@@ -2,13 +2,13 @@
   "category": "Cena",
   "recipes": [
     {
-      "title": "Filete de Merluza a la Plancha con Pure de Coliflor",
+      "title": "Filete de Tilapia a la Plancha con Pure de Coliflor",
       "calories": 320,
       "portions": "1 porcion",
       "time": "25 min",
       "difficulty": "Facil",
       "ingredients": [
-        "180 g de filete de merluza",
+        "180 g de filete de tilapia",
         "200 g de coliflor en floretes",
         "2 cucharadas de leche descremada",
         "1 cucharadita de aceite de oliva",
@@ -16,14 +16,14 @@
         "Sal, pimienta y perejil al gusto",
         "1 rodaja de limon"
       ],
-      "protein_g": 38,
+      "protein_g": 36,
       "carbs_g": 14,
       "fat_g": 11,
       "fiber_g": 5,
       "steps": [
         "Cuece la coliflor al vapor 10 minutos y tritura con la leche, el ajo y una pizca de sal hasta lograr un pure cremoso.",
-        "Salpimienta la merluza y marcala en una sarten con el aceite, 3 minutos por lado, hasta dorar.",
-        "Sirve la merluza sobre el pure y exprime el limon por encima.",
+        "Salpimienta la tilapia y marcala en una sarten con el aceite, 3 minutos por lado, hasta dorar.",
+        "Sirve la tilapia sobre el pure y exprime el limon por encima.",
         "Espolvorea perejil fresco y sirve de inmediato."
       ],
       "tips": [
@@ -103,18 +103,18 @@
         "1/2 pimiento verde en trozos",
         "1/2 cebolla morada en trozos",
         "1 cucharada de salsa de soya baja en sodio",
-        "1 cucharadita de aceite de ajonjoli",
-        "1 cucharadita de semillas de sesamo"
+        "1 cucharadita de aceite de oliva",
+        "1 cucharadita de semillas de ajonjoli"
       ],
       "protein_g": 35,
       "carbs_g": 12,
       "fat_g": 12,
       "fiber_g": 3,
       "steps": [
-        "Marina los cubos de atun en la soya y el aceite de ajonjoli durante 10 minutos.",
+        "Marina los cubos de atun en la soya y el aceite de oliva durante 10 minutos.",
         "Arma las brochetas alternando atun, pimientos y cebolla.",
         "Sella en una plancha bien caliente 1 minuto por cara para que el centro quede rosado.",
-        "Espolvorea semillas de sesamo y sirve enseguida."
+        "Espolvorea semillas de ajonjoli y sirve enseguida."
       ],
       "tips": [
         "El atun se cocina muy rapido; busca que quede jugoso por dentro.",
@@ -122,17 +122,17 @@
       ]
     },
     {
-      "title": "Sopa Ligera de Mariscos con Tomate",
+      "title": "Sopa Ligera de Camaron con Tomate",
       "calories": 260,
       "portions": "2 porciones",
       "time": "35 min",
       "difficulty": "Media",
       "ingredients": [
-        "200 g de mariscos mixtos (camaron, calamar, mejillon)",
+        "200 g de camarones pelados",
         "2 tomates maduros picados",
         "1 cebolla pequena picada",
         "2 dientes de ajo picados",
-        "500 ml de caldo de pescado bajo en sodio",
+        "500 ml de caldo de pollo bajo en sodio",
         "1 cucharadita de aceite de oliva",
         "Cilantro, sal y pimienta al gusto"
       ],
@@ -143,27 +143,27 @@
       "steps": [
         "Sofrie la cebolla y el ajo en el aceite hasta que esten transparentes.",
         "Agrega el tomate y cocina 5 minutos hasta que se deshaga.",
-        "Vierte el caldo, lleva a hervor suave y anade los mariscos.",
-        "Cocina 6 a 8 minutos, ajusta la sal y sirve con cilantro fresco."
+        "Vierte el caldo, lleva a hervor suave y anade los camarones.",
+        "Cocina 4 a 5 minutos hasta que tomen color rosado, ajusta la sal y sirve con cilantro fresco."
       ],
       "tips": [
-        "Agrega los mejillones al final para que no se endurezcan.",
+        "No cocines los camarones de mas o quedaran gomosos.",
         "Un toque de pimenton ahumado realza el sabor del caldo."
       ]
     },
     {
-      "title": "Lenguado en Papillote con Verduras Juliana",
+      "title": "Tilapia en Papillote con Verduras Juliana",
       "calories": 270,
       "portions": "1 porcion",
       "time": "28 min",
       "difficulty": "Facil",
       "ingredients": [
-        "180 g de filete de lenguado",
+        "180 g de filete de tilapia",
         "1 zanahoria en juliana",
-        "1/2 puerro en juliana",
+        "1/2 cebolla en juliana",
         "1/2 calabacin en juliana",
         "1 cucharadita de aceite de oliva",
-        "1 ramita de eneldo fresco",
+        "1 ramita de perejil fresco",
         "Sal, pimienta y zumo de medio limon"
       ],
       "protein_g": 34,
@@ -172,23 +172,23 @@
       "fiber_g": 4,
       "steps": [
         "Precalienta el horno a 190 grados y corta un cuadro grande de papel encerado.",
-        "Coloca las verduras en juliana como base y el lenguado encima.",
-        "Rocia con aceite, limon, sal, pimienta y eneldo, luego cierra el paquete sellando los bordes.",
+        "Coloca las verduras en juliana como base y la tilapia encima.",
+        "Rocia con aceite, limon, sal, pimienta y perejil, luego cierra el paquete sellando los bordes.",
         "Hornea 15 minutos y abre con cuidado por el vapor antes de servir."
       ],
       "tips": [
         "El papillote concentra los jugos y mantiene el pescado jugoso.",
-        "Sustituye el eneldo por estragon si prefieres otro aroma."
+        "Sustituye el perejil por cilantro si prefieres otro aroma."
       ]
     },
     {
-      "title": "Ensalada Tibia de Pulpo y Papa",
+      "title": "Ensalada Tibia de Camaron y Papa",
       "calories": 330,
       "portions": "1 porcion",
-      "time": "40 min",
+      "time": "30 min",
       "difficulty": "Media",
       "ingredients": [
-        "150 g de pulpo cocido en rodajas",
+        "150 g de camarones pelados",
         "1 papa mediana cocida en cubos",
         "1 cucharada de aceite de oliva",
         "1 cucharadita de pimenton dulce",
@@ -201,24 +201,24 @@
       "fat_g": 12,
       "fiber_g": 3,
       "steps": [
-        "Saltea el pulpo en una sarten caliente 2 minutos para dorar los bordes.",
+        "Saltea los camarones en una sarten caliente con la mitad del aceite 2 a 3 minutos hasta que tomen color rosado.",
         "Mezcla con la papa tibia y la cebolla morada en un bol.",
-        "Adereza con aceite de oliva, pimenton, sal y pimienta.",
+        "Adereza con el resto del aceite de oliva, pimenton, sal y pimienta.",
         "Espolvorea perejil y sirve tibia."
       ],
       "tips": [
-        "Usa pulpo precocido para ahorrar tiempo entre semana.",
-        "Un chorrito de vinagre de jerez aporta frescura al plato."
+        "Usa papa ya cocida para ahorrar tiempo entre semana.",
+        "Un chorrito de vinagre aporta frescura al plato."
       ]
     },
     {
-      "title": "Bacalao Fresco con Salsa de Tomate y Aceitunas",
+      "title": "Pescado Blanco con Salsa de Tomate y Aceitunas",
       "calories": 300,
       "portions": "1 porcion",
       "time": "30 min",
       "difficulty": "Media",
       "ingredients": [
-        "180 g de lomo de bacalao fresco",
+        "180 g de filete de pescado blanco (tilapia o corvina)",
         "1 taza de tomate triturado",
         "6 aceitunas negras sin hueso",
         "1 cucharadita de alcaparras",
@@ -233,7 +233,7 @@
       "steps": [
         "Sofrie el ajo en el aceite y agrega el tomate triturado, cocina 8 minutos.",
         "Incorpora aceitunas y alcaparras, salpimienta la salsa.",
-        "Coloca el bacalao sobre la salsa, tapa y cocina 10 minutos a fuego medio.",
+        "Coloca el pescado sobre la salsa, tapa y cocina 10 minutos a fuego medio.",
         "Decora con albahaca fresca y sirve."
       ],
       "tips": [
@@ -242,18 +242,18 @@
       ]
     },
     {
-      "title": "Vieiras Selladas sobre Pure de Arvejas",
+      "title": "Camarones Sellados sobre Pure de Arvejas",
       "calories": 280,
       "portions": "1 porcion",
       "time": "22 min",
       "difficulty": "Media",
       "ingredients": [
-        "6 vieiras grandes limpias",
+        "150 g de camarones grandes pelados",
         "150 g de arvejas (chicharos) congeladas",
         "2 cucharadas de caldo de verduras",
         "1 cucharadita de aceite de oliva",
         "1 cucharadita de mantequilla",
-        "Menta fresca picada",
+        "Cilantro fresco picado",
         "Sal y pimienta al gusto"
       ],
       "protein_g": 27,
@@ -261,114 +261,114 @@
       "fat_g": 10,
       "fiber_g": 5,
       "steps": [
-        "Cuece las arvejas 5 minutos y tritura con el caldo y la menta hasta lograr un pure.",
-        "Seca bien las vieiras con papel y salpimienta.",
-        "Sellalas en aceite y mantequilla a fuego alto 1 minuto por lado hasta dorar.",
-        "Sirve las vieiras sobre el pure de arvejas y termina con pimienta recien molida."
+        "Cuece las arvejas 5 minutos y tritura con el caldo y el cilantro hasta lograr un pure.",
+        "Seca bien los camarones con papel y salpimienta.",
+        "Sellalos en aceite y mantequilla a fuego alto 2 minutos por lado hasta que tomen color rosado.",
+        "Sirve los camarones sobre el pure de arvejas y termina con pimienta recien molida."
       ],
       "tips": [
-        "Secar las vieiras es clave para conseguir una costra dorada.",
-        "No las cocines de mas o perderan su textura tierna."
+        "Secar los camarones ayuda a que se doren mejor.",
+        "No los cocines de mas o quedaran gomosos."
       ]
     },
     {
-      "title": "Trucha al Horno con Almendras y Limon",
-      "calories": 340,
+      "title": "Tilapia al Horno con Mani y Limon",
+      "calories": 320,
       "portions": "1 porcion",
       "time": "30 min",
       "difficulty": "Facil",
       "ingredients": [
-        "180 g de filete de trucha",
-        "1 cucharada de almendras laminadas",
+        "180 g de filete de tilapia",
+        "1 cucharada de mani picado",
         "1 cucharadita de aceite de oliva",
         "1/2 limon en rodajas finas",
         "1 diente de ajo picado",
         "Sal, pimienta y perejil",
         "1 ramita de romero"
       ],
-      "protein_g": 37,
+      "protein_g": 36,
       "carbs_g": 6,
-      "fat_g": 18,
+      "fat_g": 15,
       "fiber_g": 2,
       "steps": [
-        "Precalienta el horno a 200 grados y coloca la trucha en una fuente.",
+        "Precalienta el horno a 200 grados y coloca la tilapia en una fuente.",
         "Unta con aceite, ajo, sal y pimienta, y cubre con rodajas de limon y romero.",
-        "Esparce las almendras laminadas por encima.",
-        "Hornea 15 minutos hasta que las almendras esten doradas y el pescado tierno."
+        "Esparce el mani picado por encima.",
+        "Hornea 15 minutos hasta que el mani este dorado y el pescado tierno."
       ],
       "tips": [
-        "Tuesta ligeramente las almendras aparte si quieres mas crocancia.",
-        "La piel de la trucha aporta omega 3; consumela si te gusta."
+        "Tuesta ligeramente el mani aparte si quieres mas crocancia.",
+        "Acompana con verduras al vapor para una cena completa."
       ]
     },
     {
-      "title": "Calamares Salteados con Brocoli y Jengibre",
+      "title": "Pollo Salteado con Brocoli y Jengibre",
       "calories": 270,
       "portions": "1 porcion",
       "time": "20 min",
-      "difficulty": "Media",
+      "difficulty": "Facil",
       "ingredients": [
-        "180 g de anillos de calamar",
+        "180 g de pechuga de pollo en tiras",
         "150 g de brocoli en floretes",
         "1 cucharadita de jengibre rallado",
         "1 cucharada de salsa de soya baja en sodio",
-        "1 cucharadita de aceite de ajonjoli",
+        "1 cucharadita de aceite de oliva",
         "1 diente de ajo picado",
-        "1 cucharadita de semillas de sesamo"
+        "1 cucharadita de semillas de ajonjoli"
       ],
-      "protein_g": 30,
+      "protein_g": 32,
       "carbs_g": 12,
-      "fat_g": 10,
+      "fat_g": 9,
       "fiber_g": 4,
       "steps": [
         "Blanquea el brocoli 2 minutos en agua hirviendo y reservalo.",
         "Saltea el ajo y el jengibre en el aceite a fuego alto unos segundos.",
-        "Anade los calamares y cocina 2 a 3 minutos hasta que esten opacos.",
-        "Incorpora el brocoli y la soya, saltea 1 minuto y termina con sesamo."
+        "Anade el pollo y cocina 5 a 6 minutos hasta que este dorado y bien cocido.",
+        "Incorpora el brocoli y la soya, saltea 1 minuto y termina con ajonjoli."
       ],
       "tips": [
-        "Cocina los calamares poco tiempo o a fuego muy lento, nunca a medias.",
+        "Corta el pollo en tiras finas para que se cocine parejo y rapido.",
         "Sirve sobre arroz integral si buscas una cena mas completa."
       ]
     },
     {
-      "title": "Hamburguesa de Salmon a la Plancha",
-      "calories": 350,
+      "title": "Hamburguesa de Atun a la Plancha",
+      "calories": 330,
       "portions": "2 porciones",
       "time": "25 min",
       "difficulty": "Media",
       "ingredients": [
-        "300 g de salmon fresco sin piel picado",
-        "2 cucharadas de pan integral rallado",
-        "1 clara de huevo",
-        "1 cucharadita de mostaza Dijon",
-        "1 cucharada de eneldo fresco picado",
+        "2 latas de atun en agua escurrido (300 g)",
+        "3 cucharadas de pan integral rallado",
+        "1 huevo",
+        "1 cucharadita de mostaza",
+        "1 cucharada de perejil fresco picado",
         "1 cucharadita de aceite de oliva",
         "Sal, pimienta y ralladura de limon"
       ],
-      "protein_g": 31,
-      "carbs_g": 9,
-      "fat_g": 18,
+      "protein_g": 33,
+      "carbs_g": 10,
+      "fat_g": 13,
       "fiber_g": 1,
       "steps": [
-        "Mezcla el salmon picado con el pan, la clara, la mostaza, el eneldo y los condimentos.",
+        "Mezcla el atun escurrido con el pan, el huevo, la mostaza, el perejil y los condimentos.",
         "Forma dos hamburguesas y refrigeralas 10 minutos para que tomen firmeza.",
         "Cocinalas en la plancha con el aceite 4 minutos por lado.",
         "Sirve con una rodaja de limon y ensalada fresca."
       ],
       "tips": [
-        "Pica el salmon a cuchillo para una mejor textura que la procesadora.",
+        "Escurre bien el atun para que las hamburguesas no queden aguadas.",
         "Refrigerar la mezcla evita que las hamburguesas se desarmen."
       ]
     },
     {
-      "title": "Mejillones al Vapor con Tomate y Vino Blanco",
+      "title": "Camarones al Vapor con Tomate y Vino Blanco",
       "calories": 240,
       "portions": "2 porciones",
       "time": "25 min",
       "difficulty": "Facil",
       "ingredients": [
-        "500 g de mejillones frescos limpios",
+        "300 g de camarones pelados",
         "1 tomate maduro picado",
         "1/2 cebolla picada",
         "2 dientes de ajo picados",
@@ -376,65 +376,64 @@
         "1 cucharadita de aceite de oliva",
         "Perejil, sal y pimienta"
       ],
-      "protein_g": 22,
+      "protein_g": 28,
       "carbs_g": 11,
       "fat_g": 7,
       "fiber_g": 2,
       "steps": [
         "Sofrie la cebolla y el ajo en el aceite hasta que esten transparentes.",
         "Agrega el tomate y cocina 4 minutos, luego vierte el vino blanco.",
-        "Incorpora los mejillones, tapa la olla y cocina al vapor 5 a 6 minutos.",
-        "Descarta los que no se abrieron, espolvorea perejil y sirve."
+        "Incorpora los camarones, tapa la olla y cocina 4 a 5 minutos hasta que tomen color rosado.",
+        "Espolvorea perejil y sirve enseguida."
       ],
       "tips": [
-        "Limpia bien las barbas de los mejillones antes de cocinar.",
+        "No cocines los camarones de mas o quedaran gomosos.",
         "El caldo resultante es ideal para mojar pan integral tostado."
       ]
     },
     {
-      "title": "Dorada a la Sal con Esparragos Verdes",
+      "title": "Mojarra Entera al Horno con Ejotes",
       "calories": 290,
       "portions": "1 porcion",
       "time": "35 min",
       "difficulty": "Media",
       "ingredients": [
-        "1 dorada pequena entera y limpia (250 g)",
-        "300 g de sal gruesa",
-        "1 clara de huevo",
-        "6 esparragos verdes",
-        "1 cucharadita de aceite de oliva",
+        "1 mojarra pequena entera y limpia (250 g)",
+        "150 g de ejotes (judias verdes)",
+        "1 cucharada de aceite de oliva",
+        "1 diente de ajo picado",
         "1/2 limon en rodajas",
-        "Pimienta y tomillo"
+        "Sal, pimienta y tomillo"
       ],
       "protein_g": 33,
-      "carbs_g": 7,
+      "carbs_g": 8,
       "fat_g": 12,
       "fiber_g": 3,
       "steps": [
-        "Precalienta el horno a 200 grados y mezcla la sal con la clara para formar una pasta.",
-        "Coloca una base de sal, pon la dorada rellena con limon y tomillo, y cubrela por completo.",
-        "Hornea 25 minutos; mientras, saltea los esparragos en el aceite 5 minutos.",
-        "Rompe la costra de sal, retira la piel y sirve con los esparragos."
+        "Precalienta el horno a 200 grados y coloca la mojarra en una fuente.",
+        "Rellena la mojarra con rodajas de limon y tomillo, unta con la mitad del aceite, el ajo, sal y pimienta.",
+        "Hornea 25 minutos; mientras, saltea los ejotes en el resto del aceite 6 a 7 minutos.",
+        "Sirve la mojarra con los ejotes salteados al lado."
       ],
       "tips": [
-        "La costra de sal sella los jugos y no deja el pescado salado por dentro.",
-        "Deja reposar la dorada 3 minutos antes de abrir la costra."
+        "Haz dos cortes en la piel para que el calor penetre parejo.",
+        "Deja reposar la mojarra 3 minutos antes de servir."
       ]
     },
     {
-      "title": "Wok de Langostinos con Fideos de Calabacin",
+      "title": "Wok de Camarones con Fideos de Calabacin",
       "calories": 300,
       "portions": "1 porcion",
       "time": "22 min",
       "difficulty": "Media",
       "ingredients": [
-        "150 g de langostinos pelados",
+        "150 g de camarones pelados",
         "2 calabacines en fideos (espirales)",
         "1 cucharada de salsa de soya baja en sodio",
         "1 cucharadita de jengibre rallado",
         "1 diente de ajo picado",
-        "1 cucharadita de aceite de ajonjoli",
-        "1 cebolla de verdeo en aros"
+        "1 cucharadita de aceite de oliva",
+        "1 cebollin en aros"
       ],
       "protein_g": 30,
       "carbs_g": 13,
@@ -442,9 +441,9 @@
       "fiber_g": 4,
       "steps": [
         "Calienta el wok con el aceite y dora el ajo y el jengibre unos segundos.",
-        "Anade los langostinos y saltea 2 minutos hasta que cambien de color.",
+        "Anade los camarones y saltea 2 minutos hasta que cambien de color.",
         "Incorpora los fideos de calabacin y la soya, saltea 3 minutos sin que se ablanden de mas.",
-        "Termina con la cebolla de verdeo y sirve enseguida."
+        "Termina con el cebollin y sirve enseguida."
       ],
       "tips": [
         "No cocines en exceso el calabacin para que conserve textura al dente.",
@@ -464,7 +463,7 @@
         "1 cucharada de aceite de oliva",
         "1 cucharadita de oregano",
         "Sal gruesa y pimienta",
-        "1 chorrito de vinagre de vino"
+        "1 chorrito de vinagre"
       ],
       "protein_g": 32,
       "carbs_g": 8,
@@ -488,26 +487,26 @@
       "time": "30 min",
       "difficulty": "Media",
       "ingredients": [
-        "300 g de filete de pescado blanco en trozos",
-        "200 ml de leche de coco light",
-        "1 cucharadita de pasta de curry suave",
+        "300 g de filete de pescado blanco (tilapia) en trozos",
+        "200 ml de leche de coco light (o leche descremada)",
+        "1 cucharadita de curry en polvo",
         "1 cebolla picada",
         "1 diente de ajo picado",
-        "1 cucharadita de aceite de coco",
-        "Cilantro fresco y zumo de lima"
+        "1 cucharadita de aceite de oliva",
+        "Cilantro fresco y zumo de limon"
       ],
       "protein_g": 29,
       "carbs_g": 10,
       "fat_g": 16,
       "fiber_g": 2,
       "steps": [
-        "Sofrie la cebolla y el ajo en el aceite de coco hasta dorar.",
-        "Agrega la pasta de curry y cocina 1 minuto para liberar aromas.",
+        "Sofrie la cebolla y el ajo en el aceite hasta dorar.",
+        "Agrega el curry en polvo y cocina 1 minuto para liberar aromas.",
         "Vierte la leche de coco, lleva a hervor suave e incorpora el pescado.",
-        "Cocina 8 minutos a fuego bajo, termina con cilantro y zumo de lima."
+        "Cocina 8 minutos a fuego bajo, termina con cilantro y zumo de limon."
       ],
       "tips": [
-        "Usa pescado firme como merluza o corvina para que no se deshaga.",
+        "Usa pescado firme como tilapia o corvina para que no se deshaga.",
         "Sirve sobre arroz integral o coliflor rallada para una opcion mas ligera."
       ]
     },
@@ -518,7 +517,7 @@
       "time": "35 min",
       "difficulty": "Media",
       "ingredients": [
-        "300 g de filetes de robalo o tilapia",
+        "300 g de filetes de tilapia",
         "2 tomates picados",
         "1/2 cebolla en pluma",
         "8 aceitunas verdes en rodajas",
