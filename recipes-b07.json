@@ -1,0 +1,545 @@
+{
+  "category": "Almuerzo",
+  "recipes": [
+    {
+      "title": "Filete de salmon a la plancha con esparragos",
+      "calories": 420,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 filete de salmon de 150 g",
+        "8 esparragos verdes frescos",
+        "1 cucharada de aceite de oliva",
+        "1/2 limon (jugo y ralladura)",
+        "1 diente de ajo picado",
+        "Sal y pimienta negra al gusto",
+        "1 ramita de eneldo fresco"
+      ],
+      "protein_g": 34,
+      "carbs_g": 8,
+      "fat_g": 28,
+      "fiber_g": 4,
+      "steps": [
+        "Sazona el salmon con sal, pimienta y la ralladura de limon por ambos lados.",
+        "Calienta media cucharada de aceite en una sarten y cocina el salmon 4 minutos por lado.",
+        "Saltea los esparragos con el ajo y el aceite restante durante 5 minutos hasta que esten tiernos.",
+        "Sirve el salmon sobre los esparragos y rocia con el jugo de limon y el eneldo picado."
+      ],
+      "tips": [
+        "No muevas el salmon hasta que se despegue solo de la sarten.",
+        "Elige esparragos delgados para una coccion mas rapida."
+      ]
+    },
+    {
+      "title": "Tacos de pescado blanco con repollo morado",
+      "calories": 380,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "300 g de filete de tilapia en tiras",
+        "4 tortillas de maiz",
+        "1 taza de repollo morado rallado",
+        "1/2 taza de yogur griego natural",
+        "1 cucharadita de paprika",
+        "1 lima (jugo)",
+        "Cilantro fresco al gusto"
+      ],
+      "protein_g": 32,
+      "carbs_g": 30,
+      "fat_g": 12,
+      "fiber_g": 5,
+      "steps": [
+        "Sazona las tiras de tilapia con paprika, sal y pimienta.",
+        "Cocina el pescado en una sarten antiadherente 3 minutos por lado hasta dorar.",
+        "Mezcla el yogur con el jugo de lima para crear una salsa cremosa.",
+        "Arma los tacos con el pescado, el repollo, la salsa y cilantro fresco."
+      ],
+      "tips": [
+        "Calienta las tortillas en seco para que queden flexibles.",
+        "Agrega una pizca de comino para dar un toque ahumado."
+      ]
+    },
+    {
+      "title": "Camarones al ajillo con quinoa",
+      "calories": 410,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de camarones pelados",
+        "1/2 taza de quinoa cruda",
+        "3 dientes de ajo en laminas",
+        "1 cucharada de aceite de oliva",
+        "1 pizca de hojuelas de chile",
+        "Perejil fresco picado",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 35,
+      "carbs_g": 35,
+      "fat_g": 12,
+      "fiber_g": 4,
+      "steps": [
+        "Cocina la quinoa en agua con sal durante 15 minutos y reserva.",
+        "Dora el ajo en el aceite de oliva a fuego medio sin quemarlo.",
+        "Agrega los camarones y las hojuelas de chile, cocina 3 minutos hasta que esten rosados.",
+        "Sirve los camarones sobre la quinoa y espolvorea con perejil fresco."
+      ],
+      "tips": [
+        "Enjuaga la quinoa antes de cocinar para quitar el amargor.",
+        "No sobrecocines los camarones para que no queden duros."
+      ]
+    },
+    {
+      "title": "Atun sellado con ensalada de aguacate",
+      "calories": 390,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 lomo de atun fresco de 140 g",
+        "1/2 aguacate en cubos",
+        "1 taza de hojas verdes mixtas",
+        "1 cucharada de semillas de sesamo",
+        "1 cucharada de salsa de soya baja en sodio",
+        "1 cucharadita de aceite de sesamo",
+        "1/2 limon (jugo)"
+      ],
+      "protein_g": 38,
+      "carbs_g": 9,
+      "fat_g": 22,
+      "fiber_g": 5,
+      "steps": [
+        "Cubre el lomo de atun con las semillas de sesamo presionando bien.",
+        "Sella el atun en una sarten muy caliente 1 minuto por lado para dejarlo rosado al centro.",
+        "Mezcla las hojas verdes con el aguacate, el jugo de limon y el aceite de sesamo.",
+        "Corta el atun en laminas y sirvelo sobre la ensalada con un chorrito de salsa de soya."
+      ],
+      "tips": [
+        "Usa atun de calidad sashimi para sellarlo poco hecho.",
+        "Refrigera el atun 10 minutos antes de cocinar para un mejor sellado."
+      ]
+    },
+    {
+      "title": "Bacalao al horno con tomate y aceitunas",
+      "calories": 350,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 filetes de bacalao de 150 g",
+        "2 tomates maduros en rodajas",
+        "1/4 taza de aceitunas negras",
+        "1 cucharada de alcaparras",
+        "2 cucharadas de aceite de oliva",
+        "1 cucharadita de oregano seco",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 33,
+      "carbs_g": 10,
+      "fat_g": 16,
+      "fiber_g": 3,
+      "steps": [
+        "Precalienta el horno a 200 grados y coloca el bacalao en una fuente.",
+        "Cubre el pescado con las rodajas de tomate, las aceitunas y las alcaparras.",
+        "Rocia con aceite de oliva, oregano, sal y pimienta.",
+        "Hornea durante 20 minutos hasta que el bacalao se desmenuce facilmente."
+      ],
+      "tips": [
+        "Si usas bacalao salado, desalalo en agua 24 horas antes.",
+        "Acompana con pan integral para aprovechar la salsa."
+      ]
+    },
+    {
+      "title": "Ceviche de corvina con camote",
+      "calories": 300,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de corvina fresca en cubos",
+        "6 limones (jugo)",
+        "1 cebolla morada en plumas",
+        "1 aji limo picado",
+        "1 camote cocido en rodajas",
+        "Cilantro fresco al gusto",
+        "Sal al gusto"
+      ],
+      "protein_g": 30,
+      "carbs_g": 28,
+      "fat_g": 4,
+      "fiber_g": 4,
+      "steps": [
+        "Coloca los cubos de corvina en un bol y cubrelos con el jugo de limon.",
+        "Agrega la cebolla morada, el aji limo y sal, deja marinar 10 minutos.",
+        "Incorpora el cilantro picado y rectifica la sal.",
+        "Sirve el ceviche acompanado de las rodajas de camote cocido."
+      ],
+      "tips": [
+        "Usa pescado muy fresco para evitar riesgos al comerlo crudo.",
+        "Enjuaga la cebolla con agua fria para suavizar su sabor."
+      ]
+    },
+    {
+      "title": "Mejillones al vapor con vino blanco",
+      "calories": 280,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "500 g de mejillones frescos limpios",
+        "1/2 taza de vino blanco seco",
+        "1 chalota picada",
+        "2 dientes de ajo picados",
+        "1 cucharada de aceite de oliva",
+        "Perejil fresco picado",
+        "Pimienta negra al gusto"
+      ],
+      "protein_g": 24,
+      "carbs_g": 9,
+      "fat_g": 10,
+      "fiber_g": 1,
+      "steps": [
+        "Sofrie la chalota y el ajo en el aceite de oliva durante 2 minutos.",
+        "Agrega el vino blanco y deja que hierva un minuto.",
+        "Incorpora los mejillones, tapa la olla y cocina 5 minutos hasta que se abran.",
+        "Espolvorea con perejil y pimienta antes de servir bien caliente."
+      ],
+      "tips": [
+        "Descarta los mejillones que no se abran tras la coccion.",
+        "Frota las conchas y retira las barbas antes de cocinar."
+      ]
+    },
+    {
+      "title": "Trucha al papillote con limon y hierbas",
+      "calories": 360,
+      "portions": "1 porcion",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 filete de trucha de 160 g",
+        "1/2 limon en rodajas",
+        "1 zanahoria en juliana",
+        "1/2 calabacin en juliana",
+        "1 cucharada de aceite de oliva",
+        "1 ramita de tomillo fresco",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 32,
+      "carbs_g": 8,
+      "fat_g": 20,
+      "fiber_g": 3,
+      "steps": [
+        "Precalienta el horno a 190 grados y prepara un trozo de papel para horno.",
+        "Coloca la trucha sobre las verduras en juliana y anade el limon y el tomillo.",
+        "Rocia con aceite, sal y pimienta, y cierra el papel formando un paquete.",
+        "Hornea 18 minutos y abre el papillote con cuidado al servir."
+      ],
+      "tips": [
+        "Sella bien los bordes del papel para retener el vapor.",
+        "Sirve directamente en el papel para conservar los jugos."
+      ]
+    },
+    {
+      "title": "Ensalada tibia de pulpo y papas",
+      "calories": 340,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de pulpo cocido en trozos",
+        "2 papas medianas cocidas en cubos",
+        "1 cucharada de paprika dulce",
+        "2 cucharadas de aceite de oliva",
+        "1 cucharada de vinagre de vino",
+        "Perejil fresco picado",
+        "Sal en escamas al gusto"
+      ],
+      "protein_g": 28,
+      "carbs_g": 30,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "steps": [
+        "Saltea el pulpo cocido en una sarten caliente durante 3 minutos.",
+        "Mezcla las papas tibias con el pulpo en un bol grande.",
+        "Adereza con aceite de oliva, vinagre, paprika y sal en escamas.",
+        "Espolvorea con perejil fresco y sirve la ensalada tibia."
+      ],
+      "tips": [
+        "Cuece el pulpo con una cebolla para darle mas sabor.",
+        "Sirve enseguida para disfrutar el contraste de temperaturas."
+      ]
+    },
+    {
+      "title": "Brochetas de gambas y verduras a la parrilla",
+      "calories": 320,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "300 g de gambas peladas",
+        "1 pimiento rojo en trozos",
+        "1 calabacin en rodajas gruesas",
+        "1 cebolla en cuartos",
+        "2 cucharadas de aceite de oliva",
+        "1 cucharadita de pimenton",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 30,
+      "carbs_g": 12,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "steps": [
+        "Marina las gambas con aceite, pimenton, sal y pimienta durante 10 minutos.",
+        "Ensarta las gambas alternando con los trozos de verduras en las brochetas.",
+        "Asa las brochetas en la parrilla 3 minutos por lado.",
+        "Sirve calientes con un chorrito de limon al gusto."
+      ],
+      "tips": [
+        "Remoja las brochetas de madera en agua para que no se quemen.",
+        "No sobrecargues las brochetas para una coccion pareja."
+      ]
+    },
+    {
+      "title": "Merluza en salsa verde con guisantes",
+      "calories": 330,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 filetes de merluza de 150 g",
+        "1/2 taza de guisantes frescos",
+        "2 dientes de ajo picados",
+        "1 cucharada de harina integral",
+        "2 cucharadas de aceite de oliva",
+        "1 manojo de perejil picado",
+        "1/2 taza de caldo de pescado"
+      ],
+      "protein_g": 31,
+      "carbs_g": 12,
+      "fat_g": 14,
+      "fiber_g": 4,
+      "steps": [
+        "Sofrie el ajo en aceite y anade la harina removiendo un minuto.",
+        "Incorpora el caldo poco a poco hasta formar una salsa ligera.",
+        "Agrega la merluza y los guisantes, cocina 8 minutos a fuego medio.",
+        "Anade el perejil picado, mueve la cazuela y sirve caliente."
+      ],
+      "tips": [
+        "Mueve la cazuela en circulos para ligar bien la salsa.",
+        "Usa caldo casero para un sabor mas profundo."
+      ]
+    },
+    {
+      "title": "Sopa de pescado y mariscos ligera",
+      "calories": 290,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "200 g de filete de pescado blanco en trozos",
+        "150 g de mariscos mixtos",
+        "1 tomate rallado",
+        "1 cebolla picada",
+        "2 cucharadas de aceite de oliva",
+        "4 tazas de caldo de pescado",
+        "1 pizca de azafran"
+      ],
+      "protein_g": 30,
+      "carbs_g": 10,
+      "fat_g": 11,
+      "fiber_g": 2,
+      "steps": [
+        "Sofrie la cebolla en el aceite hasta que este transparente.",
+        "Agrega el tomate rallado y cocina 5 minutos a fuego medio.",
+        "Vierte el caldo con el azafran y deja hervir suavemente 10 minutos.",
+        "Incorpora el pescado y los mariscos, cocina 6 minutos y sirve."
+      ],
+      "tips": [
+        "Anade los mariscos al final para que no se endurezcan.",
+        "Sirve con perejil fresco para realzar el aroma."
+      ]
+    },
+    {
+      "title": "Wok de calamares con pimientos",
+      "calories": 310,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de anillas de calamar",
+        "1 pimiento rojo en tiras",
+        "1 pimiento verde en tiras",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharada de aceite de sesamo",
+        "1 trozo de jengibre rallado",
+        "1 diente de ajo picado"
+      ],
+      "protein_g": 28,
+      "carbs_g": 11,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "steps": [
+        "Calienta el aceite de sesamo en un wok a fuego alto.",
+        "Saltea el ajo y el jengibre durante 30 segundos.",
+        "Anade los pimientos y cocina 3 minutos manteniendolos crujientes.",
+        "Incorpora los calamares y la salsa de soya, saltea 3 minutos y sirve."
+      ],
+      "tips": [
+        "Cocina los calamares poco tiempo para que no queden gomosos.",
+        "Manten el fuego alto para un salteado rapido y crujiente."
+      ]
+    },
+    {
+      "title": "Lubina a la sal con ensalada fresca",
+      "calories": 340,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 lubina entera de 500 g",
+        "1 kg de sal gruesa",
+        "1 clara de huevo",
+        "1 limon en rodajas",
+        "2 tazas de hojas verdes mixtas",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de vinagre balsamico"
+      ],
+      "protein_g": 33,
+      "carbs_g": 5,
+      "fat_g": 14,
+      "fiber_g": 2,
+      "steps": [
+        "Mezcla la sal gruesa con la clara de huevo hasta formar una pasta humeda.",
+        "Cubre la lubina con una cama de sal arriba y abajo en una fuente.",
+        "Hornea a 200 grados durante 25 minutos y rompe la costra de sal.",
+        "Sirve la lubina con la ensalada aderezada con aceite y balsamico."
+      ],
+      "tips": [
+        "Rompe la costra con cuidado para no salar de mas el pescado.",
+        "Retira la piel antes de servir para una textura mas limpia."
+      ]
+    },
+    {
+      "title": "Albondigas de atun en salsa de tomate",
+      "calories": 370,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "250 g de atun en conserva escurrido",
+        "1 huevo",
+        "3 cucharadas de pan rallado integral",
+        "2 tazas de salsa de tomate natural",
+        "1 cucharada de aceite de oliva",
+        "1 diente de ajo picado",
+        "Perejil fresco picado"
+      ],
+      "protein_g": 34,
+      "carbs_g": 18,
+      "fat_g": 16,
+      "fiber_g": 3,
+      "steps": [
+        "Mezcla el atun con el huevo, el pan rallado, el ajo y el perejil.",
+        "Forma pequenas albondigas con la mezcla y reservalas.",
+        "Dora las albondigas en aceite de oliva durante 4 minutos.",
+        "Anade la salsa de tomate y cocina 10 minutos a fuego medio."
+      ],
+      "tips": [
+        "Refrigera la mezcla 10 minutos para formar mejor las albondigas.",
+        "Acompana con arroz integral para un plato completo."
+      ]
+    },
+    {
+      "title": "Dorada al horno con patatas y cebolla",
+      "calories": 400,
+      "portions": "2 porciones",
+      "time": "45 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 dorada entera de 500 g",
+        "2 patatas medianas en rodajas finas",
+        "1 cebolla en aros",
+        "3 cucharadas de aceite de oliva",
+        "1/4 taza de vino blanco",
+        "1 cucharadita de pimenton dulce",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 32,
+      "carbs_g": 30,
+      "fat_g": 16,
+      "fiber_g": 4,
+      "steps": [
+        "Coloca las patatas y la cebolla en una fuente con aceite y sal.",
+        "Hornea las verduras a 200 grados durante 15 minutos.",
+        "Acomoda la dorada encima, rocia con vino, pimenton y mas aceite.",
+        "Hornea 20 minutos mas hasta que el pescado este dorado y jugoso."
+      ],
+      "tips": [
+        "Corta las patatas finas para que se cocinen al tiempo del pescado.",
+        "Riega el pescado con sus jugos a mitad de coccion."
+      ]
+    },
+    {
+      "title": "Vieiras selladas con pure de coliflor",
+      "calories": 320,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "6 vieiras frescas",
+        "2 tazas de coliflor en floretes",
+        "2 cucharadas de leche descremada",
+        "1 cucharada de aceite de oliva",
+        "1 cucharada de mantequilla",
+        "1 pizca de nuez moscada",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 30,
+      "carbs_g": 14,
+      "fat_g": 16,
+      "fiber_g": 5,
+      "steps": [
+        "Cuece la coliflor al vapor 10 minutos hasta que este muy tierna.",
+        "Tritura la coliflor con la leche, la nuez moscada, sal y pimienta.",
+        "Seca las vieiras y sellalas en aceite y mantequilla 90 segundos por lado.",
+        "Sirve las vieiras sobre el pure de coliflor y termina con pimienta."
+      ],
+      "tips": [
+        "Seca bien las vieiras para lograr un dorado perfecto.",
+        "No las muevas hasta que formen una costra dorada."
+      ]
+    },
+    {
+      "title": "Sardinas a la plancha con tomate y albahaca",
+      "calories": 350,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "8 sardinas frescas limpias",
+        "2 tomates en cubos",
+        "1 cucharada de aceite de oliva",
+        "1 diente de ajo picado",
+        "Hojas de albahaca fresca",
+        "1/2 limon (jugo)",
+        "Sal en escamas al gusto"
+      ],
+      "protein_g": 30,
+      "carbs_g": 8,
+      "fat_g": 22,
+      "fiber_g": 2,
+      "steps": [
+        "Sazona las sardinas con sal y un poco de aceite por ambos lados.",
+        "Cocinalas en una plancha caliente 3 minutos por lado.",
+        "Mezcla el tomate con el ajo, la albahaca, aceite y sal.",
+        "Sirve las sardinas con la ensalada de tomate y un chorrito de limon."
+      ],
+      "tips": [
+        "Cocina las sardinas en plancha muy caliente para una piel crujiente.",
+        "Consumelas frescas para aprovechar sus omega 3."
+      ]
+    }
+  ]
+}

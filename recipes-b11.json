@@ -1,0 +1,542 @@
+{
+  "category": "Cena",
+  "recipes": [
+    {
+      "title": "Tofu Marinado al Sesamo con Brocoli al Vapor",
+      "calories": 360,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "180 g de tofu firme en cubos",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharadita de aceite de sesamo",
+        "2 tazas de floretes de brocoli",
+        "1 diente de ajo picado",
+        "1 cucharadita de semillas de sesamo",
+        "1 cucharadita de jengibre rallado"
+      ],
+      "protein_g": 24,
+      "carbs_g": 18,
+      "fat_g": 21,
+      "fiber_g": 6,
+      "steps": [
+        "Marina el tofu con la salsa de soya, el ajo y el jengibre durante 10 minutos.",
+        "Cocina el brocoli al vapor de 4 a 5 minutos hasta que quede tierno y crujiente.",
+        "Saltea el tofu en una sarten con el aceite de sesamo hasta dorar cada cara.",
+        "Sirve el tofu sobre el brocoli y espolvorea las semillas de sesamo."
+      ],
+      "tips": [
+        "Prensa el tofu antes de marinar para que absorba mejor el sabor.",
+        "No sobrecocines el brocoli para conservar su color verde brillante."
+      ]
+    },
+    {
+      "title": "Curry Cremoso de Garbanzos y Espinaca",
+      "calories": 410,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 lata de garbanzos cocidos escurridos (400 g)",
+        "2 tazas de espinaca fresca",
+        "1 taza de leche de coco ligera",
+        "1 cebolla mediana picada",
+        "1 cucharada de pasta de curry",
+        "1 tomate picado",
+        "1 cucharada de aceite de oliva"
+      ],
+      "protein_g": 16,
+      "carbs_g": 42,
+      "fat_g": 18,
+      "fiber_g": 11,
+      "steps": [
+        "Sofrie la cebolla en aceite de oliva hasta que quede transparente.",
+        "Agrega la pasta de curry y el tomate, y cocina por 2 minutos.",
+        "Incorpora los garbanzos y la leche de coco, y cocina a fuego medio 10 minutos.",
+        "Anade la espinaca al final y mezcla hasta que se marchite."
+      ],
+      "tips": [
+        "Sirve con un poco de cilantro fresco para realzar el aroma.",
+        "Usa leche de coco ligera para reducir las calorias sin perder cremosidad."
+      ]
+    },
+    {
+      "title": "Lasana de Calabacin y Ricotta sin Pasta",
+      "calories": 340,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 calabacines grandes en laminas finas",
+        "200 g de ricotta light",
+        "1 taza de salsa de tomate natural",
+        "1/2 taza de queso mozzarella rallado",
+        "1 cucharadita de oregano seco",
+        "1 diente de ajo picado",
+        "1 cucharada de albahaca fresca picada"
+      ],
+      "protein_g": 22,
+      "carbs_g": 20,
+      "fat_g": 17,
+      "fiber_g": 5,
+      "steps": [
+        "Cocina las laminas de calabacin en seco unos minutos para reducir su agua.",
+        "Mezcla la ricotta con el ajo, el oregano y la albahaca.",
+        "Arma capas alternando calabacin, ricotta y salsa de tomate en una fuente.",
+        "Cubre con mozzarella y hornea a 190 grados durante 25 minutos."
+      ],
+      "tips": [
+        "Sala el calabacin y dejalo reposar para extraer el exceso de liquido.",
+        "Deja reposar la lasana 5 minutos antes de cortar para que tome forma."
+      ]
+    },
+    {
+      "title": "Buddha Bowl de Tofu, Quinoa y Aguacate",
+      "calories": 450,
+      "portions": "1 porcion",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de tofu firme en cubos",
+        "1/2 taza de quinoa cocida",
+        "1/2 aguacate en laminas",
+        "1 taza de hojas verdes mixtas",
+        "1/2 taza de zanahoria rallada",
+        "1 cucharada de salsa tahini",
+        "1 cucharadita de aceite de oliva"
+      ],
+      "protein_g": 23,
+      "carbs_g": 38,
+      "fat_g": 24,
+      "fiber_g": 10,
+      "steps": [
+        "Dora el tofu en una sarten con aceite de oliva hasta que quede crujiente.",
+        "Coloca la quinoa cocida como base en un tazon amplio.",
+        "Distribuye las hojas verdes, la zanahoria y el aguacate alrededor.",
+        "Agrega el tofu y rocia la salsa tahini por encima antes de servir."
+      ],
+      "tips": [
+        "Aligera el tahini con un poco de agua y limon para un aderezo mas fluido.",
+        "Prepara la quinoa con anticipacion para armar el bowl en minutos."
+      ]
+    },
+    {
+      "title": "Sopa de Lentejas Rojas y Calabaza",
+      "calories": 300,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de lentejas rojas",
+        "2 tazas de calabaza en cubos",
+        "1 cebolla picada",
+        "1 cucharadita de comino molido",
+        "4 tazas de caldo de verduras",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de cumple de jengibre rallado"
+      ],
+      "protein_g": 15,
+      "carbs_g": 45,
+      "fat_g": 6,
+      "fiber_g": 12,
+      "steps": [
+        "Sofrie la cebolla y el jengibre en aceite de oliva hasta que ablanden.",
+        "Agrega la calabaza y el comino, y cocina por 3 minutos.",
+        "Incorpora las lentejas y el caldo, y hierve a fuego medio 20 minutos.",
+        "Licua parcialmente la sopa para lograr una textura cremosa y sirve."
+      ],
+      "tips": [
+        "Las lentejas rojas no necesitan remojo previo y cocinan rapido.",
+        "Ajusta el caldo segun prefieras la sopa mas espesa o ligera."
+      ]
+    },
+    {
+      "title": "Tofu Agridulce con Pimientos y Pina",
+      "calories": 390,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "1 pimiento rojo en tiras",
+        "1 pimiento verde en tiras",
+        "1 taza de pina en cubos",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharada de vinagre de arroz",
+        "1 cucharadita de maicena"
+      ],
+      "protein_g": 18,
+      "carbs_g": 36,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "steps": [
+        "Dora el tofu en una sarten caliente hasta que quede crujiente y reserva.",
+        "Saltea los pimientos y la pina por 4 minutos a fuego alto.",
+        "Mezcla la salsa de soya, el vinagre y la maicena con un poco de agua.",
+        "Vierte la salsa sobre los vegetales, anade el tofu y cocina hasta espesar."
+      ],
+      "tips": [
+        "La pina aporta dulzor natural y ayuda a equilibrar la acidez del vinagre.",
+        "Cocina a fuego alto para que los vegetales queden crujientes."
+      ]
+    },
+    {
+      "title": "Hamburguesa de Frijoles Negros y Avena",
+      "calories": 320,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de frijoles negros cocidos",
+        "1/2 taza de avena en hojuelas",
+        "1/4 de cebolla picada finamente",
+        "1 cucharadita de comino molido",
+        "1 cucharadita de pimenton ahumado",
+        "1 huevo",
+        "1 cucharada de aceite de oliva"
+      ],
+      "protein_g": 16,
+      "carbs_g": 40,
+      "fat_g": 10,
+      "fiber_g": 11,
+      "steps": [
+        "Pisa los frijoles con un tenedor hasta formar una pasta gruesa.",
+        "Mezcla con la avena, la cebolla, el huevo y las especias.",
+        "Forma dos hamburguesas firmes con las manos humedas.",
+        "Cocinalas en una sarten con aceite de oliva 4 minutos por cada lado."
+      ],
+      "tips": [
+        "Refrigera la mezcla 10 minutos para que las hamburguesas no se deshagan.",
+        "Sirve en pan integral o sobre una cama de hojas verdes."
+      ]
+    },
+    {
+      "title": "Fideos de Calabacin con Pesto de Albahaca",
+      "calories": 310,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 calabacines en fideos (espirales)",
+        "2 cucharadas de pesto de albahaca",
+        "10 tomates cherry partidos",
+        "1 cucharada de pinones tostados",
+        "2 cucharadas de queso parmesano rallado",
+        "1 cucharadita de aceite de oliva"
+      ],
+      "protein_g": 12,
+      "carbs_g": 16,
+      "fat_g": 22,
+      "fiber_g": 5,
+      "steps": [
+        "Saltea los fideos de calabacin en aceite de oliva por 2 minutos.",
+        "Retira del fuego y mezcla con el pesto de albahaca.",
+        "Agrega los tomates cherry y revuelve suavemente.",
+        "Sirve con pinones tostados y queso parmesano por encima."
+      ],
+      "tips": [
+        "No cocines de mas el calabacin para que no suelte demasiada agua.",
+        "Tuesta los pinones en seco para potenciar su sabor."
+      ]
+    },
+    {
+      "title": "Tofu al Horno con Coles de Bruselas",
+      "calories": 350,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "2 tazas de coles de Bruselas partidas",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharada de miel",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de paprika"
+      ],
+      "protein_g": 19,
+      "carbs_g": 24,
+      "fat_g": 18,
+      "fiber_g": 7,
+      "steps": [
+        "Mezcla el tofu y las coles con la salsa de soya, la miel y la paprika.",
+        "Distribuye todo en una bandeja con el aceite de oliva.",
+        "Hornea a 200 grados durante 25 minutos removiendo a la mitad.",
+        "Sirve cuando el tofu este dorado y las coles crujientes."
+      ],
+      "tips": [
+        "Corta las coles por la mitad para que se asen de forma pareja.",
+        "Un toque de miel ayuda a caramelizar y dorar el tofu."
+      ]
+    },
+    {
+      "title": "Chili Vegetariano de Tres Frijoles",
+      "calories": 360,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de frijoles negros cocidos",
+        "1 taza de frijoles rojos cocidos",
+        "1/2 taza de frijoles pintos cocidos",
+        "1 lata de tomate triturado (400 g)",
+        "1 cebolla picada",
+        "1 cucharada de chile en polvo",
+        "1 cucharadita de comino molido"
+      ],
+      "protein_g": 20,
+      "carbs_g": 55,
+      "fat_g": 5,
+      "fiber_g": 16,
+      "steps": [
+        "Sofrie la cebolla hasta que quede transparente en una olla.",
+        "Agrega el chile en polvo y el comino, y cocina por 1 minuto.",
+        "Incorpora los frijoles y el tomate triturado.",
+        "Cocina a fuego lento durante 25 minutos removiendo de vez en cuando."
+      ],
+      "tips": [
+        "Sirve con un poco de aguacate para sumar grasas saludables.",
+        "El chili sabe aun mejor al dia siguiente recalentado."
+      ]
+    },
+    {
+      "title": "Tofu Revuelto Estilo Mexicano",
+      "calories": 290,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de tofu firme desmenuzado",
+        "1/2 cebolla picada",
+        "1/2 tomate picado",
+        "1/4 de cucharadita de curcuma",
+        "1/2 cucharadita de comino molido",
+        "1 cucharada de cilantro picado",
+        "1 cucharadita de aceite de oliva"
+      ],
+      "protein_g": 18,
+      "carbs_g": 12,
+      "fat_g": 17,
+      "fiber_g": 4,
+      "steps": [
+        "Sofrie la cebolla en aceite de oliva hasta que ablande.",
+        "Agrega el tomate y cocina 2 minutos mas.",
+        "Incorpora el tofu desmenuzado, la curcuma y el comino.",
+        "Cocina 5 minutos, anade el cilantro y sirve caliente."
+      ],
+      "tips": [
+        "La curcuma le da un color amarillo similar al del huevo revuelto.",
+        "Acompana con tortillas integrales para una cena completa."
+      ]
+    },
+    {
+      "title": "Berenjena Asada con Tahini y Granada",
+      "calories": 280,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 berenjenas medianas en mitades",
+        "2 cucharadas de salsa tahini",
+        "1/4 de taza de granos de granada",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de comino molido",
+        "1 cucharada de perejil picado"
+      ],
+      "protein_g": 7,
+      "carbs_g": 26,
+      "fat_g": 17,
+      "fiber_g": 10,
+      "steps": [
+        "Haz cortes en la pulpa de las berenjenas y barnizalas con aceite.",
+        "Espolvorea el comino y hornea a 200 grados por 25 minutos.",
+        "Rocia el tahini sobre las berenjenas asadas.",
+        "Decora con granos de granada y perejil antes de servir."
+      ],
+      "tips": [
+        "Los cortes en la pulpa ayudan a que la berenjena se cocine de manera pareja.",
+        "La granada aporta un contraste dulce y acido muy fresco."
+      ]
+    },
+    {
+      "title": "Wok de Tofu, Champinones y Bok Choy",
+      "calories": 330,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "1 taza de champinones laminados",
+        "2 tazas de bok choy picado",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharadita de aceite de sesamo",
+        "1 diente de ajo picado",
+        "1 cucharadita de jengibre rallado"
+      ],
+      "protein_g": 20,
+      "carbs_g": 14,
+      "fat_g": 18,
+      "fiber_g": 5,
+      "steps": [
+        "Dora el tofu en el wok con el aceite de sesamo y reserva.",
+        "Saltea el ajo y el jengibre por 30 segundos.",
+        "Agrega los champinones y el bok choy, y cocina a fuego alto 4 minutos.",
+        "Devuelve el tofu, vierte la salsa de soya y mezcla bien."
+      ],
+      "tips": [
+        "Cocina a fuego alto y constante para mantener los vegetales crujientes.",
+        "Anade los tallos del bok choy primero y las hojas al final."
+      ]
+    },
+    {
+      "title": "Pimientos Rellenos de Quinoa y Verduras",
+      "calories": 340,
+      "portions": "2 porciones",
+      "time": "45 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 pimientos grandes sin tapa ni semillas",
+        "1 taza de quinoa cocida",
+        "1/2 taza de maiz dulce",
+        "1/2 taza de frijoles negros cocidos",
+        "1/2 taza de salsa de tomate",
+        "1/4 de taza de queso rallado",
+        "1 cucharadita de comino molido"
+      ],
+      "protein_g": 16,
+      "carbs_g": 48,
+      "fat_g": 9,
+      "fiber_g": 10,
+      "steps": [
+        "Mezcla la quinoa, el maiz, los frijoles, el comino y la salsa de tomate.",
+        "Rellena los pimientos con la mezcla presionando suavemente.",
+        "Cubre cada pimiento con queso rallado.",
+        "Hornea a 190 grados durante 30 minutos hasta que esten tiernos."
+      ],
+      "tips": [
+        "Precocina los pimientos 5 minutos al vapor si los prefieres mas suaves.",
+        "Usa pimientos de distintos colores para un plato mas vistoso."
+      ]
+    },
+    {
+      "title": "Tofu en Salsa de Mani con Vegetales",
+      "calories": 420,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "2 cucharadas de mantequilla de mani",
+        "1 zanahoria en bastones",
+        "1 taza de vainitas troceadas",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharadita de jengibre rallado",
+        "1 cucharadita de aceite de sesamo"
+      ],
+      "protein_g": 24,
+      "carbs_g": 22,
+      "fat_g": 27,
+      "fiber_g": 6,
+      "steps": [
+        "Dora el tofu en el aceite de sesamo y reserva.",
+        "Saltea la zanahoria y las vainitas por 5 minutos.",
+        "Mezcla la mantequilla de mani, la salsa de soya, el jengibre y agua tibia.",
+        "Vierte la salsa, anade el tofu y cocina 3 minutos hasta integrar."
+      ],
+      "tips": [
+        "Diluye la mantequilla de mani con agua tibia para una salsa cremosa.",
+        "Un chorrito de jugo de lima al final realza todos los sabores."
+      ]
+    },
+    {
+      "title": "Coliflor Entera Asada con Especias",
+      "calories": 260,
+      "portions": "2 porciones",
+      "time": "50 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 coliflor entera mediana",
+        "2 cucharadas de yogur natural",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de curcuma",
+        "1 cucharadita de paprika",
+        "1 cucharadita de comino molido",
+        "1 diente de ajo picado"
+      ],
+      "protein_g": 10,
+      "carbs_g": 22,
+      "fat_g": 14,
+      "fiber_g": 8,
+      "steps": [
+        "Mezcla el yogur con el aceite, el ajo y todas las especias.",
+        "Cubre la coliflor entera con la mezcla por todas sus caras.",
+        "Hornea a 200 grados durante 40 minutos.",
+        "Verifica con un cuchillo que el centro este tierno antes de servir."
+      ],
+      "tips": [
+        "Hierve la coliflor 5 minutos antes de hornear para asegurar la coccion.",
+        "Corta en rodajas gruesas para servir como un plato principal vistoso."
+      ]
+    },
+    {
+      "title": "Tacos de Tofu Crujiente y Repollo Morado",
+      "calories": 380,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de tofu firme en tiras",
+        "4 tortillas de maiz",
+        "1 taza de repollo morado en juliana",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharadita de paprika",
+        "1 cucharada de jugo de lima",
+        "1 cucharada de aceite de oliva"
+      ],
+      "protein_g": 19,
+      "carbs_g": 40,
+      "fat_g": 16,
+      "fiber_g": 8,
+      "steps": [
+        "Marina el tofu con la salsa de soya y la paprika por 10 minutos.",
+        "Dora las tiras de tofu en aceite de oliva hasta que queden crujientes.",
+        "Calienta las tortillas en una sarten seca.",
+        "Arma los tacos con tofu, repollo morado y un toque de jugo de lima."
+      ],
+      "tips": [
+        "Exprime lima sobre el repollo para que quede mas fresco y vibrante.",
+        "Agrega salsa picante al gusto para darle un toque extra."
+      ]
+    },
+    {
+      "title": "Risotto de Hongos y Espinaca con Arroz Integral",
+      "calories": 400,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de arroz integral",
+        "2 tazas de hongos variados laminados",
+        "2 tazas de espinaca fresca",
+        "1 cebolla picada",
+        "4 tazas de caldo de verduras",
+        "2 cucharadas de queso parmesano rallado",
+        "1 cucharada de aceite de oliva"
+      ],
+      "protein_g": 14,
+      "carbs_g": 58,
+      "fat_g": 11,
+      "fiber_g": 7,
+      "steps": [
+        "Sofrie la cebolla y los hongos en aceite de oliva por 5 minutos.",
+        "Agrega el arroz integral y revuelve por 1 minuto.",
+        "Incorpora el caldo de a poco, removiendo hasta que el arroz quede cremoso.",
+        "Anade la espinaca y el parmesano al final, y mezcla antes de servir."
+      ],
+      "tips": [
+        "El arroz integral tarda mas que el blanco, ten paciencia y suma caldo gradual.",
+        "Remueve con frecuencia para liberar el almidon y lograr cremosidad."
+      ]
+    }
+  ]
+}

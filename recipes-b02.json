@@ -1,0 +1,540 @@
+{
+  "category": "Desayuno",
+  "recipes": [
+    {
+      "title": "Huevos al Horno en Aguacate Gratinado",
+      "calories": 320,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 aguacates maduros partidos a la mitad y sin hueso",
+        "4 huevos pequenos",
+        "30 g de queso mozzarella rallado",
+        "1 cucharada de cebollin picado",
+        "1/4 cucharadita de pimienta negra",
+        "1/4 cucharadita de sal",
+        "1 pizca de paprika"
+      ],
+      "protein_g": 16,
+      "carbs_g": 12,
+      "fat_g": 25,
+      "fiber_g": 9,
+      "steps": [
+        "Precalienta el horno a 200 grados y retira un poco de pulpa del centro de cada aguacate para ampliar el hueco.",
+        "Coloca los aguacates en una bandeja y casca un huevo dentro de cada mitad.",
+        "Espolvorea sal, pimienta, paprika y el queso mozzarella por encima.",
+        "Hornea de 12 a 15 minutos hasta que la clara cuaje, decora con cebollin y sirve."
+      ],
+      "tips": [
+        "Apoya los aguacates sobre bolitas de papel aluminio para que no se volteen.",
+        "Usa huevos pequenos para que quepan sin desbordar el hueco."
+      ]
+    },
+    {
+      "title": "Omelette de Tres Quesos con Hierbas Frescas",
+      "calories": 340,
+      "portions": "1 porcion",
+      "time": "12 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "3 huevos",
+        "20 g de queso cheddar rallado",
+        "20 g de queso de cabra desmenuzado",
+        "15 g de queso parmesano rallado",
+        "1 cucharada de albahaca y perejil picados",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 26,
+      "carbs_g": 3,
+      "fat_g": 26,
+      "fiber_g": 0,
+      "steps": [
+        "Bate los huevos con la sal, la pimienta y la mitad de las hierbas hasta integrar.",
+        "Calienta el aceite en una sarten antiadherente a fuego medio y vierte el huevo.",
+        "Cuando el borde cuaje, reparte los tres quesos sobre una mitad del omelette.",
+        "Dobla la tortilla, deja fundir el queso 1 minuto, decora con el resto de hierbas y sirve."
+      ],
+      "tips": [
+        "Retira del fuego cuando el centro aun se vea brillante para que quede jugoso.",
+        "Mezcla quesos de distinta intensidad para un sabor mas profundo."
+      ]
+    },
+    {
+      "title": "Burrito de Desayuno con Huevo y Frijoles Negros",
+      "calories": 410,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 tortilla integral grande",
+        "2 huevos",
+        "1/2 taza de frijoles negros cocidos y escurridos",
+        "1/4 de aguacate en rebanadas",
+        "2 cucharadas de salsa pico de gallo",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de comino y sal"
+      ],
+      "protein_g": 22,
+      "carbs_g": 42,
+      "fat_g": 17,
+      "fiber_g": 12,
+      "steps": [
+        "Calienta el aceite y revuelve los huevos con el comino y la sal hasta cuajar suaves.",
+        "Entibia los frijoles negros y la tortilla integral por unos segundos.",
+        "Rellena la tortilla con el huevo, los frijoles, el aguacate y el pico de gallo.",
+        "Enrolla el burrito firmemente, dobla los extremos y corta a la mitad para servir."
+      ],
+      "tips": [
+        "Calienta la tortilla para que no se rompa al enrollar.",
+        "Escurre bien los frijoles para evitar que el burrito quede humedo."
+      ]
+    },
+    {
+      "title": "Frittata de Brocoli y Tomate Cherry al Horno",
+      "calories": 290,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "5 huevos",
+        "1 taza de brocoli en floretes pequenos",
+        "8 tomates cherry partidos a la mitad",
+        "30 g de queso feta desmenuzado",
+        "1 cucharada de aceite de oliva",
+        "1/2 cucharadita de sal",
+        "1/4 cucharadita de pimienta"
+      ],
+      "protein_g": 20,
+      "carbs_g": 8,
+      "fat_g": 20,
+      "fiber_g": 3,
+      "steps": [
+        "Precalienta el horno a 190 grados y blanquea el brocoli en agua hirviendo 2 minutos.",
+        "Bate los huevos con la sal y la pimienta en un bol amplio.",
+        "Engrasa un molde, acomoda el brocoli, los tomates y el feta, y vierte el huevo encima.",
+        "Hornea de 18 a 20 minutos hasta que cuaje y dore ligeramente, deja reposar y corta."
+      ],
+      "tips": [
+        "Blanquear el brocoli mantiene su color verde brillante.",
+        "Deja reposar 5 minutos antes de cortar para que la frittata no se desarme."
+      ]
+    },
+    {
+      "title": "Huevos Revueltos Cremosos con Salmon Ahumado",
+      "calories": 330,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "3 huevos",
+        "60 g de salmon ahumado en tiras",
+        "1 cucharada de queso crema light",
+        "1 cucharada de eneldo fresco picado",
+        "1 cucharadita de mantequilla",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 28,
+      "carbs_g": 2,
+      "fat_g": 23,
+      "fiber_g": 0,
+      "steps": [
+        "Bate los huevos con sal y pimienta y derrite la mantequilla a fuego bajo.",
+        "Vierte el huevo y revuelve lentamente con espatula formando pliegues suaves.",
+        "Cuando esten casi listos, incorpora el queso crema y el salmon ahumado.",
+        "Retira del fuego, agrega el eneldo y sirve de inmediato cremosos."
+      ],
+      "tips": [
+        "Cocina a fuego bajo y constante para lograr textura cremosa.",
+        "Anade el salmon al final para que no se reseque."
+      ]
+    },
+    {
+      "title": "Omelette Enrollado Estilo Japones Tamagoyaki",
+      "calories": 220,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "3 huevos",
+        "1 cucharadita de salsa de soya baja en sodio",
+        "1/2 cucharadita de mirin o un toque de miel",
+        "1 cucharadita de aceite vegetal",
+        "1 cucharada de cebollin picado",
+        "1 pizca de sal"
+      ],
+      "protein_g": 19,
+      "carbs_g": 4,
+      "fat_g": 14,
+      "fiber_g": 0,
+      "steps": [
+        "Bate los huevos con la salsa de soya, el mirin, la sal y el cebollin.",
+        "Engrasa ligeramente una sarten y vierte una capa fina de huevo a fuego medio bajo.",
+        "Cuando empiece a cuajar, enrolla hacia un extremo y vierte mas huevo bajo el rollo.",
+        "Repite hasta terminar la mezcla, deja reposar y corta en rodajas gruesas."
+      ],
+      "tips": [
+        "Usa una sarten antiadherente pequena para un enrollado parejo.",
+        "Manten el fuego bajo para que no se dore demasiado."
+      ]
+    },
+    {
+      "title": "Huevos al Horno en Salsa de Tomate Estilo Shakshuka",
+      "calories": 300,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "4 huevos",
+        "2 tazas de tomate triturado",
+        "1/2 cebolla picada",
+        "1 pimiento rojo en cubos",
+        "1 diente de ajo picado",
+        "1 cucharadita de comino y paprika",
+        "1 cucharada de aceite de oliva"
+      ],
+      "protein_g": 16,
+      "carbs_g": 14,
+      "fat_g": 18,
+      "fiber_g": 4,
+      "steps": [
+        "Sofrie la cebolla, el pimiento y el ajo en el aceite hasta que ablanden.",
+        "Agrega el tomate triturado, el comino y la paprika y cocina 8 minutos.",
+        "Haz cuatro huecos en la salsa y casca un huevo en cada uno.",
+        "Tapa y cocina de 6 a 8 minutos hasta que las claras cuajen y sirve caliente."
+      ],
+      "tips": [
+        "Tapa la sarten para que los huevos cuajen de manera uniforme.",
+        "Acompana con pan integral para mojar en la salsa."
+      ]
+    },
+    {
+      "title": "Muffins de Huevo con Espinaca y Jamon de Pavo",
+      "calories": 180,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "5 huevos",
+        "1 taza de espinaca picada",
+        "60 g de jamon de pavo en cubos",
+        "30 g de queso bajo en grasa rallado",
+        "2 cucharadas de leche descremada",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 21,
+      "carbs_g": 4,
+      "fat_g": 11,
+      "fiber_g": 1,
+      "steps": [
+        "Precalienta el horno a 180 grados y engrasa seis moldes para muffin.",
+        "Bate los huevos con la leche, la sal y la pimienta en un bol.",
+        "Reparte la espinaca, el jamon de pavo y el queso en los moldes y vierte el huevo.",
+        "Hornea de 18 a 20 minutos hasta que esten firmes y dorados, deja entibiar y desmolda."
+      ],
+      "tips": [
+        "Prepara varios y guardalos en refrigerador para desayunos rapidos.",
+        "Escurre bien la espinaca si la salteas antes para evitar exceso de agua."
+      ]
+    },
+    {
+      "title": "Burrito de Huevo, Champinones y Pimiento",
+      "calories": 380,
+      "portions": "1 porcion",
+      "time": "18 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 tortilla integral grande",
+        "2 huevos",
+        "1 taza de champinones laminados",
+        "1/2 pimiento verde en tiras",
+        "30 g de queso bajo en grasa rallado",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 23,
+      "carbs_g": 34,
+      "fat_g": 16,
+      "fiber_g": 6,
+      "steps": [
+        "Saltea los champinones y el pimiento en el aceite hasta que doren.",
+        "Bate los huevos con sal y pimienta, viertelos y revuelve hasta cuajar.",
+        "Calienta la tortilla y reparte el huevo, las verduras y el queso en el centro.",
+        "Enrolla apretando bien, dobla los extremos y sirve cortado a la mitad."
+      ],
+      "tips": [
+        "Cocina los champinones a fuego alto para que suelten su agua y doren.",
+        "Funde el queso con el huevo caliente para un relleno mas cremoso."
+      ]
+    },
+    {
+      "title": "Huevos Rancheros Ligeros sobre Tortilla de Maiz",
+      "calories": 360,
+      "portions": "1 porcion",
+      "time": "18 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 tortillas de maiz",
+        "2 huevos",
+        "1/2 taza de frijoles refritos sin grasa",
+        "1/3 taza de salsa roja casera",
+        "2 cucharadas de queso fresco desmenuzado",
+        "1 cucharadita de aceite de oliva",
+        "1 cucharada de cilantro picado"
+      ],
+      "protein_g": 20,
+      "carbs_g": 40,
+      "fat_g": 14,
+      "fiber_g": 8,
+      "steps": [
+        "Calienta las tortillas de maiz en una sarten seca y reservalas tibias.",
+        "Fríe los huevos en el aceite hasta que la clara cuaje y la yema quede blanda.",
+        "Unta los frijoles sobre las tortillas y coloca un huevo sobre cada una.",
+        "Bana con salsa roja, esparce queso fresco y cilantro y sirve."
+      ],
+      "tips": [
+        "Entibia las tortillas justo antes de servir para que queden flexibles.",
+        "Usa salsa casera para controlar la sal y el picante."
+      ]
+    },
+    {
+      "title": "Omelette de Calabacin y Queso Parmesano",
+      "calories": 270,
+      "portions": "1 porcion",
+      "time": "14 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "3 huevos",
+        "1/2 calabacin rallado y escurrido",
+        "20 g de queso parmesano rallado",
+        "1 cucharada de cebolla picada",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 22,
+      "carbs_g": 5,
+      "fat_g": 19,
+      "fiber_g": 1,
+      "steps": [
+        "Saltea la cebolla y el calabacin rallado en el aceite hasta que evapore el agua.",
+        "Bate los huevos con sal y pimienta y viertelos sobre las verduras.",
+        "Espolvorea el parmesano y cocina a fuego medio hasta que el borde cuaje.",
+        "Dobla el omelette a la mitad, deja un minuto mas y sirve caliente."
+      ],
+      "tips": [
+        "Exprime el calabacin rallado para que el omelette no quede aguado.",
+        "El parmesano aporta sabor salado, ajusta la sal con cuidado."
+      ]
+    },
+    {
+      "title": "Huevos Revueltos con Tofu y Cúrcuma al Estilo Mexicano",
+      "calories": 250,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 huevos",
+        "100 g de tofu firme desmenuzado",
+        "1/2 tomate picado",
+        "1/4 cebolla picada",
+        "1/4 cucharadita de cúrcuma",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 24,
+      "carbs_g": 7,
+      "fat_g": 16,
+      "fiber_g": 2,
+      "steps": [
+        "Sofrie la cebolla y el tomate en el aceite hasta que ablanden.",
+        "Agrega el tofu desmenuzado y la cúrcuma y saltea 3 minutos.",
+        "Bate los huevos con sal y pimienta y viertelos sobre el tofu.",
+        "Revuelve hasta que el huevo cuaje a tu gusto y sirve caliente."
+      ],
+      "tips": [
+        "La cúrcuma da color dorado y un toque antiinflamatorio.",
+        "Presiona el tofu antes de usarlo para que quede mas firme."
+      ]
+    },
+    {
+      "title": "Cazuelita de Huevo al Horno con Espárragos",
+      "calories": 240,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 huevos",
+        "6 espárragos delgados troceados",
+        "20 g de queso gruyere rallado",
+        "1 cucharada de leche descremada",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 18,
+      "carbs_g": 5,
+      "fat_g": 16,
+      "fiber_g": 2,
+      "steps": [
+        "Precalienta el horno a 190 grados y saltea los espárragos en el aceite 2 minutos.",
+        "Engrasa una cazuelita y coloca los espárragos en el fondo.",
+        "Casca los huevos encima, agrega la leche, la sal, la pimienta y el queso.",
+        "Hornea de 12 a 14 minutos hasta que la clara cuaje y el queso dore."
+      ],
+      "tips": [
+        "Elige espárragos delgados para que se cocinen al mismo tiempo que el huevo.",
+        "Saca del horno cuando la yema aun tiemble para que quede cremosa."
+      ]
+    },
+    {
+      "title": "Omelette de Champinones Portobello y Cebolla Caramelizada",
+      "calories": 290,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "3 huevos",
+        "1 champinon portobello en laminas",
+        "1/2 cebolla en juliana",
+        "20 g de queso suizo rallado",
+        "1 cucharadita de aceite de oliva",
+        "1/2 cucharadita de tomillo",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 21,
+      "carbs_g": 9,
+      "fat_g": 18,
+      "fiber_g": 2,
+      "steps": [
+        "Cocina la cebolla a fuego bajo con el aceite hasta caramelizar, unos 8 minutos.",
+        "Sube el fuego, agrega el portobello y el tomillo y saltea hasta dorar.",
+        "Bate los huevos con sal y pimienta y viertelos sobre las verduras.",
+        "Cuando cuaje el borde, agrega el queso, dobla el omelette y sirve."
+      ],
+      "tips": [
+        "Caramelizar la cebolla con paciencia realza su dulzor natural.",
+        "El portobello aporta una textura carnosa muy saciante."
+      ]
+    },
+    {
+      "title": "Huevos Revueltos a la Mexicana con Nopal",
+      "calories": 230,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "3 huevos",
+        "1/2 taza de nopal cocido en cubos",
+        "1/2 tomate picado",
+        "2 cucharadas de cebolla picada",
+        "1 chile serrano picado sin semillas",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal"
+      ],
+      "protein_g": 19,
+      "carbs_g": 6,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "steps": [
+        "Sofrie la cebolla, el tomate y el chile serrano en el aceite hasta ablandar.",
+        "Agrega el nopal cocido y saltea 2 minutos para integrar sabores.",
+        "Bate los huevos con la sal y viertelos sobre las verduras.",
+        "Revuelve a fuego medio hasta cuajar al gusto y sirve caliente."
+      ],
+      "tips": [
+        "Enjuaga el nopal cocido para reducir su textura babosa.",
+        "Ajusta el chile segun tu tolerancia al picante."
+      ]
+    },
+    {
+      "title": "Frittata Individual de Pimientos Tricolor",
+      "calories": 260,
+      "portions": "1 porcion",
+      "time": "22 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "3 huevos",
+        "1/3 pimiento rojo en cubos",
+        "1/3 pimiento amarillo en cubos",
+        "1/3 pimiento verde en cubos",
+        "20 g de queso de cabra desmenuzado",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 19,
+      "carbs_g": 8,
+      "fat_g": 17,
+      "fiber_g": 2,
+      "steps": [
+        "Precalienta el horno a 190 grados y saltea los tres pimientos en el aceite 4 minutos.",
+        "Bate los huevos con la sal y la pimienta en un bol pequeno.",
+        "Coloca los pimientos en un molde individual y vierte el huevo encima.",
+        "Reparte el queso de cabra y hornea de 14 a 16 minutos hasta que cuaje y dore."
+      ],
+      "tips": [
+        "Combinar tres colores de pimiento aporta vista y antioxidantes.",
+        "Usa un molde apto para horno o una mini sarten con mango metalico."
+      ]
+    },
+    {
+      "title": "Burrito Bowl de Huevo con Quinoa y Aguacate",
+      "calories": 430,
+      "portions": "1 porcion",
+      "time": "18 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 huevos",
+        "1/2 taza de quinoa cocida",
+        "1/4 de aguacate en cubos",
+        "1/3 taza de frijoles negros cocidos",
+        "2 cucharadas de salsa pico de gallo",
+        "1 cucharadita de aceite de oliva",
+        "1 cucharada de cilantro picado"
+      ],
+      "protein_g": 22,
+      "carbs_g": 40,
+      "fat_g": 19,
+      "fiber_g": 11,
+      "steps": [
+        "Revuelve los huevos en el aceite con una pizca de sal hasta cuajar suaves.",
+        "Coloca la quinoa cocida como base en un bol.",
+        "Agrega el huevo, los frijoles negros, el aguacate y el pico de gallo.",
+        "Espolvorea cilantro fresco por encima y sirve tibio."
+      ],
+      "tips": [
+        "Cocina la quinoa con anticipacion para armar el bowl en minutos.",
+        "Anade el aguacate al final para que conserve su color."
+      ]
+    },
+    {
+      "title": "Huevos Poche sobre Tostada de Garbanzo y Tomate",
+      "calories": 310,
+      "portions": "1 porcion",
+      "time": "16 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 huevos",
+        "1 rebanada de pan integral de masa madre",
+        "1/3 taza de garbanzos cocidos triturados",
+        "3 rodajas de tomate",
+        "1 cucharadita de jugo de limon",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de sal y pimienta"
+      ],
+      "protein_g": 20,
+      "carbs_g": 30,
+      "fat_g": 14,
+      "fiber_g": 7,
+      "steps": [
+        "Hierve agua con un chorrito de vinagre y escalfa los huevos 3 minutos.",
+        "Mezcla los garbanzos triturados con el aceite, el limon, la sal y la pimienta.",
+        "Tuesta el pan y untalo con el pure de garbanzo, luego coloca las rodajas de tomate.",
+        "Acomoda los huevos poche encima, ajusta sal y pimienta y sirve enseguida."
+      ],
+      "tips": [
+        "Crea un remolino en el agua antes de echar el huevo para que la clara se agrupe.",
+        "Usa huevos muy frescos para que el poche quede compacto."
+      ]
+    }
+  ]
+}

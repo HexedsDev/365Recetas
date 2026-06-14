@@ -1,0 +1,374 @@
+{
+  "category": "Bebida",
+  "recipes": [
+    {
+      "title": "Infusion de Jengibre, Limon y Cardamomo",
+      "calories": 25,
+      "portions": "1 porcion",
+      "time": "12 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 cm de jengibre fresco en laminas",
+        "2 vainas de cardamomo machacadas",
+        "1 cucharada de jugo de limon",
+        "1 rodaja de limon",
+        "350 ml de agua",
+        "1 pizca de cascara de limon rallada"
+      ],
+      "protein_g": 0,
+      "carbs_g": 6,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Hierve el agua con el jengibre y las vainas de cardamomo durante 8 minutos a fuego bajo.",
+        "Apaga el fuego y deja reposar tapado 3 minutos para concentrar el aroma.",
+        "Cuela la infusion y agrega el jugo de limon y la cascara rallada.",
+        "Sirve caliente con la rodaja de limon como decoracion."
+      ],
+      "tips": [
+        "Bebela en ayunas para favorecer la digestion.",
+        "Si la prefieres tibia, deja enfriar 5 minutos antes de tomar."
+      ]
+    },
+    {
+      "title": "Agua Saborizada de Pepino, Menta y Lima",
+      "calories": 15,
+      "portions": "2 porciones",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 pepino en rodajas finas",
+        "8 hojas de menta fresca",
+        "1 lima en rodajas",
+        "750 ml de agua fria",
+        "4 cubos de hielo",
+        "1 pizca de sal rosada (opcional)"
+      ],
+      "protein_g": 0,
+      "carbs_g": 4,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Coloca el pepino, la menta y la lima dentro de una jarra de vidrio.",
+        "Presiona suavemente la menta con una cuchara para liberar su aroma.",
+        "Vierte el agua fria y agrega los cubos de hielo.",
+        "Refrigera 1 hora y sirve bien fria con la sal rosada si la deseas."
+      ],
+      "tips": [
+        "Reutiliza la fruta para una segunda jarra el mismo dia.",
+        "Mientras mas tiempo repose, mas intenso sera el sabor."
+      ]
+    },
+    {
+      "title": "Te Verde Frio con Durazno y Albahaca",
+      "calories": 35,
+      "portions": "2 porciones",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 bolsas de te verde",
+        "1 durazno maduro en gajos",
+        "6 hojas de albahaca fresca",
+        "700 ml de agua",
+        "1 cucharadita de jugo de limon",
+        "5 cubos de hielo"
+      ],
+      "protein_g": 1,
+      "carbs_g": 8,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Calienta el agua sin que hierva e infusiona el te verde por 4 minutos.",
+        "Retira las bolsas y deja enfriar el te a temperatura ambiente.",
+        "Agrega los gajos de durazno, la albahaca y el jugo de limon.",
+        "Refrigera 30 minutos y sirve sobre hielo."
+      ],
+      "tips": [
+        "No dejes el te mas de 4 minutos para evitar el amargor.",
+        "Machaca un gajo de durazno para un sabor mas dulce natural."
+      ]
+    },
+    {
+      "title": "Infusion Relajante de Manzanilla y Lavanda",
+      "calories": 10,
+      "portions": "1 porcion",
+      "time": "8 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 cucharada de flores de manzanilla seca",
+        "1/2 cucharadita de lavanda culinaria",
+        "300 ml de agua",
+        "1 rodaja fina de limon",
+        "1 ramita de tomillo fresco (opcional)"
+      ],
+      "protein_g": 0,
+      "carbs_g": 2,
+      "fat_g": 0,
+      "fiber_g": 0,
+      "steps": [
+        "Calienta el agua hasta el primer hervor y retirala del fuego.",
+        "Agrega la manzanilla y la lavanda, y tapa el recipiente.",
+        "Deja reposar 5 minutos para extraer los aceites aromaticos.",
+        "Cuela, sirve caliente y decora con la rodaja de limon."
+      ],
+      "tips": [
+        "Tomala 30 minutos antes de dormir para descansar mejor.",
+        "Usa poca lavanda para que no domine el sabor."
+      ]
+    },
+    {
+      "title": "Limonada de Hierbabuena sin Azucar con Estevia",
+      "calories": 18,
+      "portions": "2 porciones",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "Jugo de 2 limones",
+        "10 hojas de hierbabuena",
+        "750 ml de agua fria",
+        "5 gotas de estevia liquida",
+        "6 cubos de hielo",
+        "1 rodaja de limon para decorar"
+      ],
+      "protein_g": 0,
+      "carbs_g": 5,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Exprime los limones y reserva el jugo en una jarra.",
+        "Machaca la hierbabuena con una cuchara para soltar su aroma.",
+        "Agrega el agua fria, la estevia y los cubos de hielo, y mezcla bien.",
+        "Prueba, ajusta la estevia y sirve con la rodaja de limon."
+      ],
+      "tips": [
+        "Agrega la estevia poco a poco para evitar regusto amargo.",
+        "Enfria la jarra previamente para una bebida mas refrescante."
+      ]
+    },
+    {
+      "title": "Te Negro Especiado Estilo Chai sin Azucar",
+      "calories": 30,
+      "portions": "1 porcion",
+      "time": "14 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 bolsa de te negro",
+        "1 ramita de canela",
+        "2 clavos de olor",
+        "2 vainas de cardamomo machacadas",
+        "150 ml de leche de almendras sin azucar",
+        "200 ml de agua"
+      ],
+      "protein_g": 1,
+      "carbs_g": 4,
+      "fat_g": 1,
+      "fiber_g": 1,
+      "steps": [
+        "Hierve el agua con la canela, los clavos y el cardamomo por 6 minutos.",
+        "Agrega la bolsa de te negro e infusiona 3 minutos a fuego bajo.",
+        "Incorpora la leche de almendras y calienta sin que hierva.",
+        "Cuela las especias y sirve la bebida bien caliente."
+      ],
+      "tips": [
+        "Endulza con una pizca de estevia si lo prefieres mas dulce.",
+        "Machaca el cardamomo justo antes de usarlo para mas aroma."
+      ]
+    },
+    {
+      "title": "Agua de Sandia y Albahaca Bien Fria",
+      "calories": 45,
+      "portions": "2 porciones",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 tazas de sandia en cubos",
+        "6 hojas de albahaca fresca",
+        "500 ml de agua fria",
+        "1 cucharada de jugo de limon",
+        "6 cubos de hielo"
+      ],
+      "protein_g": 1,
+      "carbs_g": 11,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Licua la sandia con la albahaca y el jugo de limon hasta integrar.",
+        "Cuela la mezcla con un colador fino para retirar la pulpa.",
+        "Agrega el agua fria y mezcla bien.",
+        "Sirve sobre los cubos de hielo y consume de inmediato."
+      ],
+      "tips": [
+        "Congela cubos de sandia para enfriar sin diluir el sabor.",
+        "Si la sandia es muy dulce, no necesitas endulzante."
+      ]
+    },
+    {
+      "title": "Infusion de Canela y Manzana sin Azucar",
+      "calories": 40,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 manzana roja en cubos",
+        "1 ramita de canela",
+        "350 ml de agua",
+        "1 anis estrella",
+        "1 pizca de nuez moscada"
+      ],
+      "protein_g": 0,
+      "carbs_g": 10,
+      "fat_g": 0,
+      "fiber_g": 2,
+      "steps": [
+        "Hierve el agua con la manzana, la canela y el anis estrella por 10 minutos.",
+        "Reduce el fuego y deja que la manzana suelte su dulzor natural.",
+        "Agrega la nuez moscada y apaga el fuego.",
+        "Cuela y sirve caliente en taza."
+      ],
+      "tips": [
+        "Aprovecha la manzana cocida como snack saludable.",
+        "Ideal para tardes frias sin necesidad de azucar."
+      ]
+    },
+    {
+      "title": "Te de Rooibos Frio con Naranja y Vainilla",
+      "calories": 25,
+      "portions": "2 porciones",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 bolsas de te rooibos",
+        "1/2 naranja en rodajas",
+        "1/4 cucharadita de extracto de vainilla",
+        "700 ml de agua",
+        "6 cubos de hielo"
+      ],
+      "protein_g": 0,
+      "carbs_g": 6,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Calienta el agua e infusiona el rooibos durante 6 minutos.",
+        "Retira las bolsas y agrega el extracto de vainilla.",
+        "Deja enfriar e incorpora las rodajas de naranja.",
+        "Refrigera 30 minutos y sirve sobre hielo."
+      ],
+      "tips": [
+        "El rooibos no tiene cafeina, ideal para la noche.",
+        "Exprime una rodaja de naranja para mas sabor citrico."
+      ]
+    },
+    {
+      "title": "Agua Detox de Fresa, Limon y Romero",
+      "calories": 30,
+      "portions": "2 porciones",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "6 fresas en mitades",
+        "1/2 limon en rodajas",
+        "1 ramita de romero fresco",
+        "750 ml de agua fria",
+        "5 cubos de hielo"
+      ],
+      "protein_g": 0,
+      "carbs_g": 7,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Coloca las fresas, el limon y el romero en una jarra de vidrio.",
+        "Presiona ligeramente las fresas para liberar su jugo.",
+        "Agrega el agua fria y los cubos de hielo.",
+        "Refrigera 1 hora y sirve bien fria."
+      ],
+      "tips": [
+        "Usa fresas maduras para un color y sabor mas intensos.",
+        "Retira el romero tras 2 horas para evitar amargor."
+      ]
+    },
+    {
+      "title": "Matcha Latte Frio con Leche de Coco sin Azucar",
+      "calories": 60,
+      "portions": "1 porcion",
+      "time": "8 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 cucharadita de matcha en polvo",
+        "200 ml de leche de coco sin azucar",
+        "60 ml de agua tibia",
+        "3 gotas de estevia liquida",
+        "6 cubos de hielo"
+      ],
+      "protein_g": 1,
+      "carbs_g": 4,
+      "fat_g": 4,
+      "fiber_g": 1,
+      "steps": [
+        "Disuelve el matcha en el agua tibia batiendo hasta que no queden grumos.",
+        "Agrega la estevia y mezcla bien.",
+        "Llena un vaso con hielo y vierte la leche de coco.",
+        "Incorpora el matcha por encima y revuelve antes de tomar."
+      ],
+      "tips": [
+        "Usa un batidor pequeno para una espuma cremosa.",
+        "El matcha aporta energia estable sin picos de azucar."
+      ]
+    },
+    {
+      "title": "Infusion de Cúrcuma, Jengibre y Pimienta",
+      "calories": 20,
+      "portions": "1 porcion",
+      "time": "12 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 cucharadita de curcuma en polvo",
+        "2 cm de jengibre fresco rallado",
+        "1 pizca de pimienta negra",
+        "350 ml de agua",
+        "1 cucharadita de jugo de limon"
+      ],
+      "protein_g": 0,
+      "carbs_g": 4,
+      "fat_g": 0,
+      "fiber_g": 1,
+      "steps": [
+        "Hierve el agua con el jengibre rallado durante 6 minutos.",
+        "Agrega la curcuma y la pimienta negra, y revuelve bien.",
+        "Cocina 2 minutos mas a fuego bajo para integrar.",
+        "Cuela, anade el jugo de limon y sirve caliente."
+      ],
+      "tips": [
+        "La pimienta mejora la absorcion de la curcuma.",
+        "Toma esta infusion tibia para cuidar el estomago."
+      ]
+    },
+    {
+      "title": "Agua Fria de Maracuya y Menta sin Azucar",
+      "calories": 35,
+      "portions": "2 porciones",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "Pulpa de 2 maracuyas",
+        "8 hojas de menta fresca",
+        "750 ml de agua fria",
+        "4 gotas de estevia liquida",
+        "6 cubos de hielo"
+      ],
+      "protein_g": 1,
+      "carbs_g": 8,
+      "fat_g": 0,
+      "fiber_g": 2,
+      "steps": [
+        "Coloca la pulpa de maracuya en una jarra de vidrio.",
+        "Agrega la menta y machacala suavemente con una cuchara.",
+        "Vierte el agua fria, la estevia y los cubos de hielo.",
+        "Mezcla bien, prueba el dulzor y sirve de inmediato."
+      ],
+      "tips": [
+        "Cuela las semillas si prefieres una textura mas suave.",
+        "Ajusta la estevia segun la acidez del maracuya."
+      ]
+    }
+  ]
+}

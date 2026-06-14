@@ -1,0 +1,527 @@
+{
+  "category": "Desayuno",
+  "recipes": [
+    {
+      "title": "Avena Cocida con Manzana y Canela",
+      "calories": 320,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "1 taza de leche descremada",
+        "1 manzana verde rallada",
+        "1 cucharadita de canela en polvo",
+        "1 cucharadita de miel",
+        "1 pizca de sal"
+      ],
+      "protein_g": 12,
+      "carbs_g": 56,
+      "fat_g": 5,
+      "fiber_g": 7,
+      "steps": [
+        "Calienta la leche con la pizca de sal en una olla pequena a fuego medio.",
+        "Agrega la avena y cocina revolviendo durante 5 minutos hasta espesar.",
+        "Incorpora la manzana rallada y la canela, y cocina 2 minutos mas.",
+        "Sirve caliente y endulza con la miel por encima."
+      ],
+      "tips": [
+        "Usa manzana roja si la prefieres mas dulce.",
+        "Deja reposar 2 minutos para una textura mas cremosa."
+      ]
+    },
+    {
+      "title": "Granola Casera Crujiente de Avena y Almendras",
+      "calories": 280,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "1/4 taza de almendras fileteadas",
+        "2 cucharadas de semillas de girasol",
+        "2 cucharadas de miel de abeja",
+        "1 cucharada de aceite de coco",
+        "1 cucharadita de extracto de vainilla"
+      ],
+      "protein_g": 8,
+      "carbs_g": 34,
+      "fat_g": 13,
+      "fiber_g": 5,
+      "steps": [
+        "Precalienta el horno a 160 grados y forra una bandeja con papel.",
+        "Mezcla la avena, las almendras y las semillas en un bol grande.",
+        "Agrega la miel, el aceite de coco derretido y la vainilla, y revuelve bien.",
+        "Hornea 20 minutos removiendo a la mitad hasta dorar y deja enfriar."
+      ],
+      "tips": [
+        "No remuevas al sacarla para que se formen grumos crujientes.",
+        "Guarda en frasco hermetico hasta por dos semanas."
+      ]
+    },
+    {
+      "title": "Muesli Bircher Suizo con Yogur",
+      "calories": 295,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "3/4 taza de yogur natural descremado",
+        "1 manzana rallada con cascara",
+        "1 cucharada de pasas",
+        "1 cucharada de nueces picadas",
+        "1 cucharadita de jugo de limon"
+      ],
+      "protein_g": 14,
+      "carbs_g": 42,
+      "fat_g": 7,
+      "fiber_g": 6,
+      "steps": [
+        "Mezcla la avena con el yogur en un recipiente con tapa.",
+        "Agrega la manzana rallada y el jugo de limon, y revuelve.",
+        "Incorpora las pasas y las nueces picadas.",
+        "Refrigera al menos 4 horas o toda la noche y sirve frio."
+      ],
+      "tips": [
+        "El limon evita que la manzana se oxide.",
+        "Agrega un chorrito de leche si queda muy espeso al servir."
+      ]
+    },
+    {
+      "title": "Tazon de Avena con Mantequilla de Mani y Banano",
+      "calories": 380,
+      "portions": "1 porcion",
+      "time": "12 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "1 taza de bebida de almendras",
+        "1 banano en rodajas",
+        "1 cucharada de mantequilla de mani",
+        "1 cucharadita de semillas de chia",
+        "1 pizca de canela"
+      ],
+      "protein_g": 13,
+      "carbs_g": 52,
+      "fat_g": 14,
+      "fiber_g": 9,
+      "steps": [
+        "Cocina la avena con la bebida de almendras a fuego medio 5 minutos.",
+        "Agrega las semillas de chia y la canela, y revuelve.",
+        "Sirve en un tazon y coloca el banano en rodajas encima.",
+        "Termina con la mantequilla de mani derretida por encima."
+      ],
+      "tips": [
+        "Calienta la mantequilla de mani 10 segundos para que fluya mejor.",
+        "Usa banano bien maduro para mas dulzor natural."
+      ]
+    },
+    {
+      "title": "Galletas de Avena y Datiles sin Azucar",
+      "calories": 150,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "1 banano maduro pisado",
+        "6 datiles sin hueso picados",
+        "2 cucharadas de coco rallado",
+        "1 cucharadita de canela",
+        "1 pizca de sal"
+      ],
+      "protein_g": 4,
+      "carbs_g": 30,
+      "fat_g": 3,
+      "fiber_g": 5,
+      "steps": [
+        "Precalienta el horno a 180 grados y forra una bandeja.",
+        "Pisa el banano y mezclalo con la avena y los datiles picados.",
+        "Agrega el coco, la canela y la sal, y forma bolitas aplanadas.",
+        "Hornea 15 minutos hasta dorar los bordes y deja enfriar."
+      ],
+      "tips": [
+        "Remoja los datiles 10 minutos si estan muy secos.",
+        "Se conservan 4 dias en recipiente cerrado."
+      ]
+    },
+    {
+      "title": "Porridge de Quinua con Frutas del Bosque",
+      "calories": 310,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1/3 taza de quinua lavada",
+        "1 taza de leche descremada",
+        "1/2 taza de frutos rojos mixtos",
+        "1 cucharada de almendras picadas",
+        "1 cucharadita de miel",
+        "1/2 cucharadita de vainilla"
+      ],
+      "protein_g": 12,
+      "carbs_g": 48,
+      "fat_g": 7,
+      "fiber_g": 6,
+      "steps": [
+        "Cocina la quinua con la leche y la vainilla a fuego bajo 15 minutos.",
+        "Revuelve de vez en cuando hasta que este cremosa y tierna.",
+        "Sirve en un bol y agrega los frutos rojos encima.",
+        "Termina con las almendras picadas y la miel."
+      ],
+      "tips": [
+        "Lava bien la quinua para quitar el amargor.",
+        "Puedes usar frutos congelados sin descongelar."
+      ]
+    },
+    {
+      "title": "Barritas Energeticas de Avena y Cacao",
+      "calories": 200,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "3 cucharadas de mantequilla de almendras",
+        "2 cucharadas de miel",
+        "1 cucharada de cacao en polvo",
+        "2 cucharadas de chips de chocolate amargo",
+        "1 pizca de sal"
+      ],
+      "protein_g": 7,
+      "carbs_g": 28,
+      "fat_g": 9,
+      "fiber_g": 4,
+      "steps": [
+        "Mezcla la avena con el cacao y la sal en un bol grande.",
+        "Calienta la miel con la mantequilla de almendras y vierte sobre la avena.",
+        "Agrega los chips de chocolate y mezcla hasta integrar todo.",
+        "Presiona en un molde forrado, refrigera 1 hora y corta en barras."
+      ],
+      "tips": [
+        "Presiona firme para que las barras no se desarmen.",
+        "Envuelve cada barra para llevarlas de snack."
+      ]
+    },
+    {
+      "title": "Avena Horneada con Arandanos y Nuez",
+      "calories": 340,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "1 taza de leche descremada",
+        "1 huevo",
+        "1/2 taza de arandanos frescos",
+        "2 cucharadas de nueces picadas",
+        "1 cucharadita de polvo de hornear"
+      ],
+      "protein_g": 13,
+      "carbs_g": 44,
+      "fat_g": 11,
+      "fiber_g": 6,
+      "steps": [
+        "Precalienta el horno a 180 grados y engrasa un molde pequeno.",
+        "Bate el huevo con la leche y mezclalo con la avena y el polvo de hornear.",
+        "Agrega los arandanos y la mitad de las nueces, y vierte en el molde.",
+        "Esparce el resto de nueces encima y hornea 25 minutos."
+      ],
+      "tips": [
+        "Comprueba el centro con un palillo antes de sacar.",
+        "Sirve tibia con un poco de yogur natural."
+      ]
+    },
+    {
+      "title": "Crema de Avena con Mango y Coco",
+      "calories": 300,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "1 taza de leche de coco ligera",
+        "1/2 mango en cubos",
+        "1 cucharada de coco rallado",
+        "1 cucharadita de miel",
+        "1 pizca de cardamomo"
+      ],
+      "protein_g": 8,
+      "carbs_g": 50,
+      "fat_g": 9,
+      "fiber_g": 6,
+      "steps": [
+        "Cocina la avena con la leche de coco y el cardamomo 6 minutos.",
+        "Revuelve hasta lograr una textura cremosa y espesa.",
+        "Sirve en un bol y coloca los cubos de mango encima.",
+        "Espolvorea el coco rallado y agrega la miel."
+      ],
+      "tips": [
+        "Tuesta el coco rallado para mas aroma.",
+        "Usa mango maduro para reducir la miel."
+      ]
+    },
+    {
+      "title": "Muesli Tropical con Pina y Semillas",
+      "calories": 290,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "3/4 taza de yogur griego descremado",
+        "1/2 taza de pina en cubos",
+        "1 cucharada de semillas de calabaza",
+        "1 cucharada de pasas",
+        "1 cucharadita de miel"
+      ],
+      "protein_g": 16,
+      "carbs_g": 40,
+      "fat_g": 6,
+      "fiber_g": 5,
+      "steps": [
+        "Mezcla la avena con el yogur griego en un bol.",
+        "Agrega la pina en cubos y las pasas, y revuelve.",
+        "Incorpora las semillas de calabaza.",
+        "Endulza con la miel y sirve de inmediato o refrigerado."
+      ],
+      "tips": [
+        "La pina aporta enzimas que ayudan a la digestion.",
+        "Refrigera 1 hora para que la avena se ablande."
+      ]
+    },
+    {
+      "title": "Pudin de Avena y Chia con Cacao",
+      "calories": 270,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/3 taza de avena en hojuelas",
+        "1 cucharada de semillas de chia",
+        "1 taza de bebida de almendras",
+        "1 cucharada de cacao en polvo",
+        "1 cucharadita de miel",
+        "1/2 cucharadita de vainilla"
+      ],
+      "protein_g": 9,
+      "carbs_g": 36,
+      "fat_g": 9,
+      "fiber_g": 11,
+      "steps": [
+        "Mezcla la avena, la chia y el cacao en un frasco.",
+        "Agrega la bebida de almendras, la miel y la vainilla.",
+        "Revuelve muy bien para evitar grumos de cacao.",
+        "Tapa y refrigera toda la noche antes de servir."
+      ],
+      "tips": [
+        "Agita el frasco a los 10 minutos para distribuir la chia.",
+        "Decora con frutas o cacao nibs al servir."
+      ]
+    },
+    {
+      "title": "Avena Salada con Huevo y Espinaca",
+      "calories": 330,
+      "portions": "1 porcion",
+      "time": "15 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "1 taza de caldo de verduras",
+        "1 huevo",
+        "1 taza de espinaca fresca",
+        "2 cucharadas de queso parmesano rallado",
+        "1 pizca de pimienta negra"
+      ],
+      "protein_g": 18,
+      "carbs_g": 32,
+      "fat_g": 13,
+      "fiber_g": 5,
+      "steps": [
+        "Cocina la avena con el caldo de verduras a fuego medio 5 minutos.",
+        "Agrega la espinaca y revuelve hasta que se marchite.",
+        "Incorpora el queso parmesano y la pimienta.",
+        "Sirve con un huevo pochado o frito encima."
+      ],
+      "tips": [
+        "El caldo da un sabor sabroso ideal para desayuno salado.",
+        "Anade chile en hojuelas si te gusta el picante."
+      ]
+    },
+    {
+      "title": "Cereal Integral Casero con Hojuelas de Trigo",
+      "calories": 260,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de hojuelas de trigo integral",
+        "1/2 taza de avena en hojuelas",
+        "2 cucharadas de linaza molida",
+        "2 cucharadas de miel",
+        "1 cucharada de aceite de coco",
+        "1 cucharadita de canela"
+      ],
+      "protein_g": 7,
+      "carbs_g": 40,
+      "fat_g": 8,
+      "fiber_g": 7,
+      "steps": [
+        "Precalienta el horno a 160 grados y forra una bandeja.",
+        "Mezcla las hojuelas de trigo, la avena y la linaza en un bol.",
+        "Agrega la miel, el aceite de coco derretido y la canela, y revuelve.",
+        "Extiende en la bandeja y hornea 18 minutos removiendo a la mitad."
+      ],
+      "tips": [
+        "Sirve con leche fria o yogur y fruta picada.",
+        "Deja enfriar por completo para que quede crujiente."
+      ]
+    },
+    {
+      "title": "Risotto Dulce de Avena con Pera",
+      "calories": 315,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas gruesas",
+        "1 taza de leche descremada",
+        "1 pera en cubos",
+        "1 cucharada de nuez moscada rallada",
+        "1 cucharadita de miel",
+        "1 cucharada de almendras laminadas"
+      ],
+      "protein_g": 11,
+      "carbs_g": 52,
+      "fat_g": 7,
+      "fiber_g": 7,
+      "steps": [
+        "Calienta la leche y agrega la avena poco a poco como un risotto.",
+        "Cocina revolviendo constantemente unos 10 minutos hasta cremosa.",
+        "Incorpora la pera en cubos y la nuez moscada, y cocina 3 minutos.",
+        "Sirve con miel y almendras laminadas por encima."
+      ],
+      "tips": [
+        "Anade la leche tibia para una coccion mas pareja.",
+        "Usa pera firme para que no se deshaga del todo."
+      ]
+    },
+    {
+      "title": "Smoothie Bowl de Avena y Espirulina",
+      "calories": 305,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/4 taza de avena en hojuelas",
+        "1 banano congelado",
+        "1 taza de bebida de almendras",
+        "1 cucharadita de espirulina en polvo",
+        "1 cucharada de granola",
+        "1 cucharada de semillas de chia"
+      ],
+      "protein_g": 10,
+      "carbs_g": 48,
+      "fat_g": 8,
+      "fiber_g": 9,
+      "steps": [
+        "Licua la avena, el banano congelado y la bebida de almendras.",
+        "Agrega la espirulina y licua hasta lograr una crema espesa.",
+        "Vierte en un bol amplio y empareja la superficie.",
+        "Decora con la granola y las semillas de chia por encima."
+      ],
+      "tips": [
+        "Congela el banano la noche anterior para textura helada.",
+        "Empieza con poca espirulina porque su sabor es intenso."
+      ]
+    },
+    {
+      "title": "Avena Overnight con Cafe y Cacao",
+      "calories": 285,
+      "portions": "1 porcion",
+      "time": "10 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1/2 taza de avena en hojuelas",
+        "3/4 taza de leche descremada",
+        "1/4 taza de cafe espresso frio",
+        "1 cucharada de cacao en polvo",
+        "1 cucharadita de miel",
+        "1 cucharada de semillas de chia"
+      ],
+      "protein_g": 11,
+      "carbs_g": 40,
+      "fat_g": 6,
+      "fiber_g": 8,
+      "steps": [
+        "Mezcla la avena con el cacao y las semillas de chia en un frasco.",
+        "Agrega la leche, el cafe frio y la miel, y revuelve bien.",
+        "Tapa el frasco y refrigera toda la noche.",
+        "Revuelve por la manana y sirve frio o a temperatura ambiente."
+      ],
+      "tips": [
+        "Usa cafe descafeinado si lo tomas muy temprano.",
+        "Anade un toque de canela para realzar el cacao."
+      ]
+    },
+    {
+      "title": "Muffins de Avena y Zanahoria",
+      "calories": 175,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "1 zanahoria rallada",
+        "1 huevo",
+        "1/2 taza de yogur natural",
+        "1 cucharadita de polvo de hornear",
+        "1 cucharadita de canela"
+      ],
+      "protein_g": 7,
+      "carbs_g": 26,
+      "fat_g": 4,
+      "fiber_g": 4,
+      "steps": [
+        "Precalienta el horno a 180 grados y prepara moldes para muffin.",
+        "Bate el huevo con el yogur e incorpora la avena y el polvo de hornear.",
+        "Agrega la zanahoria rallada y la canela, y mezcla bien.",
+        "Reparte en los moldes y hornea 22 minutos hasta dorar."
+      ],
+      "tips": [
+        "Deja reposar la masa 5 minutos para que la avena absorba.",
+        "Anade pasas o nueces para mas textura."
+      ]
+    },
+    {
+      "title": "Granola de Avena y Mantequilla de Mani en Sarten",
+      "calories": 295,
+      "portions": "2 porciones",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de avena en hojuelas",
+        "2 cucharadas de mantequilla de mani",
+        "2 cucharadas de miel",
+        "2 cucharadas de mani picado",
+        "1 cucharada de semillas de linaza",
+        "1 pizca de sal"
+      ],
+      "protein_g": 9,
+      "carbs_g": 32,
+      "fat_g": 13,
+      "fiber_g": 5,
+      "steps": [
+        "Calienta la mantequilla de mani con la miel en una sarten a fuego bajo.",
+        "Agrega la avena, el mani y la linaza, y revuelve para cubrir todo.",
+        "Tuesta removiendo constantemente unos 6 minutos hasta dorar.",
+        "Agrega la sal, retira del fuego y deja enfriar para que endurezca."
+      ],
+      "tips": [
+        "Remueve sin parar para que no se queme la miel.",
+        "Sirve sobre yogur o como snack crujiente."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "category": "Cena",
+  "recipes": [
+    {
+      "title": "Pavo Molido Salteado con Calabacin y Albahaca",
+      "calories": 320,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de pavo molido magro",
+        "1 calabacin mediano en cubos",
+        "1/2 cebolla morada picada",
+        "1 diente de ajo picado",
+        "8 hojas de albahaca fresca",
+        "1 cucharadita de aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 34,
+      "carbs_g": 12,
+      "fat_g": 14,
+      "fiber_g": 4,
+      "steps": [
+        "Calienta el aceite y sofrie la cebolla y el ajo hasta que esten transparentes.",
+        "Agrega el pavo molido y cocina removiendo hasta que pierda el color rosado.",
+        "Incorpora el calabacin, sazona con sal y pimienta y saltea 6 minutos.",
+        "Apaga el fuego, mezcla la albahaca picada y sirve caliente."
+      ],
+      "tips": [
+        "Usa pavo lo mas magro posible para reducir la grasa.",
+        "Anade chile en hojuelas si quieres un toque picante."
+      ]
+    },
+    {
+      "title": "Brochetas de Pollo al Yogur y Comino",
+      "calories": 290,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de pechuga de pollo en cubos",
+        "1/2 taza de yogur natural descremado",
+        "1 cucharadita de comino molido",
+        "1 cucharadita de paprika",
+        "1 limon (jugo)",
+        "1 pimiento rojo en trozos",
+        "Sal al gusto"
+      ],
+      "protein_g": 38,
+      "carbs_g": 8,
+      "fat_g": 9,
+      "fiber_g": 2,
+      "steps": [
+        "Mezcla el yogur con comino, paprika, jugo de limon y sal en un bol.",
+        "Marina los cubos de pollo en la mezcla durante 15 minutos.",
+        "Ensarta el pollo y el pimiento alternados en brochetas.",
+        "Asa en sarten o parrilla 4 minutos por lado hasta dorar."
+      ],
+      "tips": [
+        "Remoja las brochetas de madera para que no se quemen.",
+        "Acompana con una ensalada verde para una cena completa."
+      ]
+    },
+    {
+      "title": "Rollitos de Pavo y Espinaca al Horno",
+      "calories": 270,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "4 filetes finos de pechuga de pavo (250 g)",
+        "1 taza de espinaca fresca",
+        "2 cucharadas de queso ricotta light",
+        "1 diente de ajo picado",
+        "1 cucharadita de aceite de oliva",
+        "Sal, pimienta y nuez moscada al gusto"
+      ],
+      "protein_g": 36,
+      "carbs_g": 5,
+      "fat_g": 10,
+      "fiber_g": 2,
+      "steps": [
+        "Saltea la espinaca con el ajo hasta marchitar y mezclala con la ricotta.",
+        "Extiende los filetes de pavo, salpimenta y coloca el relleno en el centro.",
+        "Enrolla cada filete y asegura con un palillo, luego barniza con aceite.",
+        "Hornea a 200 grados durante 18 minutos hasta dorar."
+      ],
+      "tips": [
+        "Escurre bien la espinaca para que el relleno no quede aguado.",
+        "Sirve con pure de coliflor para una cena baja en carbohidratos."
+      ]
+    },
+    {
+      "title": "Pollo a la Mostaza con Esparragos",
+      "calories": 310,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "160 g de pechuga de pollo en filete",
+        "8 esparragos verdes",
+        "1 cucharada de mostaza Dijon",
+        "1 cucharadita de miel",
+        "1 cucharadita de aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 37,
+      "carbs_g": 9,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "steps": [
+        "Mezcla la mostaza con la miel y unta el filete de pollo.",
+        "Calienta el aceite y sella el pollo 4 minutos por lado.",
+        "Agrega los esparragos a la sarten y saltea 5 minutos.",
+        "Salpimenta y sirve el pollo con los esparragos al lado."
+      ],
+      "tips": [
+        "Corta la base dura de los esparragos antes de cocinar.",
+        "Tapa la sarten unos minutos para que el pollo quede mas jugoso."
+      ]
+    },
+    {
+      "title": "Hamburguesa de Pavo y Avena sin Pan",
+      "calories": 300,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "300 g de pavo molido magro",
+        "3 cucharadas de avena en hojuelas",
+        "1 huevo",
+        "1/4 de cebolla rallada",
+        "1 cucharadita de oregano seco",
+        "Hojas de lechuga para servir",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 35,
+      "carbs_g": 11,
+      "fat_g": 13,
+      "fiber_g": 2,
+      "steps": [
+        "Mezcla el pavo con la avena, el huevo, la cebolla, el oregano, sal y pimienta.",
+        "Forma dos hamburguesas compactas con las manos humedas.",
+        "Cocina en sarten antiadherente 5 minutos por lado.",
+        "Sirve cada hamburguesa envuelta en hojas de lechuga."
+      ],
+      "tips": [
+        "Refrigera la mezcla 10 minutos para que las hamburguesas no se desarmen.",
+        "Anade tomate y aguacate como guarnicion fresca."
+      ]
+    },
+    {
+      "title": "Pollo Salteado con Brocoli y Jengibre",
+      "calories": 295,
+      "portions": "1 porcion",
+      "time": "18 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de pechuga de pollo en tiras",
+        "1 taza de floretes de brocoli",
+        "1 cucharadita de jengibre rallado",
+        "1 cucharada de salsa de soya baja en sodio",
+        "1 diente de ajo picado",
+        "1 cucharadita de aceite de ajonjoli",
+        "Semillas de sesamo para decorar"
+      ],
+      "protein_g": 36,
+      "carbs_g": 10,
+      "fat_g": 11,
+      "fiber_g": 4,
+      "steps": [
+        "Calienta el aceite y saltea el ajo y el jengibre 30 segundos.",
+        "Agrega las tiras de pollo y cocina hasta dorar por fuera.",
+        "Incorpora el brocoli y la salsa de soya y saltea 5 minutos.",
+        "Decora con semillas de sesamo y sirve de inmediato."
+      ],
+      "tips": [
+        "Corta el pollo en tiras finas para una coccion mas rapida.",
+        "Mantenel el brocoli crujiente para conservar sus nutrientes."
+      ]
+    },
+    {
+      "title": "Pavo al Curry con Leche de Coco Ligera",
+      "calories": 330,
+      "portions": "2 porciones",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de pechuga de pavo en cubos",
+        "1/2 taza de leche de coco light",
+        "1 cucharadita de curry en polvo",
+        "1/2 cebolla picada",
+        "1 tomate picado",
+        "1 cucharadita de aceite de oliva",
+        "Cilantro fresco al gusto"
+      ],
+      "protein_g": 35,
+      "carbs_g": 12,
+      "fat_g": 15,
+      "fiber_g": 3,
+      "steps": [
+        "Sofrie la cebolla en el aceite hasta que este transparente.",
+        "Agrega el pavo y sella los cubos por todos lados.",
+        "Incorpora el tomate, el curry y la leche de coco y cocina 12 minutos.",
+        "Espolvorea cilantro fresco y sirve caliente."
+      ],
+      "tips": [
+        "Usa leche de coco light para reducir las calorias del plato.",
+        "Acompana con una porcion pequena de arroz integral si deseas."
+      ]
+    },
+    {
+      "title": "Pechuga de Pollo Rellena de Champinones",
+      "calories": 315,
+      "portions": "1 porcion",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 pechuga de pollo de 180 g",
+        "1 taza de champinones laminados",
+        "1 cucharada de queso mozzarella light",
+        "1 diente de ajo picado",
+        "1 cucharadita de tomillo",
+        "1 cucharadita de aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 40,
+      "carbs_g": 6,
+      "fat_g": 12,
+      "fiber_g": 2,
+      "steps": [
+        "Saltea los champinones con el ajo y el tomillo hasta dorar.",
+        "Haz un corte lateral a la pechuga para formar un bolsillo.",
+        "Rellena con los champinones y el queso, cierra con palillos.",
+        "Sella en sarten y termina al horno a 200 grados por 15 minutos."
+      ],
+      "tips": [
+        "No sobrecargues el relleno para que la pechuga cierre bien.",
+        "Deja reposar 3 minutos antes de cortar para conservar los jugos."
+      ]
+    },
+    {
+      "title": "Albondigas de Pavo en Salsa de Tomate",
+      "calories": 305,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de pavo molido magro",
+        "2 cucharadas de pan rallado integral",
+        "1 huevo",
+        "2 tazas de salsa de tomate natural",
+        "1 diente de ajo picado",
+        "1 cucharadita de oregano",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 34,
+      "carbs_g": 14,
+      "fat_g": 12,
+      "fiber_g": 3,
+      "steps": [
+        "Mezcla el pavo con el pan rallado, el huevo, el ajo, sal y pimienta.",
+        "Forma albondigas pequenas con las manos humedas.",
+        "Dora las albondigas en una sarten antiadherente.",
+        "Anade la salsa de tomate con oregano y cocina 15 minutos a fuego bajo."
+      ],
+      "tips": [
+        "Cocina a fuego bajo para que las albondigas queden tiernas.",
+        "Sirve sobre calabacin en espiral en lugar de pasta."
+      ]
+    },
+    {
+      "title": "Pollo a la Plancha con Pimientos Asados",
+      "calories": 285,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "160 g de pechuga de pollo en filete",
+        "1 pimiento rojo en tiras",
+        "1 pimiento amarillo en tiras",
+        "1 cucharadita de aceite de oliva",
+        "1 cucharadita de paprika ahumada",
+        "1 diente de ajo en laminas",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 37,
+      "carbs_g": 10,
+      "fat_g": 9,
+      "fiber_g": 3,
+      "steps": [
+        "Sazona el pollo con paprika, sal y pimienta.",
+        "Cocina el filete en la plancha caliente 4 minutos por lado.",
+        "En la misma plancha asa los pimientos con el ajo hasta ablandar.",
+        "Sirve el pollo cubierto con los pimientos asados."
+      ],
+      "tips": [
+        "Calienta bien la plancha para sellar y evitar que se pegue.",
+        "Un chorrito de limon al final realza los sabores."
+      ]
+    },
+    {
+      "title": "Sopa Ligera de Pollo y Verduras",
+      "calories": 240,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de pechuga de pollo en cubos",
+        "1 zanahoria en rodajas",
+        "1 tallo de apio picado",
+        "1 calabacin en cubos",
+        "4 tazas de caldo de pollo bajo en sodio",
+        "1 diente de ajo picado",
+        "Perejil fresco al gusto"
+      ],
+      "protein_g": 28,
+      "carbs_g": 12,
+      "fat_g": 6,
+      "fiber_g": 4,
+      "steps": [
+        "Lleva el caldo a ebullicion con el ajo.",
+        "Agrega el pollo y la zanahoria y cocina 10 minutos.",
+        "Incorpora el apio y el calabacin y cocina 8 minutos mas.",
+        "Espolvorea perejil fresco y sirve bien caliente."
+      ],
+      "tips": [
+        "Retira la espuma del caldo para una sopa mas clara.",
+        "Anade jengibre rallado para un toque reconfortante."
+      ]
+    },
+    {
+      "title": "Pavo Asado con Limon y Romero",
+      "calories": 280,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "170 g de filete de pechuga de pavo",
+        "1 limon (jugo y ralladura)",
+        "1 ramita de romero fresco",
+        "1 diente de ajo picado",
+        "1 cucharadita de aceite de oliva",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 38,
+      "carbs_g": 4,
+      "fat_g": 9,
+      "fiber_g": 1,
+      "steps": [
+        "Mezcla el jugo y la ralladura de limon con el ajo, el romero y el aceite.",
+        "Marina el pavo en esta mezcla durante 10 minutos.",
+        "Sella el filete en una sarten caliente 3 minutos por lado.",
+        "Tapa y cocina a fuego bajo 6 minutos hasta que este jugoso."
+      ],
+      "tips": [
+        "No cocines de mas el pavo para que no quede seco.",
+        "Acompana con vegetales al vapor para una cena ligera."
+      ]
+    },
+    {
+      "title": "Wrap de Lechuga con Pollo Desmenuzado",
+      "calories": 260,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de pechuga de pollo cocida y desmenuzada",
+        "8 hojas grandes de lechuga romana",
+        "1/2 aguacate en cubos",
+        "1 tomate picado",
+        "2 cucharadas de yogur natural descremado",
+        "1 cucharadita de jugo de limon",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 30,
+      "carbs_g": 8,
+      "fat_g": 11,
+      "fiber_g": 4,
+      "steps": [
+        "Mezcla el yogur con el jugo de limon, sal y pimienta.",
+        "Combina el pollo desmenuzado con el aderezo de yogur.",
+        "Reparte el pollo, el aguacate y el tomate sobre las hojas de lechuga.",
+        "Enrolla cada hoja como un taco y sirve de inmediato."
+      ],
+      "tips": [
+        "Usa lechuga firme para que el wrap no se rompa.",
+        "Anade cilantro picado para mas frescura."
+      ]
+    },
+    {
+      "title": "Pollo al Horno con Tomate Cherry y Aceitunas",
+      "calories": 320,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 filetes de pechuga de pollo (300 g)",
+        "1 taza de tomates cherry",
+        "10 aceitunas negras sin hueso",
+        "1 cucharadita de oregano",
+        "2 cucharaditas de aceite de oliva",
+        "1 diente de ajo en laminas",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 36,
+      "carbs_g": 8,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "steps": [
+        "Coloca el pollo en una fuente y sazona con sal, pimienta y oregano.",
+        "Reparte los tomates cherry, las aceitunas y el ajo alrededor.",
+        "Rocia con aceite de oliva por encima.",
+        "Hornea a 200 grados durante 22 minutos hasta dorar."
+      ],
+      "tips": [
+        "Pincha los tomates cherry para que liberen su jugo al hornear.",
+        "Usa aceitunas con moderacion para controlar el sodio."
+      ]
+    },
+    {
+      "title": "Pavo Salteado Estilo Asiatico con Verduras",
+      "calories": 300,
+      "portions": "2 porciones",
+      "time": "20 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "300 g de pechuga de pavo en tiras",
+        "1 taza de col morada en juliana",
+        "1 zanahoria en bastones",
+        "2 cucharadas de salsa de soya baja en sodio",
+        "1 cucharadita de jengibre rallado",
+        "1 cucharadita de aceite de ajonjoli",
+        "Cebollin picado al gusto"
+      ],
+      "protein_g": 35,
+      "carbs_g": 11,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "steps": [
+        "Calienta el aceite y saltea el jengibre unos segundos.",
+        "Agrega el pavo y cocina hasta que dore por fuera.",
+        "Incorpora la col y la zanahoria con la salsa de soya y saltea 5 minutos.",
+        "Decora con cebollin y sirve caliente."
+      ],
+      "tips": [
+        "Mantenel el fuego alto para un salteado rapido y crujiente.",
+        "Anade chile fresco si te gusta el picante."
+      ]
+    },
+    {
+      "title": "Pechuga de Pollo en Salsa de Champinones Light",
+      "calories": 310,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "160 g de pechuga de pollo en filete",
+        "1 taza de champinones laminados",
+        "1/4 de taza de leche descremada",
+        "1 cucharadita de harina integral",
+        "1 diente de ajo picado",
+        "1 cucharadita de aceite de oliva",
+        "Sal, pimienta y perejil al gusto"
+      ],
+      "protein_g": 38,
+      "carbs_g": 9,
+      "fat_g": 11,
+      "fiber_g": 2,
+      "steps": [
+        "Sella el pollo en el aceite 4 minutos por lado y reserva.",
+        "Saltea los champinones con el ajo en la misma sarten.",
+        "Espolvorea la harina, anade la leche y revuelve hasta espesar.",
+        "Regresa el pollo a la salsa, calienta 3 minutos y espolvorea perejil."
+      ],
+      "tips": [
+        "Disuelve bien la harina para evitar grumos en la salsa.",
+        "Sirve con vegetales verdes al vapor."
+      ]
+    },
+    {
+      "title": "Tiras de Pavo con Ensalada Tibia de Garbanzos",
+      "calories": 340,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "150 g de pechuga de pavo en tiras",
+        "1/2 taza de garbanzos cocidos",
+        "1 taza de espinaca fresca",
+        "1/2 tomate picado",
+        "1 cucharadita de comino",
+        "1 cucharadita de aceite de oliva",
+        "Jugo de medio limon"
+      ],
+      "protein_g": 36,
+      "carbs_g": 22,
+      "fat_g": 11,
+      "fiber_g": 7,
+      "steps": [
+        "Sazona el pavo con comino, sal y pimienta y saltealo en el aceite.",
+        "Agrega los garbanzos y calienta 3 minutos junto al pavo.",
+        "Incorpora la espinaca hasta que apenas se marchite.",
+        "Sirve sobre el tomate fresco y rocia con jugo de limon."
+      ],
+      "tips": [
+        "Enjuaga bien los garbanzos enlatados para reducir el sodio.",
+        "Sirve la ensalada tibia para una cena mas reconfortante."
+      ]
+    },
+    {
+      "title": "Pollo al Ajillo con Espinacas Salteadas",
+      "calories": 300,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "160 g de pechuga de pollo en cubos",
+        "2 tazas de espinaca fresca",
+        "3 dientes de ajo en laminas",
+        "1 cucharadita de aceite de oliva",
+        "1 pizca de chile en hojuelas",
+        "Jugo de medio limon",
+        "Sal y pimienta al gusto"
+      ],
+      "protein_g": 37,
+      "carbs_g": 6,
+      "fat_g": 11,
+      "fiber_g": 3,
+      "steps": [
+        "Dora el ajo en el aceite a fuego medio sin que se queme.",
+        "Agrega el pollo y cocina hasta que este dorado y cocido.",
+        "Incorpora la espinaca y el chile y saltea hasta marchitar.",
+        "Termina con jugo de limon, sal y pimienta y sirve."
+      ],
+      "tips": [
+        "Retira el ajo si empieza a dorarse demasiado para que no amargue.",
+        "Sirve con una rodaja de pan integral si necesitas mas saciedad."
+      ]
+    }
+  ]
+}

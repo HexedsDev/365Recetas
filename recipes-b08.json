@@ -1,0 +1,575 @@
+{
+  "category": "Almuerzo",
+  "recipes": [
+    {
+      "title": "Guiso de Lentejas con Calabaza y Espinaca",
+      "calories": 410,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de lentejas pardinas remojadas",
+        "2 tazas de calabaza en cubos",
+        "2 tazas de espinaca fresca",
+        "1 cebolla picada",
+        "2 dientes de ajo picados",
+        "1 cucharadita de comino molido",
+        "3 tazas de caldo de verduras"
+      ],
+      "protein_g": 22,
+      "carbs_g": 58,
+      "fat_g": 7,
+      "fiber_g": 16,
+      "steps": [
+        "Sofrie la cebolla y el ajo en una olla con un poco de caldo hasta dorar.",
+        "Agrega las lentejas, la calabaza, el comino y el caldo, y cocina 20 minutos.",
+        "Incorpora la espinaca y cocina 5 minutos mas hasta que se ablande.",
+        "Ajusta la sal y sirve caliente en tazones."
+      ],
+      "tips": [
+        "Remoja las lentejas 2 horas para reducir el tiempo de coccion.",
+        "Anade chile en hojuelas si quieres un toque picante."
+      ]
+    },
+    {
+      "title": "Bowl de Garbanzos Especiados con Quinoa",
+      "calories": 470,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de garbanzos cocidos",
+        "3/4 taza de quinoa cocida",
+        "1 cucharadita de pimenton ahumado",
+        "1/2 pepino en cubos",
+        "1/2 taza de tomate cherry",
+        "1 cucharada de aceite de oliva",
+        "Jugo de medio limon"
+      ],
+      "protein_g": 18,
+      "carbs_g": 60,
+      "fat_g": 14,
+      "fiber_g": 12,
+      "steps": [
+        "Saltea los garbanzos con el pimenton y un poco de aceite hasta dorar.",
+        "Coloca la quinoa como base en un bowl amplio.",
+        "Agrega el pepino, el tomate cherry y los garbanzos especiados.",
+        "Rocia con aceite de oliva y jugo de limon antes de servir."
+      ],
+      "tips": [
+        "Seca bien los garbanzos para que queden mas crujientes.",
+        "Acompana con yogur natural para una salsa cremosa."
+      ]
+    },
+    {
+      "title": "Chili de Frijoles Negros y Maiz",
+      "calories": 390,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 tazas de frijoles negros cocidos",
+        "1 taza de granos de maiz",
+        "1 pimiento rojo picado",
+        "1 cebolla picada",
+        "2 cucharadas de pasta de tomate",
+        "1 cucharadita de comino y oregano",
+        "1 taza de caldo de verduras"
+      ],
+      "protein_g": 19,
+      "carbs_g": 62,
+      "fat_g": 5,
+      "fiber_g": 17,
+      "steps": [
+        "Sofrie la cebolla y el pimiento hasta que esten tiernos.",
+        "Agrega la pasta de tomate, el comino y el oregano y cocina un minuto.",
+        "Incorpora los frijoles, el maiz y el caldo, y hierve 15 minutos.",
+        "Aplasta una parte de los frijoles para espesar y sirve."
+      ],
+      "tips": [
+        "Sirve con cilantro fresco y unas gotas de limon.",
+        "Guarda porciones en el congelador para otro dia."
+      ]
+    },
+    {
+      "title": "Tofu Salteado con Brocoli y Ajonjoli",
+      "calories": 360,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "2 tazas de floretes de brocoli",
+        "1 cucharada de salsa de soya baja en sodio",
+        "1 cucharadita de jengibre rallado",
+        "1 diente de ajo picado",
+        "1 cucharadita de aceite de ajonjoli",
+        "1 cucharadita de semillas de ajonjoli"
+      ],
+      "protein_g": 24,
+      "carbs_g": 18,
+      "fat_g": 20,
+      "fiber_g": 6,
+      "steps": [
+        "Dora el tofu en una sarten caliente hasta que este crujiente.",
+        "Agrega el ajo y el jengibre y saltea 30 segundos.",
+        "Incorpora el brocoli y la salsa de soya y cocina 5 minutos.",
+        "Termina con aceite y semillas de ajonjoli y sirve."
+      ],
+      "tips": [
+        "Presiona el tofu antes de cocinar para que dore mejor.",
+        "Sirve sobre arroz integral para un plato mas completo."
+      ]
+    },
+    {
+      "title": "Hamburguesa de Lentejas y Avena",
+      "calories": 430,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "1 taza de lentejas cocidas y escurridas",
+        "1/2 taza de avena en hojuelas",
+        "1 zanahoria rallada",
+        "1/4 taza de cebolla picada fina",
+        "1 cucharadita de comino",
+        "1 cucharada de aceite de oliva",
+        "2 panes integrales"
+      ],
+      "protein_g": 20,
+      "carbs_g": 56,
+      "fat_g": 12,
+      "fiber_g": 14,
+      "steps": [
+        "Aplasta las lentejas y mezcla con la avena, la zanahoria, la cebolla y el comino.",
+        "Forma dos hamburguesas firmes con la mezcla.",
+        "Cocina en una sarten con aceite 4 minutos por lado.",
+        "Sirve en pan integral con tus vegetales favoritos."
+      ],
+      "tips": [
+        "Refrigera la mezcla 15 minutos para que se compacte mejor.",
+        "Anade un huevo si la mezcla queda muy suelta."
+      ]
+    },
+    {
+      "title": "Curry de Garbanzos con Leche de Coco",
+      "calories": 480,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 tazas de garbanzos cocidos",
+        "1 taza de leche de coco ligera",
+        "1 cucharada de pasta de curry",
+        "1 tomate picado",
+        "1 cebolla picada",
+        "1 cucharadita de curcuma",
+        "2 tazas de espinaca"
+      ],
+      "protein_g": 19,
+      "carbs_g": 54,
+      "fat_g": 18,
+      "fiber_g": 13,
+      "steps": [
+        "Sofrie la cebolla con la pasta de curry y la curcuma hasta aromatizar.",
+        "Agrega el tomate y cocina hasta que se deshaga.",
+        "Incorpora los garbanzos y la leche de coco y hierve 12 minutos.",
+        "Anade la espinaca, cocina 3 minutos y sirve."
+      ],
+      "tips": [
+        "Acompana con arroz basmati para absorber la salsa.",
+        "Ajusta el picante con mas o menos pasta de curry."
+      ]
+    },
+    {
+      "title": "Tacos de Frijoles Refritos con Aguacate",
+      "calories": 440,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de frijoles pintos cocidos",
+        "3 tortillas de maiz",
+        "1/2 aguacate en laminas",
+        "1/4 taza de cebolla morada picada",
+        "1/4 taza de cilantro picado",
+        "1 cucharadita de aceite de oliva",
+        "Jugo de medio limon"
+      ],
+      "protein_g": 16,
+      "carbs_g": 58,
+      "fat_g": 16,
+      "fiber_g": 15,
+      "steps": [
+        "Aplasta los frijoles en una sarten con aceite hasta formar un pure.",
+        "Calienta las tortillas en una plancha sin grasa.",
+        "Rellena cada tortilla con los frijoles y laminas de aguacate.",
+        "Termina con cebolla, cilantro y jugo de limon."
+      ],
+      "tips": [
+        "Tuesta las tortillas para mas textura.",
+        "Anade salsa picante al gusto para realzar el sabor."
+      ]
+    },
+    {
+      "title": "Ensalada Tibia de Lentejas y Betabel",
+      "calories": 380,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de lentejas cocidas",
+        "1 betabel cocido en cubos",
+        "1 taza de hojas de rucula",
+        "30 g de queso feta desmenuzado",
+        "1 cucharada de aceite de oliva",
+        "1 cucharadita de mostaza",
+        "1 cucharada de vinagre balsamico"
+      ],
+      "protein_g": 18,
+      "carbs_g": 42,
+      "fat_g": 15,
+      "fiber_g": 12,
+      "steps": [
+        "Mezcla el aceite, la mostaza y el vinagre para hacer el aderezo.",
+        "Combina las lentejas tibias con el betabel en un bowl.",
+        "Agrega la rucula y el queso feta por encima.",
+        "Rocia con el aderezo y sirve de inmediato."
+      ],
+      "tips": [
+        "Usa guantes al cortar el betabel para no mancharte.",
+        "Sustituye el feta por queso de cabra si prefieres."
+      ]
+    },
+    {
+      "title": "Estofado de Frijoles Blancos con Romero",
+      "calories": 400,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 tazas de frijoles blancos cocidos",
+        "2 tomates picados",
+        "1 zanahoria en cubos",
+        "1 tallo de apio picado",
+        "1 ramita de romero fresco",
+        "2 dientes de ajo picados",
+        "2 tazas de caldo de verduras"
+      ],
+      "protein_g": 18,
+      "carbs_g": 56,
+      "fat_g": 6,
+      "fiber_g": 14,
+      "steps": [
+        "Sofrie el ajo, la zanahoria y el apio hasta ablandar.",
+        "Agrega los tomates y el romero y cocina 5 minutos.",
+        "Incorpora los frijoles y el caldo y hierve 15 minutos.",
+        "Retira el romero, ajusta la sal y sirve caliente."
+      ],
+      "tips": [
+        "Acompana con pan integral tostado para mojar.",
+        "Un chorrito de aceite de oliva al final realza el sabor."
+      ]
+    },
+    {
+      "title": "Tofu a la Plancha con Ensalada de Quinoa",
+      "calories": 450,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "200 g de tofu firme en filetes",
+        "3/4 taza de quinoa cocida",
+        "1/2 pepino en cubos",
+        "1/2 taza de tomate picado",
+        "2 cucharadas de menta picada",
+        "1 cucharada de aceite de oliva",
+        "Jugo de medio limon"
+      ],
+      "protein_g": 25,
+      "carbs_g": 44,
+      "fat_g": 18,
+      "fiber_g": 8,
+      "steps": [
+        "Marina el tofu con un poco de aceite y limon 5 minutos.",
+        "Asalo en una plancha caliente hasta dorar ambos lados.",
+        "Mezcla la quinoa con el pepino, el tomate y la menta.",
+        "Sirve el tofu sobre la ensalada y rocia con aceite."
+      ],
+      "tips": [
+        "Corta el tofu en filetes delgados para que dore parejo.",
+        "Agrega ralladura de limon para un aroma mas fresco."
+      ]
+    },
+    {
+      "title": "Dahl de Lentejas Rojas",
+      "calories": 420,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de lentejas rojas",
+        "1 cebolla picada",
+        "2 dientes de ajo picados",
+        "1 cucharadita de jengibre rallado",
+        "1 cucharadita de curcuma",
+        "1 cucharadita de comino",
+        "3 tazas de agua o caldo"
+      ],
+      "protein_g": 21,
+      "carbs_g": 60,
+      "fat_g": 6,
+      "fiber_g": 14,
+      "steps": [
+        "Sofrie la cebolla, el ajo y el jengibre con las especias.",
+        "Agrega las lentejas rojas y el agua o caldo.",
+        "Cocina a fuego medio 20 minutos hasta que se deshagan.",
+        "Ajusta la sal, revuelve hasta cremoso y sirve."
+      ],
+      "tips": [
+        "Las lentejas rojas no necesitan remojo previo.",
+        "Sirve con arroz o pan plano integral."
+      ]
+    },
+    {
+      "title": "Wrap de Hummus y Vegetales Asados",
+      "calories": 410,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 tortilla integral grande",
+        "4 cucharadas de hummus de garbanzo",
+        "1/2 calabacin en tiras",
+        "1/2 pimiento en tiras",
+        "1/4 cebolla en pluma",
+        "1 puñado de espinaca fresca",
+        "1 cucharadita de aceite de oliva"
+      ],
+      "protein_g": 14,
+      "carbs_g": 52,
+      "fat_g": 16,
+      "fiber_g": 11,
+      "steps": [
+        "Asa el calabacin, el pimiento y la cebolla con aceite hasta dorar.",
+        "Unta el hummus sobre toda la tortilla.",
+        "Distribuye los vegetales asados y la espinaca encima.",
+        "Enrolla firme, corta a la mitad y sirve."
+      ],
+      "tips": [
+        "Calienta la tortilla para que se enrolle sin romperse.",
+        "Anade semillas de girasol para mas textura."
+      ]
+    },
+    {
+      "title": "Sopa de Garbanzos con Espinaca y Limon",
+      "calories": 370,
+      "portions": "2 porciones",
+      "time": "30 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "2 tazas de garbanzos cocidos",
+        "3 tazas de espinaca fresca",
+        "1 cebolla picada",
+        "2 dientes de ajo picados",
+        "1 cucharadita de comino",
+        "3 tazas de caldo de verduras",
+        "Jugo de un limon"
+      ],
+      "protein_g": 17,
+      "carbs_g": 52,
+      "fat_g": 6,
+      "fiber_g": 13,
+      "steps": [
+        "Sofrie la cebolla y el ajo hasta transparentar.",
+        "Agrega los garbanzos, el comino y el caldo y hierve 15 minutos.",
+        "Incorpora la espinaca y cocina 3 minutos mas.",
+        "Termina con jugo de limon y sirve caliente."
+      ],
+      "tips": [
+        "Aplasta algunos garbanzos para una sopa mas espesa.",
+        "El limon al final aporta frescura y resalta sabores."
+      ]
+    },
+    {
+      "title": "Pimientos Rellenos de Frijoles y Arroz",
+      "calories": 440,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 pimientos grandes",
+        "1 taza de frijoles negros cocidos",
+        "1 taza de arroz integral cocido",
+        "1/2 taza de granos de maiz",
+        "1/4 taza de cebolla picada",
+        "1 cucharadita de comino",
+        "1/2 taza de salsa de tomate"
+      ],
+      "protein_g": 16,
+      "carbs_g": 66,
+      "fat_g": 8,
+      "fiber_g": 13,
+      "steps": [
+        "Corta la parte superior de los pimientos y retira las semillas.",
+        "Mezcla los frijoles, el arroz, el maiz, la cebolla y el comino.",
+        "Rellena los pimientos y cubre con salsa de tomate.",
+        "Hornea a 200 grados 25 minutos hasta que esten tiernos."
+      ],
+      "tips": [
+        "Tapa con papel aluminio para que no se sequen.",
+        "Espolvorea queso rallado los ultimos 5 minutos si deseas."
+      ]
+    },
+    {
+      "title": "Salteado de Tofu con Garbanzos y Pimenton",
+      "calories": 460,
+      "portions": "1 porcion",
+      "time": "20 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "150 g de tofu firme en cubos",
+        "1 taza de garbanzos cocidos",
+        "1 pimiento rojo en tiras",
+        "1 cucharadita de pimenton ahumado",
+        "1 diente de ajo picado",
+        "1 cucharada de aceite de oliva",
+        "1 cucharada de perejil picado"
+      ],
+      "protein_g": 26,
+      "carbs_g": 38,
+      "fat_g": 20,
+      "fiber_g": 11,
+      "steps": [
+        "Dora el tofu en una sarten con aceite hasta crujiente.",
+        "Agrega el ajo y el pimiento y saltea 4 minutos.",
+        "Incorpora los garbanzos y el pimenton y cocina 5 minutos.",
+        "Termina con perejil fresco y sirve caliente."
+      ],
+      "tips": [
+        "Usa pimenton dulce si prefieres un sabor mas suave.",
+        "Acompana con una rebanada de pan integral."
+      ]
+    },
+    {
+      "title": "Ensalada de Frijoles Tres Colores",
+      "calories": 360,
+      "portions": "2 porciones",
+      "time": "15 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de frijoles negros cocidos",
+        "1 taza de frijoles rojos cocidos",
+        "1 taza de garbanzos cocidos",
+        "1/2 pimiento amarillo picado",
+        "1/4 taza de cilantro picado",
+        "2 cucharadas de aceite de oliva",
+        "Jugo de un limon"
+      ],
+      "protein_g": 18,
+      "carbs_g": 50,
+      "fat_g": 12,
+      "fiber_g": 16,
+      "steps": [
+        "Escurre y enjuaga bien todas las legumbres.",
+        "Mezclalas en un bowl con el pimiento y el cilantro.",
+        "Prepara un aderezo con aceite, limon y sal.",
+        "Vierte el aderezo, revuelve y sirve frio."
+      ],
+      "tips": [
+        "Deja reposar 10 minutos para que tome sabor.",
+        "Anade aguacate justo antes de servir."
+      ]
+    },
+    {
+      "title": "Albondigas de Garbanzo en Salsa de Tomate",
+      "calories": 430,
+      "portions": "2 porciones",
+      "time": "35 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "2 tazas de garbanzos cocidos",
+        "1/4 taza de pan rallado integral",
+        "1 huevo",
+        "1 diente de ajo picado",
+        "1 cucharadita de comino",
+        "2 tazas de salsa de tomate natural",
+        "2 cucharadas de perejil picado"
+      ],
+      "protein_g": 20,
+      "carbs_g": 54,
+      "fat_g": 11,
+      "fiber_g": 13,
+      "steps": [
+        "Procesa los garbanzos con el huevo, el ajo, el comino y el pan rallado.",
+        "Forma albondigas pequenas con la mezcla.",
+        "Dorala en una sarten ligeramente aceitada.",
+        "Agrega la salsa de tomate, cocina 12 minutos y sirve con perejil."
+      ],
+      "tips": [
+        "Si la mezcla esta suelta, agrega mas pan rallado.",
+        "Acompana con arroz integral o pasta integral."
+      ]
+    },
+    {
+      "title": "Bowl de Tofu Teriyaki con Edamame",
+      "calories": 470,
+      "portions": "1 porcion",
+      "time": "25 min",
+      "difficulty": "Media",
+      "ingredients": [
+        "200 g de tofu firme en cubos",
+        "1/2 taza de edamame sin vaina",
+        "3/4 taza de arroz integral cocido",
+        "2 cucharadas de salsa teriyaki baja en sodio",
+        "1 cucharadita de jengibre rallado",
+        "1 cucharadita de aceite de ajonjoli",
+        "1 cucharadita de semillas de ajonjoli"
+      ],
+      "protein_g": 27,
+      "carbs_g": 50,
+      "fat_g": 18,
+      "fiber_g": 9,
+      "steps": [
+        "Dora el tofu en una sarten con aceite de ajonjoli.",
+        "Agrega el jengibre y la salsa teriyaki y glasea el tofu.",
+        "Calienta el edamame en agua un par de minutos.",
+        "Sirve el arroz, el tofu y el edamame, y termina con ajonjoli."
+      ],
+      "tips": [
+        "Reserva un poco de salsa para rociar al final.",
+        "Anade cebollin picado para mas color y sabor."
+      ]
+    },
+    {
+      "title": "Cazuela de Lentejas con Arroz Integral",
+      "calories": 450,
+      "portions": "2 porciones",
+      "time": "40 min",
+      "difficulty": "Facil",
+      "ingredients": [
+        "1 taza de lentejas pardinas",
+        "1/2 taza de arroz integral",
+        "1 cebolla picada",
+        "1 zanahoria en cubos",
+        "1 hoja de laurel",
+        "1 cucharadita de pimenton",
+        "4 tazas de caldo de verduras"
+      ],
+      "protein_g": 21,
+      "carbs_g": 70,
+      "fat_g": 6,
+      "fiber_g": 15,
+      "steps": [
+        "Sofrie la cebolla y la zanahoria hasta ablandar.",
+        "Agrega el pimenton, las lentejas, el arroz y el laurel.",
+        "Vierte el caldo y cocina a fuego medio 30 minutos.",
+        "Retira el laurel, ajusta la sal y sirve caliente."
+      ],
+      "tips": [
+        "Anade mas caldo si lo prefieres mas caldoso.",
+        "Un chorrito de vinagre al final realza el sabor."
+      ]
+    }
+  ]
+}
