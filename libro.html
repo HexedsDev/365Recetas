@@ -56,8 +56,13 @@
   .index { padding: 12mm 14mm 14mm; }
   .idx-title { font-family: Georgia, 'Times New Roman', serif; font-size: 24pt; color: #22341f; margin-bottom: 1mm; }
   .idx-sub { font-size: 9.5pt; color: #3a7d34; margin-bottom: 5mm; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
-  .idx-row { display: flex; align-items: center; gap: 4mm; text-decoration: none; color: inherit; padding: 2.5mm 3mm; border: 1px solid #e6ebe1; border-radius: 7px; margin-bottom: 2.5mm; background: #fbfcfa; }
-  .idx-thumb { width: 12mm; height: 12mm; object-fit: cover; border-radius: 5px; flex-shrink: 0; }
+  .idx-row { display: flex; align-items: center; gap: 3.5mm; text-decoration: none; color: inherit; padding: 1.8mm 3mm; border: 1px solid #e6ebe1; border-radius: 7px; margin-bottom: 1.8mm; background: #fbfcfa; }
+  .idx-thumb { width: 10mm; height: 10mm; object-fit: cover; border-radius: 5px; flex-shrink: 0; }
+  .idx-cat { font-family: Georgia, 'Times New Roman', serif; font-size: 13pt; color: #22341f; font-weight: 700; margin: 3mm 0 2mm; padding-bottom: 1.5mm; border-bottom: 2px solid #d9622b; }
+  .idx-cat:first-of-type { margin-top: 1mm; }
+  /* Espacio reservado para fotos pendientes */
+  .r-img.ph { display: flex; align-items: center; justify-content: center; background: #eef0ec; border: 2px dashed #cdd8c8; color: #8fa585; font-size: 11pt; font-weight: 600; letter-spacing: 1px; }
+  .idx-thumb.ph { display: flex; align-items: center; justify-content: center; background: #eef0ec; border: 1px dashed #cdd8c8; color: #b3c4ab; font-size: 9pt; }
   .idx-mid { flex: 1; }
   .idx-num { font-size: 7.5pt; letter-spacing: 1px; color: #3a7d34; font-weight: 700; text-transform: uppercase; }
   .idx-name { font-family: Georgia, 'Times New Roman', serif; font-size: 11.5pt; color: #22341f; line-height: 1.1; margin-top: 0.8mm; }
@@ -77,30 +82,11 @@
   <div class="idx-title">Índice de recetas</div>
   <div class="idx-sub">Toca cualquier receta para ir directo a ella ↓</div>
 
+  <div class="idx-cat">🍳 Desayunos</div>
   <a class="idx-row" href="#receta-001">
     <img class="idx-thumb" src="imagenes/receta-001-avena.png" alt="">
     <div class="idx-mid"><div class="idx-num">Receta 001 · Desayuno</div><div class="idx-name">Avena Overnight con Frutos Rojos y Chía</div></div>
     <div class="idx-cal">320<small>KCAL</small></div>
-  </a>
-  <a class="idx-row" href="#receta-002">
-    <img class="idx-thumb" src="imagenes/receta-002-bowl-pollo.png" alt="">
-    <div class="idx-mid"><div class="idx-num">Receta 002 · Almuerzo</div><div class="idx-name">Bowl de Pollo a la Plancha con Quinoa y Aguacate</div></div>
-    <div class="idx-cal">480<small>KCAL</small></div>
-  </a>
-  <a class="idx-row" href="#receta-003">
-    <img class="idx-thumb" src="imagenes/receta-003-salmon.png" alt="">
-    <div class="idx-mid"><div class="idx-num">Receta 003 · Cena</div><div class="idx-name">Salmón al Horno con Espárragos y Limón</div></div>
-    <div class="idx-cal">410<small>KCAL</small></div>
-  </a>
-  <a class="idx-row" href="#receta-004">
-    <img class="idx-thumb" src="imagenes/receta-004-hummus.png" alt="">
-    <div class="idx-mid"><div class="idx-num">Receta 004 · Snack</div><div class="idx-name">Hummus Casero con Crudités</div></div>
-    <div class="idx-cal">190<small>KCAL</small></div>
-  </a>
-  <a class="idx-row" href="#receta-005">
-    <img class="idx-thumb" src="imagenes/receta-005-smoothie.png" alt="">
-    <div class="idx-mid"><div class="idx-num">Receta 005 · Bebida</div><div class="idx-name">Smoothie Verde Proteico</div></div>
-    <div class="idx-cal">250<small>KCAL</small></div>
   </a>
   <a class="idx-row" href="#receta-006">
     <img class="idx-thumb" src="imagenes/receta-006.png" alt="">
@@ -112,15 +98,140 @@
     <div class="idx-mid"><div class="idx-num">Receta 007 · Desayuno</div><div class="idx-name">Panqueques de Avena y Plátano</div></div>
     <div class="idx-cal">380<small>KCAL</small></div>
   </a>
+  <a class="idx-row" href="#receta-013">
+    <img class="idx-thumb" src="imagenes/receta-013.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 013 · Desayuno</div><div class="idx-name">Huevos Revueltos con Espinaca y Champiñones</div></div>
+    <div class="idx-cal">290<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-014">
+    <img class="idx-thumb" src="imagenes/receta-014.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 014 · Desayuno</div><div class="idx-name">Smoothie Bowl de Plátano y Maní</div></div>
+    <div class="idx-cal">340<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-025">
+    <img class="idx-thumb" src="imagenes/receta-025.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 025 · Desayuno</div><div class="idx-name">Tortilla de Claras con Vegetales</div></div>
+    <div class="idx-cal">200<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-026">
+    <img class="idx-thumb" src="imagenes/receta-026.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 026 · Desayuno</div><div class="idx-name">Pudín de Chía con Mango</div></div>
+    <div class="idx-cal">280<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-027">
+    <img class="idx-thumb" src="imagenes/receta-027.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 027 · Desayuno</div><div class="idx-name">Tostada Francesa Integral</div></div>
+    <div class="idx-cal">330<small>KCAL</small></div>
+  </a>
+
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- ÍNDICE · PÁGINA 2 -->
+<div class="page index" id="indice-2">
+  <div class="idx-title">Índice · Almuerzos</div>
+  <div class="idx-sub">Comidas completas para el mediodía ↓</div>
+
+  <div class="idx-cat">🥗 Almuerzos</div>
+  <a class="idx-row" href="#receta-002">
+    <img class="idx-thumb" src="imagenes/receta-002-bowl-pollo.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 002 · Almuerzo</div><div class="idx-name">Bowl de Pollo a la Plancha con Quinoa y Aguacate</div></div>
+    <div class="idx-cal">480<small>KCAL</small></div>
+  </a>
   <a class="idx-row" href="#receta-008">
     <img class="idx-thumb" src="imagenes/receta-008.png" alt="">
     <div class="idx-mid"><div class="idx-num">Receta 008 · Almuerzo</div><div class="idx-name">Ensalada Mediterránea de Garbanzos</div></div>
     <div class="idx-cal">420<small>KCAL</small></div>
   </a>
+  <a class="idx-row" href="#receta-015">
+    <img class="idx-thumb" src="imagenes/receta-015.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 015 · Almuerzo</div><div class="idx-name">Bowl de Quinoa con Vegetales Asados y Garbanzos</div></div>
+    <div class="idx-cal">420<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-016">
+    <img class="idx-thumb" src="imagenes/receta-016.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 016 · Almuerzo</div><div class="idx-name">Wrap Integral de Pollo y Hummus</div></div>
+    <div class="idx-cal">380<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-028">
+    <img class="idx-thumb" src="imagenes/receta-028.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 028 · Almuerzo</div><div class="idx-name">Ensalada César con Pollo (ligera)</div></div>
+    <div class="idx-cal">390<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-029">
+    <img class="idx-thumb" src="imagenes/receta-029.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 029 · Almuerzo</div><div class="idx-name">Arroz Integral con Vegetales y Huevo</div></div>
+    <div class="idx-cal">430<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-030">
+    <img class="idx-thumb" src="imagenes/receta-030.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 030 · Almuerzo</div><div class="idx-name">Sopa de Pollo con Fideos Integrales</div></div>
+    <div class="idx-cal">340<small>KCAL</small></div>
+  </a>
+
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- ÍNDICE · PÁGINA 3 -->
+<div class="page index" id="indice-3">
+  <div class="idx-title">Índice · Cenas</div>
+  <div class="idx-sub">Cenas ligeras y nutritivas ↓</div>
+
+  <div class="idx-cat">🍽 Cenas</div>
+  <a class="idx-row" href="#receta-003">
+    <img class="idx-thumb" src="imagenes/receta-003-salmon.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 003 · Cena</div><div class="idx-name">Salmón al Horno con Espárragos y Limón</div></div>
+    <div class="idx-cal">410<small>KCAL</small></div>
+  </a>
   <a class="idx-row" href="#receta-009">
     <img class="idx-thumb" src="imagenes/receta-009.png" alt="">
     <div class="idx-mid"><div class="idx-num">Receta 009 · Cena</div><div class="idx-name">Sopa de Lentejas con Verduras</div></div>
     <div class="idx-cal">310<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-017">
+    <img class="idx-thumb" src="imagenes/receta-017.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 017 · Cena</div><div class="idx-name">Pechuga de Pollo al Limón con Brócoli</div></div>
+    <div class="idx-cal">350<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-018">
+    <img class="idx-thumb" src="imagenes/receta-018.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 018 · Cena</div><div class="idx-name">Tacos de Pescado con Repollo Morado</div></div>
+    <div class="idx-cal">330<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-019">
+    <img class="idx-thumb" src="imagenes/receta-019.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 019 · Cena</div><div class="idx-name">Salteado de Tofu y Verduras con Arroz Integral</div></div>
+    <div class="idx-cal">400<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-031">
+    <img class="idx-thumb" src="imagenes/receta-031.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 031 · Cena</div><div class="idx-name">Pescado al Vapor con Vegetales</div></div>
+    <div class="idx-cal">300<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-032">
+    <img class="idx-thumb" src="imagenes/receta-032.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 032 · Cena</div><div class="idx-name">Berenjenas Rellenas de Pavo</div></div>
+    <div class="idx-cal">360<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-033">
+    <img class="idx-thumb" src="imagenes/receta-033.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 033 · Cena</div><div class="idx-name">Pizza de Coliflor con Vegetales</div></div>
+    <div class="idx-cal">340<small>KCAL</small></div>
+  </a>
+
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- ÍNDICE · PÁGINA 4 -->
+<div class="page index" id="indice-4">
+  <div class="idx-title">Índice · Snacks y Bebidas</div>
+  <div class="idx-sub">Para media mañana o media tarde ↓</div>
+
+  <div class="idx-cat">🥑 Snacks</div>
+  <a class="idx-row" href="#receta-004">
+    <img class="idx-thumb" src="imagenes/receta-004-hummus.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 004 · Snack</div><div class="idx-name">Hummus Casero con Crudités</div></div>
+    <div class="idx-cal">190<small>KCAL</small></div>
   </a>
   <a class="idx-row" href="#receta-010">
     <img class="idx-thumb" src="imagenes/receta-010.png" alt="">
@@ -132,10 +243,67 @@
     <div class="idx-mid"><div class="idx-num">Receta 011 · Snack</div><div class="idx-name">Energy Balls de Dátil y Cacao</div></div>
     <div class="idx-cal">180<small>KCAL</small></div>
   </a>
+  <a class="idx-row" href="#receta-020">
+    <img class="idx-thumb" src="imagenes/receta-020.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 020 · Snack</div><div class="idx-name">Edamame al Vapor con Sal de Mar</div></div>
+    <div class="idx-cal">150<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-021">
+    <img class="idx-thumb" src="imagenes/receta-021.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 021 · Snack</div><div class="idx-name">Manzana con Mantequilla de Almendra</div></div>
+    <div class="idx-cal">210<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-034">
+    <img class="idx-thumb" src="imagenes/receta-034.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 034 · Snack</div><div class="idx-name">Mix de Frutos Secos y Semillas</div></div>
+    <div class="idx-cal">200<small>KCAL</small></div>
+  </a>
+
+  <div class="idx-cat">🥤 Bebidas</div>
+  <a class="idx-row" href="#receta-005">
+    <img class="idx-thumb" src="imagenes/receta-005-smoothie.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 005 · Bebida</div><div class="idx-name">Smoothie Verde Proteico</div></div>
+    <div class="idx-cal">250<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-022">
+    <img class="idx-thumb" src="imagenes/receta-022.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 022 · Bebida</div><div class="idx-name">Batido Verde de Piña y Espinaca</div></div>
+    <div class="idx-cal">160<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-035">
+    <img class="idx-thumb" src="imagenes/receta-035.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 035 · Bebida</div><div class="idx-name">Agua de Jamaica sin Azúcar</div></div>
+    <div class="idx-cal">30<small>KCAL</small></div>
+  </a>
+
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- ÍNDICE · PÁGINA 5 -->
+<div class="page index" id="indice-5">
+  <div class="idx-title">Índice · Postres</div>
+  <div class="idx-sub">Dulces saludables sin culpa ↓</div>
+
+  <div class="idx-cat">🍓 Postres</div>
   <a class="idx-row" href="#receta-012">
     <img class="idx-thumb" src="imagenes/receta-012.png" alt="">
     <div class="idx-mid"><div class="idx-num">Receta 012 · Postre</div><div class="idx-name">Mousse de Chocolate y Aguacate</div></div>
     <div class="idx-cal">210<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-023">
+    <img class="idx-thumb" src="imagenes/receta-023.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 023 · Postre</div><div class="idx-name">Fresas con Yogur Griego y Miel</div></div>
+    <div class="idx-cal">180<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-024">
+    <img class="idx-thumb" src="imagenes/receta-024.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 024 · Postre</div><div class="idx-name">Galletas de Avena y Plátano</div></div>
+    <div class="idx-cal">150<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-036">
+    <div class="idx-thumb ph">📷</div>
+    <div class="idx-mid"><div class="idx-num">Receta 036 · Postre</div><div class="idx-name">Brownies de Frijol Negro</div></div>
+    <div class="idx-cal">160<small>KCAL</small></div>
   </a>
 
   <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
@@ -629,6 +797,975 @@
     <ul>
       <li>El aguacate no se nota en sabor pero da una textura súper cremosa.</li>
       <li>Ajusta el dulzor con la miel según tu gusto.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 013 -->
+<div class="page recipe" id="receta-013">
+  <div class="r-top"><span class="r-num">Receta 013</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Huevos Revueltos con Espinaca y Champiñones</div>
+  <img class="r-img" src="imagenes/receta-013.png" alt="Huevos Revueltos con Espinaca y Champiñones">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 12 min</span><span>📊 Fácil</span><span class="cal">290 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 huevos</li>
+        <li>1 taza de espinaca fresca</li>
+        <li>½ taza de champiñones laminados</li>
+        <li>1 cdita de aceite de oliva</li>
+        <li>Sal y pimienta</li>
+        <li>Pizca de parmesano (opcional)</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>290 kcal</b> · Proteína: 19 g<br>Carbohidratos: 6 g · Grasas: 21 g · Fibra: 2 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Saltea los champiñones en el aceite 3 min.</li>
+        <li>Agrega la espinaca hasta que se reduzca.</li>
+        <li>Vierte los huevos batidos y revuelve a fuego medio.</li>
+        <li>Salpimienta y sirve caliente.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>No cocines de más los huevos para que queden cremosos; retíralos un poco antes.</li>
+      <li>Añade chile o cebollín para más sabor sin sumar calorías.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 014 -->
+<div class="page recipe" id="receta-014">
+  <div class="r-top"><span class="r-num">Receta 014</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Smoothie Bowl de Plátano y Maní</div>
+  <img class="r-img" src="imagenes/receta-014.png" alt="Smoothie Bowl de Plátano y Maní">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 8 min</span><span>📊 Fácil</span><span class="cal">340 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 plátano congelado</li>
+        <li>½ taza de leche de almendras</li>
+        <li>1 cda de mantequilla de maní</li>
+        <li>2 cdas de avena</li>
+        <li>Topping: plátano, granola y chía</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>340 kcal</b> · Proteína: 10 g<br>Carbohidratos: 48 g · Grasas: 13 g · Fibra: 6 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Licúa plátano, leche, maní y avena hasta espesar.</li>
+        <li>Vierte la mezcla en un bowl.</li>
+        <li>Decora con plátano, granola y chía.</li>
+        <li>Sirve de inmediato.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa plátano congelado para lograr una textura tipo helado.</li>
+      <li>Si queda muy espeso, añade un chorrito de leche.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 015 -->
+<div class="page recipe" id="receta-015">
+  <div class="r-top"><span class="r-num">Receta 015</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Bowl de Quinoa con Vegetales Asados y Garbanzos</div>
+  <img class="r-img" src="imagenes/receta-015.png" alt="Bowl de Quinoa con Vegetales Asados y Garbanzos">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 30 min</span><span>📊 Media</span><span class="cal">420 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>½ taza de quinoa cocida</li>
+        <li>½ taza de garbanzos</li>
+        <li>1 taza de vegetales (pimiento, calabacín, cebolla)</li>
+        <li>¼ de aguacate</li>
+        <li>1 cda de aceite de oliva</li>
+        <li>Jugo de limón y sal</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>420 kcal</b> · Proteína: 15 g<br>Carbohidratos: 52 g · Grasas: 18 g · Fibra: 11 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Asa vegetales y garbanzos con aceite a 200 °C por 20 min.</li>
+        <li>Coloca la quinoa como base en el bowl.</li>
+        <li>Agrega los vegetales, los garbanzos y el aguacate.</li>
+        <li>Aliña con limón y sal.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Prepara doble quinoa y guárdala para otra comida.</li>
+      <li>Los garbanzos asados quedan crujientes y son un gran snack.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 016 -->
+<div class="page recipe" id="receta-016">
+  <div class="r-top"><span class="r-num">Receta 016</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Wrap Integral de Pollo y Hummus</div>
+  <img class="r-img" src="imagenes/receta-016.png" alt="Wrap Integral de Pollo y Hummus">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 15 min</span><span>📊 Fácil</span><span class="cal">380 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 tortilla integral</li>
+        <li>80 g de pollo a la plancha</li>
+        <li>2 cdas de hummus</li>
+        <li>Lechuga y tomate</li>
+        <li>Pepino</li>
+        <li>Zanahoria rallada</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>380 kcal</b> · Proteína: 30 g<br>Carbohidratos: 35 g · Grasas: 13 g · Fibra: 7 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Unta el hummus sobre la tortilla.</li>
+        <li>Coloca el pollo y las verduras.</li>
+        <li>Enrolla apretando bien.</li>
+        <li>Corta por la mitad y sirve.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Calienta la tortilla unos segundos para que no se quiebre al enrollar.</li>
+      <li>Versión vegetariana: usa falafel o solo garbanzos.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 017 -->
+<div class="page recipe" id="receta-017">
+  <div class="r-top"><span class="r-num">Receta 017</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Pechuga de Pollo al Limón con Brócoli</div>
+  <img class="r-img" src="imagenes/receta-017.png" alt="Pechuga de Pollo al Limón con Brócoli">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 25 min</span><span>📊 Media</span><span class="cal">350 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 pechuga de pollo (150 g)</li>
+        <li>2 tazas de brócoli</li>
+        <li>Jugo de 1 limón</li>
+        <li>1 cda de aceite de oliva</li>
+        <li>Ajo</li>
+        <li>Sal y pimienta</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>350 kcal</b> · Proteína: 38 g<br>Carbohidratos: 12 g · Grasas: 17 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Marina el pollo con limón, ajo, sal y pimienta 10 min.</li>
+        <li>Cocina a la plancha 6 min por lado.</li>
+        <li>Cuece el brócoli al vapor 5 min.</li>
+        <li>Sirve junto y rocía con el jugo de cocción.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>No cocines de más la pechuga para que no quede seca (74 °C al interior).</li>
+      <li>El brócoli al vapor conserva más nutrientes que hervido.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 018 -->
+<div class="page recipe" id="receta-018">
+  <div class="r-top"><span class="r-num">Receta 018</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Tacos de Pescado con Repollo Morado</div>
+  <img class="r-img" src="imagenes/receta-018.png" alt="Tacos de Pescado con Repollo Morado">
+  <div class="r-meta"><span>🍽 2 tacos</span><span>⏱ 20 min</span><span>📊 Media</span><span class="cal">330 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>120 g de pescado blanco</li>
+        <li>2 tortillas de maíz</li>
+        <li>1 taza de repollo morado</li>
+        <li>Yogur griego y limón</li>
+        <li>Cilantro</li>
+        <li>Paprika y comino</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>330 kcal</b> · Proteína: 28 g<br>Carbohidratos: 30 g · Grasas: 10 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Sazona el pescado y cocínalo 3–4 min por lado.</li>
+        <li>Mezcla yogur con limón para la salsa.</li>
+        <li>Calienta las tortillas.</li>
+        <li>Arma con pescado, repollo, salsa y cilantro.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>El repollo morado aporta color y antioxidantes.</li>
+      <li>Cambia la crema por yogur griego para bajar calorías sin perder cremosidad.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 019 -->
+<div class="page recipe" id="receta-019">
+  <div class="r-top"><span class="r-num">Receta 019</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Salteado de Tofu y Verduras con Arroz Integral</div>
+  <img class="r-img" src="imagenes/receta-019.png" alt="Salteado de Tofu y Verduras con Arroz Integral">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 20 min</span><span>📊 Media</span><span class="cal">400 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>100 g de tofu firme</li>
+        <li>1½ taza de verduras (brócoli, pimiento, zanahoria)</li>
+        <li>½ taza de arroz integral cocido</li>
+        <li>1 cda de salsa de soya baja en sodio</li>
+        <li>1 cdita de aceite de sésamo</li>
+        <li>Jengibre</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>400 kcal</b> · Proteína: 18 g<br>Carbohidratos: 48 g · Grasas: 15 g · Fibra: 6 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Dora el tofu en cubos hasta que esté crujiente.</li>
+        <li>Saltea las verduras con jengibre.</li>
+        <li>Agrega el tofu y la salsa de soya.</li>
+        <li>Sirve sobre el arroz integral.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Presiona el tofu para quitar el exceso de agua y que dore mejor.</li>
+      <li>Usa salsa de soya baja en sodio para cuidar la presión.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 020 -->
+<div class="page recipe" id="receta-020">
+  <div class="r-top"><span class="r-num">Receta 020</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Edamame al Vapor con Sal de Mar</div>
+  <img class="r-img" src="imagenes/receta-020.png" alt="Edamame al Vapor con Sal de Mar">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 8 min</span><span>📊 Fácil</span><span class="cal">150 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de edamame en vaina</li>
+        <li>½ cdita de sal de mar</li>
+        <li>Unas gotas de jugo de limón</li>
+        <li>Pizca de chile (opcional)</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>150 kcal</b> · Proteína: 12 g<br>Carbohidratos: 12 g · Grasas: 6 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Hierve o cuece al vapor el edamame 5 min.</li>
+        <li>Escurre bien.</li>
+        <li>Espolvorea sal de mar y unas gotas de limón.</li>
+        <li>Sirve caliente o frío.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Alto en proteína vegetal: ideal antes o después de entrenar.</li>
+      <li>Se come exprimiendo la vaina; la cáscara no se come.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 021 -->
+<div class="page recipe" id="receta-021">
+  <div class="r-top"><span class="r-num">Receta 021</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Manzana con Mantequilla de Almendra</div>
+  <img class="r-img" src="imagenes/receta-021.png" alt="Manzana con Mantequilla de Almendra">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min</span><span>📊 Fácil</span><span class="cal">210 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 manzana</li>
+        <li>1 cda de mantequilla de almendra</li>
+        <li>Pizca de canela</li>
+        <li>1 cdita de semillas (opcional)</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>210 kcal</b> · Proteína: 4 g<br>Carbohidratos: 30 g · Grasas: 10 g · Fibra: 6 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Corta la manzana en rodajas.</li>
+        <li>Acompaña o unta con la mantequilla de almendra.</li>
+        <li>Espolvorea canela (y semillas si quieres).</li>
+        <li>Disfruta al momento.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>La fibra de la manzana + la grasa buena de la almendra te mantienen lleno.</li>
+      <li>La canela ayuda a regular el azúcar en sangre.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 022 -->
+<div class="page recipe" id="receta-022">
+  <div class="r-top"><span class="r-num">Receta 022</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Bebida</span></span></div>
+  <div class="r-title">Batido Verde de Piña y Espinaca</div>
+  <img class="r-img" src="imagenes/receta-022.png" alt="Batido Verde de Piña y Espinaca">
+  <div class="r-meta"><span>🍽 1 vaso</span><span>⏱ 5 min</span><span>📊 Fácil</span><span class="cal">160 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de espinaca</li>
+        <li>1 taza de piña</li>
+        <li>½ plátano</li>
+        <li>1 taza de agua de coco</li>
+        <li>Jugo de ½ limón</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>160 kcal</b> · Proteína: 3 g<br>Carbohidratos: 36 g · Grasas: 1 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Coloca todo en la licuadora.</li>
+        <li>Licúa hasta que quede suave.</li>
+        <li>Agrega hielo si lo prefieres frío.</li>
+        <li>Sirve de inmediato.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>La piña tiene enzimas que ayudan a la digestión.</li>
+      <li>Tómalo recién hecho para aprovechar mejor las vitaminas.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 023 -->
+<div class="page recipe" id="receta-023">
+  <div class="r-top"><span class="r-num">Receta 023</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Postre</span></span></div>
+  <div class="r-title">Fresas con Yogur Griego y Miel</div>
+  <img class="r-img" src="imagenes/receta-023.png" alt="Fresas con Yogur Griego y Miel">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min</span><span>📊 Fácil</span><span class="cal">180 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de fresas</li>
+        <li>¾ taza de yogur griego natural</li>
+        <li>1 cdita de miel</li>
+        <li>Hojitas de menta</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>180 kcal</b> · Proteína: 15 g<br>Carbohidratos: 22 g · Grasas: 3 g · Fibra: 3 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Corta las fresas en mitades.</li>
+        <li>Sirve el yogur en una copa.</li>
+        <li>Agrega las fresas y la miel.</li>
+        <li>Decora con menta.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>El yogur griego aporta el doble de proteína que el normal.</li>
+      <li>Cambia las fresas por los frutos rojos de temporada.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 024 -->
+<div class="page recipe" id="receta-024">
+  <div class="r-top"><span class="r-num">Receta 024</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Postre</span></span></div>
+  <div class="r-title">Galletas de Avena y Plátano (3 ingredientes)</div>
+  <img class="r-img" src="imagenes/receta-024.png" alt="Galletas de Avena y Plátano">
+  <div class="r-meta"><span>🍽 6 galletas</span><span>⏱ 20 min</span><span>📊 Fácil</span><span class="cal">150 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 plátanos maduros</li>
+        <li>1 taza de avena</li>
+        <li>2 cdas de chispas de chocolate oscuro (opcional)</li>
+        <li>Pizca de canela</li>
+      </ul>
+      <div class="nutri"><b>Por 2 galletas:</b><br>Calorías: <b>150 kcal</b> · Proteína: 4 g<br>Carbohidratos: 30 g · Grasas: 3 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Machaca los plátanos y mézclalos con la avena.</li>
+        <li>Agrega la canela y las chispas.</li>
+        <li>Forma galletas en una bandeja.</li>
+        <li>Hornea 15 min a 180 °C.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Sin azúcar añadida: el plátano maduro aporta todo el dulzor.</li>
+      <li>Guárdalas en un frasco hermético hasta 4 días.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 025 -->
+<div class="page recipe" id="receta-025">
+  <div class="r-top"><span class="r-num">Receta 025</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Tortilla de Claras con Vegetales</div>
+  <img class="r-img" src="imagenes/receta-025.png" alt="Tortilla de Claras con Vegetales">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 12 min</span><span>📊 Fácil</span><span class="cal">200 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>4 claras de huevo</li>
+        <li>½ taza de espinaca</li>
+        <li>¼ taza de tomate</li>
+        <li>¼ de cebolla</li>
+        <li>1 cdita de aceite de oliva</li>
+        <li>Sal y pimienta</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>200 kcal</b> · Proteína: 18 g<br>Carbohidratos: 9 g · Grasas: 10 g · Fibra: 3 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Sofríe la cebolla y el tomate.</li>
+        <li>Agrega la espinaca.</li>
+        <li>Vierte las claras batidas.</li>
+        <li>Dobla en tortilla y sirve.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Solo claras = menos grasa y más proteína.</li>
+      <li>Agrega champiñones o pimiento para variar.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 026 -->
+<div class="page recipe" id="receta-026">
+  <div class="r-top"><span class="r-num">Receta 026</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Pudín de Chía con Mango</div>
+  <img class="r-img" src="imagenes/receta-026.png" alt="Pudín de Chía con Mango">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min + frío</span><span>📊 Fácil</span><span class="cal">280 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>3 cdas de semillas de chía</li>
+        <li>1 taza de leche de almendras</li>
+        <li>½ mango</li>
+        <li>1 cdita de miel</li>
+        <li>Vainilla</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>280 kcal</b> · Proteína: 8 g<br>Carbohidratos: 36 g · Grasas: 12 g · Fibra: 11 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Mezcla chía, leche, miel y vainilla.</li>
+        <li>Refrigera 4 h o toda la noche.</li>
+        <li>Corta el mango.</li>
+        <li>Sirve la chía con el mango encima.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Déjalo de un día para otro y tienes el desayuno listo.</li>
+      <li>La chía es rica en omega-3 y fibra.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 027 -->
+<div class="page recipe" id="receta-027">
+  <div class="r-top"><span class="r-num">Receta 027</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Tostada Francesa Integral</div>
+  <img class="r-img" src="imagenes/receta-027.png" alt="Tostada Francesa Integral">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 12 min</span><span>📊 Fácil</span><span class="cal">330 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 rebanadas de pan integral</li>
+        <li>1 huevo</li>
+        <li>¼ taza de leche</li>
+        <li>Canela y vainilla</li>
+        <li>Frutos rojos</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>330 kcal</b> · Proteína: 14 g<br>Carbohidratos: 42 g · Grasas: 11 g · Fibra: 6 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Bate huevo, leche, canela y vainilla.</li>
+        <li>Remoja el pan en la mezcla.</li>
+        <li>Dora en sartén antiadherente.</li>
+        <li>Sirve con frutos rojos.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa pan integral para más fibra.</li>
+      <li>Endulza con fruta en vez de sirope.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 028 -->
+<div class="page recipe" id="receta-028">
+  <div class="r-top"><span class="r-num">Receta 028</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Ensalada César con Pollo (ligera)</div>
+  <img class="r-img" src="imagenes/receta-028.png" alt="Ensalada César con Pollo">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 15 min</span><span>📊 Fácil</span><span class="cal">390 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 tazas de lechuga romana</li>
+        <li>100 g de pollo a la plancha</li>
+        <li>1 cda de aderezo césar a base de yogur</li>
+        <li>2 cdas de crutones integrales</li>
+        <li>Parmesano</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>390 kcal</b> · Proteína: 34 g<br>Carbohidratos: 18 g · Grasas: 20 g · Fibra: 3 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Corta la lechuga.</li>
+        <li>Mézclala con el aderezo.</li>
+        <li>Agrega el pollo y los crutones.</li>
+        <li>Espolvorea parmesano.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa aderezo a base de yogur para bajar calorías.</li>
+      <li>Haz tus propios crutones con pan integral.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 029 -->
+<div class="page recipe" id="receta-029">
+  <div class="r-top"><span class="r-num">Receta 029</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Arroz Integral con Vegetales y Huevo</div>
+  <img class="r-img" src="imagenes/receta-029.png" alt="Arroz Integral con Vegetales y Huevo">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 20 min</span><span>📊 Media</span><span class="cal">430 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>¾ taza de arroz integral cocido</li>
+        <li>1 taza de vegetales mixtos</li>
+        <li>1 huevo</li>
+        <li>1 cda de salsa de soya baja en sodio</li>
+        <li>1 cdita de aceite de sésamo</li>
+        <li>Cebollín</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>430 kcal</b> · Proteína: 15 g<br>Carbohidratos: 58 g · Grasas: 15 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Saltea los vegetales.</li>
+        <li>Agrega el arroz y la salsa de soya.</li>
+        <li>Haz espacio y cocina el huevo.</li>
+        <li>Mezcla y sirve con cebollín.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa arroz del día anterior para mejor textura.</li>
+      <li>La salsa de soya baja en sodio cuida la presión.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 030 -->
+<div class="page recipe" id="receta-030">
+  <div class="r-top"><span class="r-num">Receta 030</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Sopa de Pollo con Fideos Integrales</div>
+  <img class="r-img" src="imagenes/receta-030.png" alt="Sopa de Pollo con Fideos Integrales">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 30 min</span><span>📊 Media</span><span class="cal">340 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>100 g de pollo</li>
+        <li>½ taza de fideos integrales</li>
+        <li>Zanahoria y apio</li>
+        <li>Cebolla</li>
+        <li>Caldo bajo en sodio</li>
+        <li>Perejil</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>340 kcal</b> · Proteína: 28 g<br>Carbohidratos: 40 g · Grasas: 7 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Cuece el pollo en el caldo.</li>
+        <li>Agrega zanahoria, apio y cebolla.</li>
+        <li>Añade los fideos y cocina 8 min.</li>
+        <li>Sirve con perejil.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Reconfortante y baja en grasa.</li>
+      <li>Haz doble y congela porciones.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 031 -->
+<div class="page recipe" id="receta-031">
+  <div class="r-top"><span class="r-num">Receta 031</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Pescado al Vapor con Vegetales</div>
+  <img class="r-img" src="imagenes/receta-031.png" alt="Pescado al Vapor con Vegetales">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 20 min</span><span>📊 Media</span><span class="cal">300 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>150 g de filete de pescado blanco</li>
+        <li>1½ taza de vegetales (brócoli, zanahoria, calabacín)</li>
+        <li>Limón</li>
+        <li>Ajo</li>
+        <li>Eneldo</li>
+        <li>Sal</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>300 kcal</b> · Proteína: 34 g<br>Carbohidratos: 12 g · Grasas: 12 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Sazona el pescado con limón, ajo y eneldo.</li>
+        <li>Cuece al vapor 8–10 min.</li>
+        <li>Cuece los vegetales al vapor.</li>
+        <li>Sirve junto.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Al vapor conserva sabor y nutrientes sin grasa extra.</li>
+      <li>El eneldo combina genial con el pescado.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 032 -->
+<div class="page recipe" id="receta-032">
+  <div class="r-top"><span class="r-num">Receta 032</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Berenjenas Rellenas de Pavo</div>
+  <img class="r-img" src="imagenes/receta-032.png" alt="Berenjenas Rellenas de Pavo">
+  <div class="r-meta"><span>🍽 2 mitades</span><span>⏱ 40 min</span><span>📊 Media</span><span class="cal">360 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 berenjena</li>
+        <li>120 g de pavo molido</li>
+        <li>½ taza de salsa de tomate</li>
+        <li>Cebolla y ajo</li>
+        <li>Queso bajo en grasa</li>
+        <li>Hierbas</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>360 kcal</b> · Proteína: 30 g<br>Carbohidratos: 22 g · Grasas: 16 g · Fibra: 8 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Hornea la berenjena partida 15 min.</li>
+        <li>Sofríe el pavo con cebolla, ajo y tomate.</li>
+        <li>Rellena la berenjena.</li>
+        <li>Gratina con queso 10 min.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>El pavo es más magro que la res.</li>
+      <li>Sirve con ensalada para una cena completa.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 033 -->
+<div class="page recipe" id="receta-033">
+  <div class="r-top"><span class="r-num">Receta 033</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Pizza de Coliflor con Vegetales</div>
+  <img class="r-img" src="imagenes/receta-033.png" alt="Pizza de Coliflor con Vegetales">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 35 min</span><span>📊 Media</span><span class="cal">340 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 tazas de coliflor rallada</li>
+        <li>1 huevo</li>
+        <li>¼ taza de mozzarella</li>
+        <li>Salsa de tomate</li>
+        <li>Vegetales</li>
+        <li>Orégano</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>340 kcal</b> · Proteína: 20 g<br>Carbohidratos: 24 g · Grasas: 18 g · Fibra: 6 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Cuece y exprime la coliflor.</li>
+        <li>Mézclala con huevo y queso, forma la base y hornea 15 min.</li>
+        <li>Agrega salsa y vegetales.</li>
+        <li>Hornea 10 min más.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Base baja en carbohidratos y sin harina.</li>
+      <li>Exprime bien la coliflor para que quede crujiente.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 034 -->
+<div class="page recipe" id="receta-034">
+  <div class="r-top"><span class="r-num">Receta 034</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Mix de Frutos Secos y Semillas</div>
+  <img class="r-img" src="imagenes/receta-034.png" alt="Mix de Frutos Secos y Semillas">
+  <div class="r-meta"><span>🍽 1 porción (30 g)</span><span>⏱ 2 min</span><span>📊 Fácil</span><span class="cal">200 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>Almendras</li>
+        <li>Nueces</li>
+        <li>Pistachos</li>
+        <li>Semillas de calabaza</li>
+        <li>Arándanos secos</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>200 kcal</b> · Proteína: 6 g<br>Carbohidratos: 14 g · Grasas: 14 g · Fibra: 3 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Mezcla todos los ingredientes.</li>
+        <li>Porciona en 30 g.</li>
+        <li>Guarda en un frasco.</li>
+        <li>Lleva contigo.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Controla la porción: son nutritivos pero calóricos.</li>
+      <li>Elige versiones sin sal ni azúcar añadida.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 035 -->
+<div class="page recipe" id="receta-035">
+  <div class="r-top"><span class="r-num">Receta 035</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Bebida</span></span></div>
+  <div class="r-title">Agua de Jamaica sin Azúcar</div>
+  <img class="r-img" src="imagenes/receta-035.png" alt="Agua de Jamaica sin Azúcar">
+  <div class="r-meta"><span>🍽 2 vasos</span><span>⏱ 15 min + frío</span><span>📊 Fácil</span><span class="cal">30 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 cdas de flor de jamaica</li>
+        <li>4 tazas de agua</li>
+        <li>Jugo de limón</li>
+        <li>Stevia</li>
+        <li>Hielo</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>30 kcal</b> · Proteína: 0 g<br>Carbohidratos: 7 g · Grasas: 0 g · Fibra: 0 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Hierve la jamaica 5 min.</li>
+        <li>Cuela y deja enfriar.</li>
+        <li>Endulza con stevia y limón.</li>
+        <li>Sirve con hielo.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Rica en antioxidantes y sin azúcar.</li>
+      <li>Sírvela bien fría en días calurosos.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 036 -->
+<div class="page recipe" id="receta-036">
+  <div class="r-top"><span class="r-num">Receta 036</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Postre</span></span></div>
+  <div class="r-title">Brownies de Frijol Negro</div>
+  <div class="r-img ph">📷 Foto próximamente</div>
+  <div class="r-meta"><span>🍽 9 porciones</span><span>⏱ 30 min</span><span>📊 Media</span><span class="cal">160 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de frijoles negros cocidos</li>
+        <li>2 cdas de cacao</li>
+        <li>2 huevos</li>
+        <li>3 cdas de miel</li>
+        <li>1 cdita de vainilla</li>
+        <li>Chispas de chocolate</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>160 kcal</b> · Proteína: 6 g<br>Carbohidratos: 22 g · Grasas: 6 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Licúa frijoles, cacao, huevos, miel y vainilla.</li>
+        <li>Vierte en un molde con las chispas.</li>
+        <li>Hornea 20 min a 180 °C.</li>
+        <li>Deja enfriar y corta.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>No se nota el frijol y suma fibra y proteína.</li>
+      <li>Sin harina refinada.</li>
     </ul>
   </div>
   <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>

@@ -11,7 +11,7 @@ entrega automática por correo y precio que se ajusta por país. Dominio: **365r
 ## ✅ Lo que llevamos hecho
 
 ### 1. El recetario (ebook)
-- **12 recetas listas** (de las 365 objetivo) con texto, calorías y macros.
+- **36 recetas listas** (de las 365 objetivo) con texto, calorías y macros — 35 con foto y la última con espacio reservado (se acabaron los créditos de imágenes).
 - Cada receta tiene: foto, badge de calorías, ingredientes + tabla nutricional, preparación,
   enlace a la web dentro del texto, **"Consejos útiles"** (2 tips) y una "Advertencia" de salud.
 - **Portada llamativa** con el "365" gigante, badge "CALORÍAS EN CADA RECETA" y el dominio.
@@ -113,8 +113,8 @@ Para producción: sube el contenido de `web/` a `public_html` de Hostinger y reg
 - [ ] Links legales del footer (privacidad / términos / reembolsos) — Meta los exige para anuncios.
 
 **Para escalar y pulir:**
-- [ ] Llegar a **365 recetas** (hoy 12) — requiere recarga de créditos Higgsfield.
-- [ ] Portada a 2K para aligerar el PDF (hoy ~81 MB).
+- [ ] Llegar a **365 recetas** (hoy 36) — requiere recarga de créditos Higgsfield para las fotos.
+- [x] PDF aligerado: fotos a 1000 px + JPEG → el PDF pasó de ~81 MB a **13 MB** (42 páginas).
 - [ ] Conectar el contador de compras y el formulario de reseñas a datos reales (hoy simulados).
 
 ---
