@@ -11,7 +11,7 @@ entrega automática por correo y precio que se ajusta por país. Dominio: **365r
 ## ✅ Lo que llevamos hecho
 
 ### 1. El recetario (ebook)
-- **365 recetas completas** con texto, calorías y macros. **35 con foto** (Soul 2); las **330 restantes tienen el espacio de imagen reservado** ("📷 Foto próximamente") para rellenarlas cuando haya más créditos de Higgsfield.
+- **365 recetas completas** con texto, calorías y macros, **todas con foto** (las **365/365** generadas con Soul 2).
 - Cada receta tiene: foto, badge de calorías, ingredientes + tabla nutricional, preparación,
   enlace a la web dentro del texto, **"Consejos útiles"** (2 tips) y una "Advertencia" de salud.
 - **Portada llamativa** con el "365" gigante, badge "CALORÍAS EN CADA RECETA" y el dominio.
@@ -113,9 +113,9 @@ Para producción: sube el contenido de `web/` a `public_html` de Hostinger y reg
 - [ ] Links legales del footer (privacidad / términos / reembolsos) — Meta los exige para anuncios.
 
 **Para escalar y pulir:**
-- [x] **365 recetas escritas** (libro de 376 páginas). Faltan las **330 fotos** restantes — requieren recarga de créditos Higgsfield; los espacios ya están reservados.
+- [x] **365 recetas escritas + 365 fotos** (libro de 376 páginas; **todas** las recetas ilustradas con Soul 2).
 - [ ] Revisar/pulir las 329 recetas generadas con IA (estilo y tildes finas) antes de vender.
-- [x] PDF aligerado: fotos a 1000 px + JPEG → el PDF pasó de ~81 MB a **13 MB** (42 páginas).
+- [x] PDF optimizado: fotos a 1000 px + JPEG (q82). El libro completo de 376 páginas con las 365 fotos pesa **~54 MB**.
 - [ ] Conectar el contador de compras y el formulario de reseñas a datos reales (hoy simulados).
 
 ---
