@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif; color: #2b2b2b;
+  }
+  .page { width: 210mm; height: 297mm; page-break-after: always; position: relative; overflow: hidden; background: #fff; }
+  .page:last-child { page-break-after: auto; }
+
+  /* Portada */
+  .cover { display: flex; align-items: center; justify-content: center; background: #eef0ec; }
+  .cover img { width: 100%; height: 100%; object-fit: contain; }
+
+  /* Receta */
+  .recipe { padding: 14mm 15mm 18mm; }
+  .r-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3mm; }
+  .r-num { font-size: 10pt; letter-spacing: 2px; color: #3a7d34; font-weight: 700; text-transform: uppercase; }
+  .r-cat { font-size: 8.5pt; background: #3a7d34; color: #fff; padding: 3px 11px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px; }
+  .r-title { font-family: Georgia, 'Times New Roman', serif; font-size: 25pt; line-height: 1.1; color: #22341f; margin-bottom: 5mm; }
+  .r-img { width: 100%; height: 66mm; object-fit: cover; border-radius: 6px; margin-bottom: 5mm; }
+  .r-meta { display: flex; gap: 5mm; align-items: center; font-size: 9.5pt; color: #555; margin-bottom: 5mm; flex-wrap: wrap; }
+  .r-meta .cal { margin-left: auto; background: #d9622b; color: #fff; font-weight: 700; padding: 4px 13px; border-radius: 6px; font-size: 11pt; }
+  .r-cols { display: flex; gap: 9mm; }
+  .r-col { flex: 1; }
+  .r-h { font-size: 11.5pt; font-weight: 700; color: #3a7d34; margin-bottom: 3mm; border-bottom: 2px solid #e0e6da; padding-bottom: 2mm; text-transform: uppercase; letter-spacing: 1px; }
+  .r-col ul { list-style: none; }
+  .r-col ul li { font-size: 10pt; line-height: 1.55; padding-left: 13px; position: relative; }
+  .r-col ul li:before { content: "•"; color: #3a7d34; position: absolute; left: 0; }
+  .r-col ol { padding-left: 15px; }
+  .r-col ol li { font-size: 10pt; line-height: 1.5; margin-bottom: 2.5mm; }
+  .nutri { margin-top: 5mm; background: #f3f6f0; border-radius: 6px; padding: 4mm; font-size: 9.5pt; line-height: 1.7; }
+  .nutri b { color: #22341f; }
+  .tip { margin-top: 4mm; background: #fff5ec; border-left: 3px solid #d9622b; padding: 3mm 4mm; font-size: 9.5pt; line-height: 1.5; }
+  .weblink { text-align: center; font-size: 9pt; color: #3a7d34; margin: 6mm 0 3mm; letter-spacing: .5px; }
+  .weblink b { color: #22341f; }
+  .consejos { background: #f3f6f0; border-radius: 6px; padding: 5mm 6mm; }
+  .consejos .c-h { font-size: 11pt; font-weight: 700; color: #3a7d34; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3mm; }
+  .consejos ul { list-style: none; }
+  .consejos li { font-size: 9.5pt; line-height: 1.5; padding-left: 14px; position: relative; margin-bottom: 1.5mm; }
+  .consejos li:before { content: "•"; color: #d9622b; position: absolute; left: 0; }
+  .advert { font-size: 7.5pt; color: #8a8a8a; line-height: 1.4; margin-top: 4mm; font-style: italic; }
+  .advert b { color: #6a6a6a; font-style: normal; }
+  .footer { position: absolute; bottom: 0; left: 0; right: 0; background: #3a7d34; color: #fff; text-align: center; font-size: 9pt; padding: 3mm; letter-spacing: 1px; }
+  .footer b { font-weight: 700; }
+
+  /* Navegación interactiva */
+  .r-right { display: flex; gap: 9px; align-items: center; }
+  .back { font-size: 8pt; color: #3a7d34; text-decoration: none; border: 1px solid #cfe0c8; padding: 2px 10px; border-radius: 20px; }
+
+  /* Índice interactivo */
+  .index { padding: 12mm 14mm 14mm; }
+  .idx-title { font-family: Georgia, 'Times New Roman', serif; font-size: 24pt; color: #22341f; margin-bottom: 1mm; }
+  .idx-sub { font-size: 9.5pt; color: #3a7d34; margin-bottom: 5mm; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+  .idx-row { display: flex; align-items: center; gap: 4mm; text-decoration: none; color: inherit; padding: 2.5mm 3mm; border: 1px solid #e6ebe1; border-radius: 7px; margin-bottom: 2.5mm; background: #fbfcfa; }
+  .idx-thumb { width: 12mm; height: 12mm; object-fit: cover; border-radius: 5px; flex-shrink: 0; }
+  .idx-mid { flex: 1; }
+  .idx-num { font-size: 7.5pt; letter-spacing: 1px; color: #3a7d34; font-weight: 700; text-transform: uppercase; }
+  .idx-name { font-family: Georgia, 'Times New Roman', serif; font-size: 11.5pt; color: #22341f; line-height: 1.1; margin-top: 0.8mm; }
+  .idx-cal { flex-shrink: 0; text-align: center; color: #d9622b; font-weight: 700; font-size: 12pt; }
+  .idx-cal small { display: block; font-size: 6.5pt; color: #999; font-weight: 400; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="page cover">
+  <img src="imagenes/portada-v2-borrador.png" alt="Portada 365 Recetas Saludables">
+</div>
+
+<!-- ÍNDICE INTERACTIVO -->
+<div class="page index" id="indice">
+  <div class="idx-title">Índice de recetas</div>
+  <div class="idx-sub">Toca cualquier receta para ir directo a ella ↓</div>
+
+  <a class="idx-row" href="#receta-001">
+    <img class="idx-thumb" src="imagenes/receta-001-avena.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 001 · Desayuno</div><div class="idx-name">Avena Overnight con Frutos Rojos y Chía</div></div>
+    <div class="idx-cal">320<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-002">
+    <img class="idx-thumb" src="imagenes/receta-002-bowl-pollo.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 002 · Almuerzo</div><div class="idx-name">Bowl de Pollo a la Plancha con Quinoa y Aguacate</div></div>
+    <div class="idx-cal">480<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-003">
+    <img class="idx-thumb" src="imagenes/receta-003-salmon.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 003 · Cena</div><div class="idx-name">Salmón al Horno con Espárragos y Limón</div></div>
+    <div class="idx-cal">410<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-004">
+    <img class="idx-thumb" src="imagenes/receta-004-hummus.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 004 · Snack</div><div class="idx-name">Hummus Casero con Crudités</div></div>
+    <div class="idx-cal">190<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-005">
+    <img class="idx-thumb" src="imagenes/receta-005-smoothie.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 005 · Bebida</div><div class="idx-name">Smoothie Verde Proteico</div></div>
+    <div class="idx-cal">250<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-006">
+    <img class="idx-thumb" src="imagenes/receta-006.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 006 · Desayuno</div><div class="idx-name">Tostada de Aguacate con Huevo Poché</div></div>
+    <div class="idx-cal">340<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-007">
+    <img class="idx-thumb" src="imagenes/receta-007.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 007 · Desayuno</div><div class="idx-name">Panqueques de Avena y Plátano</div></div>
+    <div class="idx-cal">380<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-008">
+    <img class="idx-thumb" src="imagenes/receta-008.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 008 · Almuerzo</div><div class="idx-name">Ensalada Mediterránea de Garbanzos</div></div>
+    <div class="idx-cal">420<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-009">
+    <img class="idx-thumb" src="imagenes/receta-009.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 009 · Cena</div><div class="idx-name">Sopa de Lentejas con Verduras</div></div>
+    <div class="idx-cal">310<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-010">
+    <img class="idx-thumb" src="imagenes/receta-010.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 010 · Snack</div><div class="idx-name">Yogur Griego con Granola y Frutos Rojos</div></div>
+    <div class="idx-cal">240<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-011">
+    <img class="idx-thumb" src="imagenes/receta-011.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 011 · Snack</div><div class="idx-name">Energy Balls de Dátil y Cacao</div></div>
+    <div class="idx-cal">180<small>KCAL</small></div>
+  </a>
+  <a class="idx-row" href="#receta-012">
+    <img class="idx-thumb" src="imagenes/receta-012.png" alt="">
+    <div class="idx-mid"><div class="idx-num">Receta 012 · Postre</div><div class="idx-name">Mousse de Chocolate y Aguacate</div></div>
+    <div class="idx-cal">210<small>KCAL</small></div>
+  </a>
+
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 001 -->
+<div class="page recipe" id="receta-001">
+  <div class="r-top"><span class="r-num">Receta 001</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Avena Overnight con Frutos Rojos y Chía</div>
+  <img class="r-img" src="imagenes/receta-001-avena.png" alt="Avena Overnight">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min + reposo</span><span>📊 Fácil</span><span class="cal">320 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>½ taza de avena en hojuelas (40 g)</li>
+        <li>¾ taza de leche descremada o de almendras (180 ml)</li>
+        <li>1 cda de semillas de chía (12 g)</li>
+        <li>½ taza de frutos rojos mixtos (75 g)</li>
+        <li>1 cdita de miel o sirope sin azúcar (opcional)</li>
+        <li>Una pizca de canela</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>320 kcal</b> · Proteína: 14 g<br>Carbohidratos: 48 g · Grasas: 9 g · Fibra: 11 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>En un frasco de vidrio, mezcla la avena, la leche, la chía y la canela.</li>
+        <li>Remueve bien para que la chía no se apelmace.</li>
+        <li>Tapa y refrigera mínimo 6 horas (idealmente toda la noche).</li>
+        <li>Por la mañana, remueve, añade los frutos rojos y la miel si la usas.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Prepara 3 frascos a la vez y ten desayunos listos toda la semana.</li>
+      <li>Los frutos rojos congelados también sirven y salen más económicos.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 002 -->
+<div class="page recipe" id="receta-002">
+  <div class="r-top"><span class="r-num">Receta 002</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Bowl de Pollo a la Plancha con Quinoa y Aguacate</div>
+  <img class="r-img" src="imagenes/receta-002-bowl-pollo.png" alt="Bowl de Pollo">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 25 min</span><span>📊 Media</span><span class="cal">480 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>120 g de pechuga de pollo</li>
+        <li>½ taza de quinoa cocida (90 g)</li>
+        <li>¼ de aguacate (35 g)</li>
+        <li>1 taza de espinacas frescas (30 g)</li>
+        <li>½ pimiento rojo en tiras (60 g)</li>
+        <li>5 tomates cherry</li>
+        <li>1 cda de aceite de oliva</li>
+        <li>Jugo de ½ limón, sal y pimienta</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>480 kcal</b> · Proteína: 38 g<br>Carbohidratos: 35 g · Grasas: 19 g · Fibra: 8 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Sazona el pollo con sal, pimienta y limón. Cocínalo a la plancha 5–6 min por lado.</li>
+        <li>Cocina la quinoa según el paquete y déjala templar.</li>
+        <li>En un bowl, pon la base de espinacas, encima la quinoa, el pimiento y los tomates.</li>
+        <li>Corta el pollo en tiras y el aguacate en láminas; distribúyelos por encima.</li>
+        <li>Aliña con aceite de oliva, limón, sal y pimienta.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Cocina la quinoa con caldo en vez de agua para darle más sabor.</li>
+      <li>Cambia el pollo por garbanzos para una versión vegetariana.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 003 -->
+<div class="page recipe" id="receta-003">
+  <div class="r-top"><span class="r-num">Receta 003</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Salmón al Horno con Espárragos y Limón</div>
+  <img class="r-img" src="imagenes/receta-003-salmon.png" alt="Salmón al Horno">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 20 min</span><span>📊 Fácil</span><span class="cal">410 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>130 g de filete de salmón</li>
+        <li>8 espárragos verdes</li>
+        <li>1 cda de aceite de oliva</li>
+        <li>½ limón en rodajas</li>
+        <li>1 diente de ajo picado</li>
+        <li>Eneldo fresco (o seco), sal y pimienta</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>410 kcal</b> · Proteína: 34 g<br>Carbohidratos: 8 g · Grasas: 27 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Precalienta el horno a 200 °C.</li>
+        <li>Coloca el salmón y los espárragos sobre papel de hornear.</li>
+        <li>Rocía con aceite, ajo, sal, pimienta y eneldo. Pon las rodajas de limón encima.</li>
+        <li>Hornea 12–15 min hasta que el salmón se desmenuce con un tenedor.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>No sobrecocines el salmón: retíralo cuando se desmenuce con facilidad.</li>
+      <li>Su omega-3 cuida tu corazón y ayuda a reducir la inflamación.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 004 -->
+<div class="page recipe" id="receta-004">
+  <div class="r-top"><span class="r-num">Receta 004</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Hummus Casero con Crudités</div>
+  <img class="r-img" src="imagenes/receta-004-hummus.png" alt="Hummus Casero">
+  <div class="r-meta"><span>🍽 4 porciones</span><span>⏱ 10 min</span><span>📊 Fácil</span><span class="cal">190 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 lata de garbanzos cocidos, escurridos (240 g)</li>
+        <li>2 cdas de tahini</li>
+        <li>Jugo de 1 limón</li>
+        <li>1 diente de ajo</li>
+        <li>2 cdas de aceite de oliva</li>
+        <li>½ cdita de comino, sal al gusto</li>
+        <li>3–4 cdas de agua fría</li>
+        <li>Zanahoria, apio y pepino en bastones</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>190 kcal</b> · Proteína: 7 g<br>Carbohidratos: 16 g · Grasas: 11 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Tritura en la procesadora los garbanzos, tahini, limón, ajo, comino y sal.</li>
+        <li>Añade el aceite y el agua poco a poco hasta lograr una textura cremosa.</li>
+        <li>Sirve en un bol; decora con un hilo de aceite y pimentón.</li>
+        <li>Acompaña con los bastones de verdura crujiente.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Para un hummus más cremoso, agrega un cubito de hielo al procesar.</li>
+      <li>Se conserva hasta 4 días en la nevera en un recipiente hermético.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 005 -->
+<div class="page recipe" id="receta-005">
+  <div class="r-top"><span class="r-num">Receta 005</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Bebida</span></span></div>
+  <div class="r-title">Smoothie Verde Proteico</div>
+  <img class="r-img" src="imagenes/receta-005-smoothie.png" alt="Smoothie Verde">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min</span><span>📊 Fácil</span><span class="cal">250 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de espinacas frescas (30 g)</li>
+        <li>½ plátano congelado (60 g)</li>
+        <li>1 scoop de proteína de vainilla (30 g) o ¾ taza de yogur griego</li>
+        <li>¾ taza de bebida de almendras sin azúcar (180 ml)</li>
+        <li>1 cda de mantequilla de almendras</li>
+        <li>½ taza de hielo</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>250 kcal</b> · Proteína: 28 g<br>Carbohidratos: 22 g · Grasas: 8 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Coloca todos los ingredientes en la licuadora.</li>
+        <li>Licúa 45–60 segundos hasta que quede totalmente cremoso.</li>
+        <li>Sirve de inmediato en un vaso alto.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa plátano congelado para una textura cremosa sin necesidad de hielo.</li>
+      <li>Si lo quieres más dulce, agrega un dátil en lugar de azúcar.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 006 -->
+<div class="page recipe" id="receta-006">
+  <div class="r-top"><span class="r-num">Receta 006</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Tostada de Aguacate con Huevo Poché</div>
+  <img class="r-img" src="imagenes/receta-006.png" alt="Tostada de Aguacate con Huevo Poché">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 10 min</span><span>📊 Fácil</span><span class="cal">340 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>2 rebanadas de pan integral</li>
+        <li>½ aguacate maduro</li>
+        <li>1 huevo</li>
+        <li>4 tomates cherry</li>
+        <li>Un puñado de rúcula o microgreens</li>
+        <li>Sal, pimienta y unas gotas de limón</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>340 kcal</b> · Proteína: 15 g<br>Carbohidratos: 30 g · Grasas: 18 g · Fibra: 8 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Tuesta el pan integral.</li>
+        <li>Hierve agua con un chorrito de vinagre y escalfa el huevo 3 min.</li>
+        <li>Machaca el aguacate con limón, sal y pimienta, y úntalo en el pan.</li>
+        <li>Coloca el huevo poché encima; añade los tomates y la rúcula.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Para un huevo poché perfecto, usa el huevo lo más fresco posible.</li>
+      <li>Agrega hojuelas de chile para un toque picante.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 007 -->
+<div class="page recipe" id="receta-007">
+  <div class="r-top"><span class="r-num">Receta 007</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Desayuno</span></span></div>
+  <div class="r-title">Panqueques de Avena y Plátano</div>
+  <img class="r-img" src="imagenes/receta-007.png" alt="Panqueques de Avena y Plátano">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 15 min</span><span>📊 Fácil</span><span class="cal">380 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 plátano maduro</li>
+        <li>2 huevos</li>
+        <li>½ taza de avena en hojuelas (40 g)</li>
+        <li>1 cdita de polvo de hornear</li>
+        <li>Canela al gusto</li>
+        <li>Frutos rojos y un poco de miel para servir</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>380 kcal</b> · Proteína: 18 g<br>Carbohidratos: 48 g · Grasas: 12 g · Fibra: 7 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Licúa el plátano, los huevos, la avena, el polvo de hornear y la canela.</li>
+        <li>Calienta una sartén antiadherente a fuego medio.</li>
+        <li>Vierte porciones pequeñas y cocina 2 min por lado.</li>
+        <li>Sirve con frutos rojos y un hilo de miel.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Si la mezcla queda muy líquida, agrega un poco más de avena.</li>
+      <li>El plátano bien maduro endulza solo: evita el azúcar añadido.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 008 -->
+<div class="page recipe" id="receta-008">
+  <div class="r-top"><span class="r-num">Receta 008</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Almuerzo</span></span></div>
+  <div class="r-title">Ensalada Mediterránea de Garbanzos</div>
+  <img class="r-img" src="imagenes/receta-008.png" alt="Ensalada Mediterránea de Garbanzos">
+  <div class="r-meta"><span>🍽 2 porciones</span><span>⏱ 12 min</span><span>📊 Fácil</span><span class="cal">420 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de garbanzos cocidos (160 g)</li>
+        <li>1 pepino en cubos</li>
+        <li>8 tomates cherry partidos</li>
+        <li>¼ de cebolla morada</li>
+        <li>40 g de queso feta</li>
+        <li>8 aceitunas negras</li>
+        <li>1 cda de aceite de oliva, limón, sal y orégano</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>420 kcal</b> · Proteína: 16 g<br>Carbohidratos: 38 g · Grasas: 23 g · Fibra: 10 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Mezcla los garbanzos, el pepino, los tomates y la cebolla.</li>
+        <li>Agrega el feta desmenuzado y las aceitunas.</li>
+        <li>Aliña con aceite de oliva, limón, sal y orégano.</li>
+        <li>Revuelve con cuidado y sirve fría.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Déjala reposar 10 min para que se integren los sabores.</li>
+      <li>Aguanta 2 días en la nevera; ideal para llevar al trabajo.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 009 -->
+<div class="page recipe" id="receta-009">
+  <div class="r-top"><span class="r-num">Receta 009</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Cena</span></span></div>
+  <div class="r-title">Sopa de Lentejas con Verduras</div>
+  <img class="r-img" src="imagenes/receta-009.png" alt="Sopa de Lentejas con Verduras">
+  <div class="r-meta"><span>🍽 3 porciones</span><span>⏱ 40 min</span><span>📊 Fácil</span><span class="cal">310 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de lentejas (190 g)</li>
+        <li>1 zanahoria en cubos</li>
+        <li>1 tallo de apio picado</li>
+        <li>½ cebolla y 1 diente de ajo</li>
+        <li>1 tomate</li>
+        <li>4 tazas de caldo de verduras</li>
+        <li>1 cda de aceite de oliva, sal, pimienta y comino</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>310 kcal</b> · Proteína: 18 g<br>Carbohidratos: 45 g · Grasas: 5 g · Fibra: 16 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Sofríe la cebolla, el ajo, la zanahoria y el apio en el aceite.</li>
+        <li>Agrega el tomate y las especias; cocina 2 min.</li>
+        <li>Añade las lentejas y el caldo; lleva a ebullición.</li>
+        <li>Tapa y cocina a fuego bajo 25–30 min hasta que estén suaves.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>No agregues sal hasta el final para que las lentejas no se endurezcan.</li>
+      <li>Congela porciones para tener cena lista cualquier día.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 010 -->
+<div class="page recipe" id="receta-010">
+  <div class="r-top"><span class="r-num">Receta 010</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Yogur Griego con Granola y Frutos Rojos</div>
+  <img class="r-img" src="imagenes/receta-010.png" alt="Yogur Griego con Granola y Frutos Rojos">
+  <div class="r-meta"><span>🍽 1 porción</span><span>⏱ 5 min</span><span>📊 Fácil</span><span class="cal">240 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de yogur griego natural (200 g)</li>
+        <li>¼ taza de granola (30 g)</li>
+        <li>½ taza de frutos rojos</li>
+        <li>1 cdita de miel (opcional)</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>240 kcal</b> · Proteína: 18 g<br>Carbohidratos: 28 g · Grasas: 6 g · Fibra: 4 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Coloca el yogur en un vaso o bol.</li>
+        <li>Añade la granola por encima.</li>
+        <li>Corona con los frutos rojos y la miel si la usas.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Usa yogur griego 0% para menos grasa y más proteína.</li>
+      <li>Agrega la granola justo antes de comer para que quede crujiente.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 011 -->
+<div class="page recipe" id="receta-011">
+  <div class="r-top"><span class="r-num">Receta 011</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Snack</span></span></div>
+  <div class="r-title">Energy Balls de Dátil y Cacao</div>
+  <img class="r-img" src="imagenes/receta-011.png" alt="Energy Balls de Dátil y Cacao">
+  <div class="r-meta"><span>🍽 10 unidades</span><span>⏱ 15 min</span><span>📊 Fácil</span><span class="cal">180 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 taza de dátiles sin hueso (150 g)</li>
+        <li>½ taza de almendras (70 g)</li>
+        <li>2 cdas de cacao en polvo</li>
+        <li>1 cda de mantequilla de maní</li>
+        <li>Coco rallado para rebozar</li>
+      </ul>
+      <div class="nutri"><b>Por porción (2 unidades):</b><br>Calorías: <b>180 kcal</b> · Proteína: 5 g<br>Carbohidratos: 24 g · Grasas: 8 g · Fibra: 5 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Tritura los dátiles y las almendras en un procesador.</li>
+        <li>Agrega el cacao y la mantequilla de maní; procesa hasta formar masa.</li>
+        <li>Forma bolitas con las manos.</li>
+        <li>Rebózalas en coco rallado y refrigera 20 min.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>Si la masa está seca, agrega 1 dátil más; si está pegajosa, un poco de avena.</li>
+      <li>Se conservan hasta 1 semana en la nevera.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+<!-- RECETA 012 -->
+<div class="page recipe" id="receta-012">
+  <div class="r-top"><span class="r-num">Receta 012</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">Postre</span></span></div>
+  <div class="r-title">Mousse de Chocolate y Aguacate</div>
+  <img class="r-img" src="imagenes/receta-012.png" alt="Mousse de Chocolate y Aguacate">
+  <div class="r-meta"><span>🍽 2 porciones</span><span>⏱ 10 min + frío</span><span>📊 Fácil</span><span class="cal">210 kcal</span></div>
+  <div class="r-cols">
+    <div class="r-col">
+      <div class="r-h">Ingredientes</div>
+      <ul>
+        <li>1 aguacate maduro</li>
+        <li>3 cdas de cacao en polvo</li>
+        <li>3 cdas de miel o sirope de dátil</li>
+        <li>¼ taza de leche de almendras</li>
+        <li>1 cdita de vainilla</li>
+        <li>Frutos rojos para decorar</li>
+      </ul>
+      <div class="nutri"><b>Por porción:</b><br>Calorías: <b>210 kcal</b> · Proteína: 4 g<br>Carbohidratos: 26 g · Grasas: 12 g · Fibra: 7 g</div>
+    </div>
+    <div class="r-col">
+      <div class="r-h">Preparación</div>
+      <ol>
+        <li>Licúa el aguacate, el cacao, la miel, la leche y la vainilla.</li>
+        <li>Procesa hasta lograr una textura cremosa y sin grumos.</li>
+        <li>Reparte en vasitos y refrigera 30 min.</li>
+        <li>Decora con frutos rojos antes de servir.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="consejos">
+    <div class="c-h">Consejos útiles</div>
+    <ul>
+      <li>El aguacate no se nota en sabor pero da una textura súper cremosa.</li>
+      <li>Ajusta el dulzor con la miel según tu gusto.</li>
+    </ul>
+  </div>
+  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
+  <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
+</div>
+
+</body>
+</html>

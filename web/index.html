@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#3c5a39">
+<title>365 Recetas Saludables · Una receta para cada día (con calorías)</title>
+<meta name="description" content="365 recetas saludables, una para cada día del año, cada una con sus calorías y macros. Pago único, acceso de por vida, entrega inmediata.">
+<link rel="icon" href="assets/portada.png">
+<style>
+  :root{
+    --green:#3c5a39; --green-2:#33502f; --green-deep:#22341f; --green-accent:#5aa64f;
+    --terra:#d9622b; --gold:#f4b400; --cream:#f6f4ee; --white:#fff; --ink:#2b2b2b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,.05);}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+  body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:var(--green);color:#eef2ea;line-height:1.5;overflow-x:hidden;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 16px;}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15;color:#fff;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+
+  .topbar{background:var(--cream);color:var(--green-deep);font-size:12.5px;font-weight:700;text-align:center;padding:9px 12px;letter-spacing:.2px;}
+  .topbar b{color:var(--terra);}
+
+  /* Contador regresivo */
+  .countdown{background:var(--green-deep);color:#fff;text-align:center;font-size:14px;padding:10px 12px;font-weight:600;position:sticky;top:0;z-index:40;border-bottom:1px solid rgba(255,255,255,.08);}
+  .countdown b{font-family:'Courier New',monospace;font-size:17px;color:#ffd9a8;background:rgba(0,0,0,.25);padding:2px 8px;border-radius:6px;margin-left:4px;letter-spacing:1px;}
+
+  .btn{display:block;width:100%;border:none;cursor:pointer;font-family:inherit;font-weight:800;border-radius:12px;padding:17px 20px;font-size:17px;text-align:center;text-decoration:none;transition:transform .08s,filter .15s;}
+  .btn:active{transform:scale(.985);}
+  .btn-buy{background:var(--terra);color:#fff;box-shadow:0 8px 22px rgba(217,98,43,.35);}
+  .btn-buy:hover{filter:brightness(1.05);}
+
+  .hero{text-align:center;padding:26px 0 14px;}
+  .hero h1{font-size:30px;margin-bottom:12px;}
+  .hero h1 u{text-decoration-color:var(--terra);text-underline-offset:5px;}
+  .hero p{color:#d6e0d2;font-size:15.5px;margin-bottom:8px;}
+  .badge-soc{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:30px;padding:7px 15px;font-size:12.5px;margin:10px 0;color:#fff;}
+  .stars{color:var(--gold);letter-spacing:2px;font-size:18px;}
+
+  /* Marco tablet/dispositivo */
+  .device{background:#1c1c1c;border-radius:24px;padding:10px;box-shadow:0 18px 45px rgba(0,0,0,.45);margin:18px auto;max-width:320px;}
+  .device img{border-radius:12px;}
+
+  .section{padding:28px 0;}
+  .section h2{font-size:25px;text-align:center;margin-bottom:8px;}
+  .section .sub{text-align:center;color:#cdd8c8;font-size:14.5px;margin-bottom:18px;}
+  .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent);margin:6px 0 20px;}
+
+  .list{list-style:none;}
+  .list li{position:relative;padding:10px 0 10px 34px;font-size:15.5px;color:#e9efe5;border-bottom:1px solid rgba(255,255,255,.07);}
+  .list li:before{content:"✓";position:absolute;left:0;top:9px;width:22px;height:22px;background:var(--green-accent);color:#fff;border-radius:50%;font-size:13px;display:flex;align-items:center;justify-content:center;font-weight:700;}
+  .list.pain li:before{content:"•";background:var(--terra);}
+
+  .calo{background:linear-gradient(135deg,#d9622b,#b94d1f);border-radius:18px;padding:24px 20px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.3);}
+  .calo .tag{display:inline-block;background:rgba(255,255,255,.2);border-radius:30px;padding:5px 14px;font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;}
+  .calo h2{font-size:23px;margin:12px 0 8px;}
+  .calo p{color:#ffe9dd;font-size:14.5px;}
+  .calo .big{font-size:36px;font-weight:900;font-family:Georgia,serif;color:#fff;}
+
+  /* Lifestyle band */
+  .lifestyle{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.3);}
+  .lifestyle img{width:100%;height:230px;object-fit:cover;}
+  .lifestyle .cap{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(34,52,31,.8));display:flex;flex-direction:column;justify-content:flex-end;padding:20px;}
+  .lifestyle .cap h2{font-size:24px;text-align:left;margin:0 0 4px;}
+  .lifestyle .cap p{color:#e9efe5;font-size:14px;}
+
+  /* Tablets "Así verás" */
+  .tablets{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;}
+  .tablets::-webkit-scrollbar{height:6px;}
+  .tablets::-webkit-scrollbar-thumb{background:rgba(255,255,255,.25);border-radius:3px;}
+  .tablet{flex:0 0 76%;max-width:290px;scroll-snap-align:center;background:#1f1f1f;border-radius:16px;padding:8px;box-shadow:0 12px 28px rgba(0,0,0,.4);}
+  .tablet img{width:100%;border-radius:9px;}
+
+  /* Preview recetas */
+  .recetas{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .rcard{background:#fff;border-radius:14px;overflow:hidden;color:var(--ink);box-shadow:0 6px 16px rgba(0,0,0,.2);}
+  .rcard img{height:115px;width:100%;object-fit:cover;}
+  .rcard .b{padding:10px 11px;}
+  .rcard .cat{font-size:10px;font-weight:800;color:var(--green-accent);text-transform:uppercase;letter-spacing:1px;}
+  .rcard .nm{font-family:Georgia,serif;font-size:13.5px;color:var(--green-deep);line-height:1.2;margin:3px 0 6px;min-height:33px;}
+  .rcard .kcal{display:inline-block;background:#fff1e8;color:var(--terra);font-weight:800;font-size:12px;padding:3px 9px;border-radius:6px;}
+
+  /* Producto */
+  .product{background:var(--cream);color:var(--ink);border-radius:18px;padding:22px 18px;box-shadow:0 16px 40px rgba(0,0,0,.35);text-align:center;}
+  .product .device{max-width:230px;margin:0 auto 16px;}
+  .product h3{color:var(--green-deep);font-size:20px;margin-bottom:8px;}
+  .price-row{display:flex;align-items:center;justify-content:center;gap:9px;margin:10px 0;flex-wrap:wrap;}
+  .price-old{color:#aaa;text-decoration:line-through;font-size:17px;}
+  .price-now{color:var(--green-deep);font-size:33px;font-weight:900;}
+  .price-off{background:#e9f3e4;color:var(--green-accent);font-weight:800;font-size:12px;padding:5px 11px;border-radius:30px;}
+  .product .tax{color:#9aa595;font-size:12px;margin-bottom:10px;}
+  .cd-mini{background:#fff3e9;color:var(--terra);border-radius:10px;padding:9px;font-weight:700;font-size:13.5px;margin-bottom:12px;}
+  .cd-mini b{font-family:'Courier New',monospace;letter-spacing:1px;}
+  .prod-list{text-align:left;background:#fff;border-radius:12px;padding:14px 16px;margin:12px 0;}
+  .prod-list li{list-style:none;padding:7px 0 7px 28px;position:relative;font-size:14px;color:#3a3a3a;}
+  .prod-list li:before{content:"✓";position:absolute;left:0;color:var(--green-accent);font-weight:800;}
+  .pago-unico{background:#eaf4e5;color:var(--green-deep);border-radius:10px;padding:11px;font-weight:700;font-size:13.5px;margin:12px 0;}
+  .pago-unico .dot{color:var(--green-accent);}
+  .socialproof{background:#fff3f2;border:1px solid #f6d5d2;color:#7a3b34;border-radius:10px;padding:11px 12px;font-size:13px;margin:12px 0;text-align:left;display:flex;align-items:center;gap:9px;line-height:1.35;}
+  .socialproof b{color:#c0392b;}
+  .pulse{width:11px;height:11px;border-radius:50%;background:#e74c3c;flex-shrink:0;animation:pulse 1.4s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(231,76,60,.55);}70%{box-shadow:0 0 0 10px rgba(231,76,60,0);}100%{box-shadow:0 0 0 0 rgba(231,76,60,0);}}
+  .secure{background:#fff;color:var(--ink);border-radius:14px;padding:15px;text-align:center;margin-top:14px;}
+  .secure .t{font-size:12.5px;color:#888;margin-bottom:10px;font-weight:600;}
+  .pay-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+  .pay-badges span{background:#f1f1f1;border-radius:6px;padding:6px 10px;font-size:11px;font-weight:800;color:#555;}
+
+  .valuebox{background:rgba(0,0,0,.18);border:1px dashed rgba(255,255,255,.25);border-radius:16px;padding:22px;text-align:center;}
+  .valuebox .vt{color:#cdd8c8;text-decoration:line-through;font-size:18px;}
+  .valuebox .vn{font-size:28px;font-weight:900;color:#fff;font-family:Georgia,serif;}
+
+  /* Combo */
+  .combo{background:#fff;color:var(--ink);border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.22);border:2px solid var(--green-accent);}
+  .combo-badge{background:var(--green-accent);color:#fff;text-align:center;font-weight:800;font-size:13px;padding:9px 12px;letter-spacing:.3px;}
+  .combo-items{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px;}
+  .combo .ci{display:flex;align-items:center;gap:10px;background:#f6f7f3;border-radius:10px;padding:8px;}
+  .combo .ci img{width:44px;height:56px;object-fit:cover;border-radius:6px;flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,.18);}
+  .combo .ci span{font-size:12px;font-weight:700;color:var(--green-deep);line-height:1.25;}
+  .combo-foot{padding:2px 16px 18px;text-align:center;}
+  .combo-price{margin:6px 0 12px;}
+  .combo-price .cnow{font-size:30px;font-weight:900;color:var(--green-deep);font-family:Georgia,serif;}
+  .combo-price .cold{color:#bbb;font-size:17px;margin-left:8px;}
+  .combo-foot .btn{width:100%;background:var(--terra);}
+  .combo-foot .pago-unico{margin-top:10px;justify-content:center;}
+
+  .faq details{background:rgba(255,255,255,.96);color:var(--ink);border-radius:12px;margin-bottom:10px;overflow:hidden;}
+  .faq summary{padding:14px 16px;font-weight:700;font-size:14.5px;color:var(--green-deep);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary:after{content:"+";font-size:22px;color:var(--green-accent);font-weight:700;}
+  .faq details[open] summary:after{content:"–";}
+  .faq .ans{padding:0 16px 15px;font-size:14px;color:#4a4a4a;}
+
+  /* Reseñas masonry 2 col */
+  .rating-sum{text-align:center;margin-bottom:16px;}
+  .rating-sum .num{font-size:38px;font-weight:900;color:#fff;font-family:Georgia,serif;line-height:1;}
+  .rating-sum .st{color:var(--gold);font-size:20px;letter-spacing:2px;}
+  .rating-sum .cap{color:#cdd8c8;font-size:13px;margin-top:4px;}
+  .reviews-grid{column-count:2;column-gap:10px;}
+  .review{background:#fff;color:var(--ink);border-radius:12px;padding:12px;margin:0 0 10px;break-inside:avoid;display:inline-block;width:100%;}
+  .review .hd{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:5px;}
+  .review .nm{font-weight:800;color:var(--green-deep);font-size:12.5px;}
+  .review .vf{font-size:9px;color:var(--green-accent);font-weight:700;white-space:nowrap;}
+  .review .stars{font-size:13px;}
+  .review .tx{font-size:12.5px;color:#4a4a4a;line-height:1.4;}
+  .review .reply{margin-top:8px;background:#f1f5ee;border-left:3px solid var(--green-accent);border-radius:7px;padding:8px 9px;font-size:11.5px;color:#555;line-height:1.4;}
+  .review .reply b{color:var(--green-deep);display:block;margin-bottom:2px;}
+
+  /* Dejar reseña */
+  .leave{margin-top:8px;}
+  .leave .lbtn{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff;border-radius:10px;padding:13px;width:100%;font-weight:800;font-family:inherit;font-size:15px;cursor:pointer;}
+  .rform{display:none;background:#fff;color:var(--ink);border-radius:12px;padding:16px;margin-top:12px;text-align:left;}
+  .rform label{font-size:12.5px;font-weight:700;color:var(--green-deep);display:block;margin:8px 0 4px;}
+  .rform input,.rform select,.rform textarea{width:100%;border:1px solid #d8ddd2;border-radius:8px;padding:10px;font-family:inherit;font-size:14px;color:#333;}
+  .rform textarea{min-height:72px;resize:vertical;}
+  .rform .send{margin-top:12px;background:var(--terra);color:#fff;border:none;border-radius:9px;padding:12px;width:100%;font-weight:800;font-family:inherit;font-size:15px;cursor:pointer;}
+  .rok{display:none;background:#eaf4e5;color:var(--green-deep);border-radius:12px;padding:16px;margin-top:12px;text-align:center;font-weight:700;font-size:15px;}
+
+  .guarantee{background:#fff;color:var(--ink);border-radius:16px;padding:24px;text-align:center;}
+  .guarantee .seal{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,#f4b400,#d99a00);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:21px;margin:8px auto 14px;border:4px solid #fff;box-shadow:0 6px 16px rgba(0,0,0,.2);}
+  .guarantee h3{color:var(--green-deep);font-size:19px;margin-bottom:6px;}
+  .guarantee p{color:#666;font-size:14px;}
+
+  footer{background:var(--green-2);text-align:center;padding:28px 16px 110px;margin-top:22px;}
+  footer h3{font-size:19px;margin-bottom:8px;}
+  footer .mail{color:#cdd8c8;font-size:14px;margin-bottom:14px;}
+  footer .legal{font-size:11.5px;color:#9fb097;margin-top:14px;line-height:1.8;}
+  footer .legal a{color:#cdd8c8;text-decoration:none;margin:0 5px;}
+
+  .stickybar{position:fixed;bottom:0;left:0;right:0;background:var(--green-deep);box-shadow:0 -4px 18px rgba(0,0,0,.4);padding:9px 12px calc(9px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:10px;}
+  .stickybar .sp{flex:1;min-width:0;}
+  .stickybar .sp .pn{font-weight:900;font-size:17px;color:#fff;}
+  .stickybar .sp .po{font-size:11px;color:#9fb097;text-decoration:line-through;}
+  .stickybar .btn{width:auto;flex:1;padding:13px 14px;font-size:15px;border-radius:10px;}
+
+  @media(min-width:560px){
+    .hero h1{font-size:36px;}
+    .recetas{grid-template-columns:repeat(3,1fr);}
+    .tablet{flex:1;max-width:none;}
+    .combo-items{grid-template-columns:repeat(4,1fr);}
+    .combo .ci{flex-direction:column;text-align:center;gap:7px;}
+    .combo .ci img{width:50px;height:64px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">🔥 OFERTA DE LANZAMIENTO · <b>365 recetas + contador de calorías GRATIS</b> + actualizaciones de por vida</div>
+<div class="countdown">⏳ Tu descuento termina en <b class="cd">10:00</b></div>
+
+<!-- HERO -->
+<header class="hero wrap">
+  <h1>365 recetas saludables, <u>una para cada día</u> del año</h1>
+  <p>Comidas ricas, fáciles y balanceadas — <b>con las calorías de cada plato</b> para que comas sin adivinar.</p>
+  <span class="badge-soc">✅ Pago único · Acceso de por vida · Entrega inmediata</span>
+  <div class="device"><img src="assets/portada.png" alt="365 Recetas Saludables"></div>
+  <div class="stars">★★★★★</div>
+  <p style="font-size:13px;color:#cdd8c8;">Ideal para quienes cuentan calorías y quieren comer sano sin complicarse</p>
+  <a href="#comprar" class="btn btn-buy" style="margin-top:16px;">Quiero mi recetario →</a>
+</header>
+
+<!-- ES PARA TI -->
+<section class="section wrap">
+  <h2>Este recetario es para ti si…</h2>
+  <div class="divider"></div>
+  <ul class="list pain">
+    <li>Quieres <b>comer sano</b> pero te aburre cocinar siempre lo mismo.</li>
+    <li>Llevas la <b>cuenta de calorías</b> y odias calcularlas a mano.</li>
+    <li>Necesitas <b>recetas rápidas</b>, con ingredientes normales del súper.</li>
+    <li>Quieres <b>variedad</b>: desayunos, almuerzos, cenas, snacks y bebidas.</li>
+    <li>Buscas <b>bajar de peso o mantenerte</b> sin pasar hambre.</li>
+    <li>Te cansaste de dietas complicadas y caras.</li>
+  </ul>
+</section>
+
+<!-- CALORÍAS -->
+<section class="section wrap">
+  <div class="calo">
+    <span class="tag">⭐ Bonus incluido</span>
+    <h2>Contador de calorías en CADA receta</h2>
+    <p class="big">320 · 480 · 410 kcal…</p>
+    <p>Cada plato trae sus <b>calorías y macros</b> (proteína, carbos, grasa, fibra). Cuenta calorías sin apps, sin báscula mental, sin adivinar.</p>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section class="section wrap">
+  <div class="lifestyle">
+    <img src="assets/lifestyle.png" alt="Cocinar saludable">
+    <div class="cap"><h2>Comer sano, sin complicarte</h2><p>Recetas pensadas para el día a día real.</p></div>
+  </div>
+</section>
+
+<!-- LO QUE INCLUYE -->
+<section class="section wrap">
+  <h2>Lo que incluye</h2>
+  <div class="divider"></div>
+  <ul class="list">
+    <li><b>365 recetas</b> saludables — una para cada día del año.</li>
+    <li><b>Calorías + macros</b> en todas (el bonus "contador de calorías").</li>
+    <li>Categorías: <b>desayunos, almuerzos, cenas, snacks y bebidas</b>.</li>
+    <li>Ingredientes con <b>cantidades exactas</b> y pasos numerados.</li>
+    <li><b>Índice clickeable</b>: tocas una receta y vas directo a ella.</li>
+    <li>Listo para <b>imprimir</b> o usar desde el celular.</li>
+    <li><b>Actualizaciones gratis</b> de por vida.</li>
+  </ul>
+</section>
+
+<!-- ASÍ VERÁS TUS RECETAS -->
+<section class="section wrap">
+  <h2>Así verás tus recetas</h2>
+  <p class="sub">Páginas reales del recetario</p>
+  <div class="tablets">
+    <div class="tablet"><img src="assets/tab-receta-1.png" alt="Receta de ejemplo"></div>
+    <div class="tablet"><img src="assets/tab-receta-2.png" alt="Receta de ejemplo"></div>
+    <div class="tablet"><img src="assets/tab-receta-3.png" alt="Receta de ejemplo"></div>
+  </div>
+  <p class="sub" style="margin-top:4px;">👉 Desliza para ver más</p>
+</section>
+
+<!-- PREVIEW VARIEDAD -->
+<section class="section wrap">
+  <h2>Variedad para todo el día</h2>
+  <p class="sub">Desayunos, almuerzos, cenas, snacks y bebidas</p>
+  <div class="recetas">
+    <div class="rcard"><img src="assets/receta-001.png" alt=""><div class="b"><div class="cat">Desayuno</div><div class="nm">Avena Overnight con Frutos Rojos</div><span class="kcal">320 kcal</span></div></div>
+    <div class="rcard"><img src="assets/receta-002.png" alt=""><div class="b"><div class="cat">Almuerzo</div><div class="nm">Bowl de Pollo con Quinoa</div><span class="kcal">480 kcal</span></div></div>
+    <div class="rcard"><img src="assets/receta-003.png" alt=""><div class="b"><div class="cat">Cena</div><div class="nm">Salmón al Horno con Espárragos</div><span class="kcal">410 kcal</span></div></div>
+    <div class="rcard"><img src="assets/receta-004.png" alt=""><div class="b"><div class="cat">Snack</div><div class="nm">Hummus Casero con Crudités</div><span class="kcal">190 kcal</span></div></div>
+    <div class="rcard"><img src="assets/receta-005.png" alt=""><div class="b"><div class="cat">Bebida</div><div class="nm">Smoothie Verde Proteico</div><span class="kcal">250 kcal</span></div></div>
+  </div>
+</section>
+
+<!-- PRODUCTO -->
+<section class="section wrap" id="comprar">
+  <div class="product">
+    <div class="device"><img src="assets/portada.png" alt="365 Recetas Saludables"></div>
+    <h3>365 Recetas Saludables — con contador de calorías</h3>
+    <div class="stars">★★★★★ <span style="color:#888;font-size:13px;">4.5/5 · reseñas verificadas</span></div>
+    <div class="price-row">
+      <span class="price-old" id="precioOld">$19.97</span>
+      <span class="price-now" id="precioNow">$9.97</span>
+      <span class="price-off">50% OFF</span>
+    </div>
+    <div class="tax" id="monedaNota">Precio en USD · impuestos incluidos</div>
+    <div class="cd-mini">⏳ Precio de lanzamiento por <b class="cd">10:00</b></div>
+
+    <ul class="prod-list">
+      <li>365 recetas con calorías y macros</li>
+      <li>Entrega <b>inmediata</b> por email</li>
+      <li>Acceso de <b>por vida</b> + actualizaciones gratis</li>
+      <li>Descargable en cualquier dispositivo</li>
+    </ul>
+
+    <div class="socialproof"><span class="pulse"></span><span><b id="compraCount">+7,214 personas</b> han comprado este recetario en los últimos días</span></div>
+
+    <div class="pago-unico"><span class="dot">●</span> PAGO ÚNICO · ESTE PRODUCTO NO ES UNA SUSCRIPCIÓN</div>
+
+    <button class="btn btn-buy" id="btnComprar" onclick="comprar()">Comprar ahora · <span id="precioBtn">$9.97</span></button>
+
+    <div class="secure">
+      <div class="t">🔒 Pago 100% seguro procesado por Recurrente</div>
+      <div class="pay-badges"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>TARJETA DÉBITO</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMBO -->
+<section class="section wrap" id="combo">
+  <h2>Llévate el combo completo</h2>
+  <p class="sub">Tu recetario + 3 complementos perfectos, todo en un solo pago</p>
+  <div class="combo">
+    <div class="combo-badge">🔥 EL PAQUETE COMPLETO · 4 PRODUCTOS EN 1 · AHORRA <span id="comboSave">$20</span></div>
+    <div class="combo-items">
+      <div class="ci"><img src="assets/portada.png" alt=""><span>365 Recetas Saludables</span></div>
+      <div class="ci"><img src="assets/upsell-postres.png" alt=""><span>100 Postres sin Azúcar</span></div>
+      <div class="ci"><img src="assets/upsell-airfryer.png" alt=""><span>Recetas Air Fryer</span></div>
+      <div class="ci"><img src="assets/upsell-mealprep.png" alt=""><span>Plan 30 Días + Lista de Compras</span></div>
+    </div>
+    <div class="combo-foot">
+      <div class="combo-price"><span class="cnow" id="comboNow">$14.97</span> <s class="cold" id="comboOld">$34.88</s></div>
+      <button class="btn" id="btnCombo" onclick="comprarCombo()">Llevar el combo · <span id="comboBtn">$14.97</span></button>
+      <div class="pago-unico"><span class="dot">●</span> Pago único · Entrega inmediata por correo</div>
+    </div>
+  </div>
+</section>
+
+<!-- VALOR -->
+<section class="section wrap">
+  <div class="valuebox">
+    <div style="font-size:12.5px;letter-spacing:1px;color:#cdd8c8;text-transform:uppercase;margin-bottom:10px;">Todo lo que te llevas hoy</div>
+    <p style="color:#e9efe5;margin-bottom:14px;">365 recetas + contador de calorías + índice clickeable + actualizaciones de por vida</p>
+    <div class="vt" id="valorTotal">$29.97</div>
+    <div class="vn" id="valorHoy">Solo hoy: $9.97</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section wrap faq">
+  <h2>Preguntas frecuentes</h2>
+  <p class="sub">Resolvemos dudas antes de comprar</p>
+  <details><summary>¿Cómo y cuándo recibo el recetario?</summary><div class="ans">Al instante. Apenas se confirma tu pago, recibes el enlace de descarga en pantalla y también por email.</div></details>
+  <details><summary>¿En qué formato está?</summary><div class="ans">Es un PDF optimizado, con índice clickeable. Lo abres en el celular, tablet o computadora, y puedes imprimirlo.</div></details>
+  <details><summary>¿Cada receta trae las calorías?</summary><div class="ans">Sí. Todas incluyen calorías y macros (proteína, carbohidratos, grasa y fibra). Es ideal si cuentas calorías.</div></details>
+  <details><summary>¿Es pago único o suscripción?</summary><div class="ans">Pago único. Pagas una sola vez y el acceso es de por vida, con actualizaciones gratis.</div></details>
+  <details><summary>¿Necesito ingredientes raros o caros?</summary><div class="ans">No. Las recetas usan ingredientes normales del súper y son fáciles de preparar.</div></details>
+  <details><summary>¿Qué métodos de pago aceptan?</summary><div class="ans">Tarjeta de crédito y débito (Visa, Mastercard, Amex), a través de Recurrente con pago 100% seguro.</div></details>
+</section>
+
+<!-- RESEÑAS -->
+<section class="section wrap">
+  <h2>Lo que dicen</h2>
+  <div class="rating-sum">
+    <div class="num">4.5</div>
+    <div class="st">★★★★★</div>
+    <div class="cap">Reseñas verificadas de clientes</div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review"><div class="hd"><span class="nm">Jessica W.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Me quité 3 kilos sin pasar hambre, ¡gracias! El índice está muy ordenado, encontré rápido lo que quería.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Ana Cristina R.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Buenísimo. Puedo cambiar el menú durante el año sin repetir. Todas las comidas son saludables y me siento muy bien.</div><div class="reply"><b>365 Recetas respondió:</b> ¡Gracias por tu comentario! Nos alegra muchísimo que te esté funcionando 🙌</div></div>
+    <div class="review"><div class="hd"><span class="nm">Rebeca B.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Es fácil de imprimir y llevar a la cocina. El índice está muy ordenado, encontré rápido lo que buscaba.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Lorena X.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Las medidas en gramos ayudan mucho. Recetas sin azúcar que de verdad saben a algo.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Verónica S.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Mi hija de 10 años me ayudó a cocinar, ¡mira qué fácil lo explica!</div></div>
+    <div class="review"><div class="hd"><span class="nm">Daniela X.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">Buena relación calidad-precio, recomendable. Me llegó rapidísimo y sin complicaciones.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Lucía Q.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★★</div><div class="tx">La lista de la compra al final es un plus muy útil.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Esther R.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★☆</div><div class="tx">Tenía dudas de la stevia, pero mezclan muy bien. Sentí que era repetitivo, pero cada receta es distinta.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Pilar D.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★★☆</div><div class="tx">No está mal, esperaba un poco más, pero cumple.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Susana B.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★★☆☆</div><div class="tx">Las recetas son un poco básicas, pero bueno, no está del todo mal.</div><div class="reply"><b>365 Recetas respondió:</b> ¡Gracias por tu comentario! ¿Qué te gustaría ver para mejorarlas? Lo tomamos en cuenta.</div></div>
+    <div class="review"><div class="hd"><span class="nm">Silvia V.</span><span class="vf">✔ Verificada</span></div><div class="stars">★★☆☆☆</div><div class="tx">No me pareció tan útil, algunas recetas se me hicieron repetitivas.</div><div class="reply"><b>365 Recetas respondió:</b> Gracias por tu mensaje. Sumamos recetas nuevas seguido; tu sugerencia nos ayuda a mejorar 🙏</div></div>
+    <div class="review"><div class="hd"><span class="nm">Juana M.</span><span class="vf">✔ Verificada</span></div><div class="stars">★☆☆☆☆</div><div class="tx">No me gustó, prefería un libro físico.</div><div class="reply"><b>365 Recetas respondió:</b> Lamentamos que no fuera lo que esperabas. Es digital para que lo tengas siempre en el celular y puedas imprimirlo.</div></div>
+  </div>
+
+  <div class="leave">
+    <button class="lbtn" id="reviewBtn" onclick="toggleReview()">✍️ Dejar una reseña</button>
+    <form class="rform" id="reviewForm" onsubmit="return enviarReview(event)">
+      <label>Tu nombre</label>
+      <input type="text" required placeholder="Ej. María G.">
+      <label>Tu calificación</label>
+      <select required>
+        <option value="5">★★★★★ (5)</option>
+        <option value="4">★★★★☆ (4)</option>
+        <option value="3">★★★☆☆ (3)</option>
+        <option value="2">★★☆☆☆ (2)</option>
+        <option value="1">★☆☆☆☆ (1)</option>
+      </select>
+      <label>Tu reseña</label>
+      <textarea required placeholder="Cuéntanos tu experiencia…"></textarea>
+      <button type="submit" class="send">Enviar reseña</button>
+    </form>
+    <div class="rok" id="reviewOk">✓ ¡Reseña enviada exitosamente! Gracias por tu opinión.</div>
+  </div>
+</section>
+
+<!-- GARANTÍA -->
+<section class="section wrap">
+  <div class="guarantee">
+    <div class="seal">100%</div>
+    <h3>Garantía de satisfacción</h3>
+    <p>Si el recetario no es para ti, escríbenos y lo resolvemos. Tu compra está protegida.</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section wrap" style="text-align:center;">
+  <h2 style="margin-bottom:16px;">Empieza a comer sano hoy</h2>
+  <a href="#comprar" class="btn btn-buy">Quiero las 365 recetas →</a>
+</section>
+
+<footer>
+  <h3>Contacto</h3>
+  <div class="mail">hola@365recetas.com</div>
+  <div class="pay-badges" style="justify-content:center;"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span></div>
+  <div class="legal">
+    © 2026 365recetas.com · Todos los derechos reservados<br>
+    <a href="#">Política de privacidad</a>·<a href="#">Términos</a>·<a href="#">Reembolsos</a>
+  </div>
+</footer>
+
+<div class="stickybar">
+  <div class="sp"><span class="pn" id="precioSticky">$9.97</span> <span class="po" id="precioStickyOld">$19.97</span></div>
+  <button class="btn btn-buy" onclick="comprar()">Comprar ahora</button>
+</div>
+
+<script>
+  /* ===== CONFIG ===== */
+  var META_PIXEL_ID = "";     // pega tu Pixel ID aquí
+  var API_BASE = "api/";
+
+  /* ===== META PIXEL ===== */
+  if (META_PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID); fbq('track','PageView');
+    fbq('track','ViewContent',{content_name:'365 Recetas Saludables',content_type:'product'});
+  }
+  function pixel(ev,data){ if(window.fbq){ fbq('track',ev,data||{}); } }
+
+  /* ===== PRECIO DINÁMICO (USD / GTQ) ===== */
+  var PRECIO={currency:'USD',symbol:'$',now:'9.97',old:'19.97',total:'29.97',combo:{currency:'USD',symbol:'$',now:'14.97',old:'34.88'}};
+  function pintar(){
+    var n=PRECIO.symbol+PRECIO.now,o=PRECIO.symbol+PRECIO.old;
+    var set=function(id,v){var e=document.getElementById(id);if(e)e.textContent=v;};
+    set('precioNow',n);set('precioOld',o);set('precioBtn',n);
+    set('precioSticky',n);set('precioStickyOld',o);
+    set('valorTotal',PRECIO.symbol+PRECIO.total);set('valorHoy','Solo hoy: '+n);
+    set('monedaNota','Precio en '+PRECIO.currency+' · impuestos incluidos');
+    if(PRECIO.combo){
+      var cs=PRECIO.combo.symbol;
+      set('comboNow',cs+PRECIO.combo.now);set('comboOld',cs+PRECIO.combo.old);set('comboBtn',cs+PRECIO.combo.now);
+      var save=Math.round(parseFloat(PRECIO.combo.old)-parseFloat(PRECIO.combo.now));
+      if(!isNaN(save)&&save>0) set('comboSave',cs+save);
+    }
+  }
+  fetch(API_BASE+'precio.php').then(function(r){return r.json();})
+    .then(function(p){if(p&&p.now){PRECIO=p;pintar();}}).catch(function(){});
+  pintar();
+
+  /* ===== CONTADOR REGRESIVO ===== */
+  (function(){
+    var KEY='cd_deadline_365', LEN=10*60*1000;
+    var d=parseInt(localStorage.getItem(KEY)||'0',10), now=new Date().getTime();
+    if(!d||d<now){ d=now+LEN; localStorage.setItem(KEY,String(d)); }
+    function tick(){
+      var t=d-new Date().getTime();
+      if(t<=0){ d=new Date().getTime()+LEN; localStorage.setItem(KEY,String(d)); t=d-new Date().getTime(); }
+      var m=Math.floor(t/60000), s=Math.floor((t%60000)/1000);
+      var txt=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+      var els=document.getElementsByClassName('cd');
+      for(var i=0;i<els.length;i++){ els[i].textContent=txt; }
+    }
+    tick(); setInterval(tick,1000);
+  })();
+
+  /* ===== CONTADOR DE COMPRAS (sube cada día, y un poco durante la sesión) ===== */
+  (function(){
+    var startUTC = Date.UTC(2026,5,13);   // fecha de arranque del contador
+    var base = 7214;
+    var t = new Date();
+    var todayUTC = Date.UTC(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate());
+    var days = Math.max(0, Math.floor((todayUTC - startUTC) / 86400000));
+    var total = base;
+    for (var i = 0; i < days; i++) { var s = Math.sin((i+1)*12.9898)*43758.5453; s = s - Math.floor(s); total += 95 + Math.floor(s*130); }
+    var el = document.getElementById('compraCount');
+    function fmt(n){ return '+' + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' personas'; }
+    function render(){ if (el) el.textContent = fmt(total); }
+    render();
+    setInterval(function(){ total += 1; render(); }, 18000); // sube sin parar mientras miran
+  })();
+
+  /* ===== COMPRAR ===== */
+  function comprar(){
+    var btn=document.getElementById('btnComprar');
+    if(btn){ btn.textContent='Redirigiendo a pago seguro…'; btn.disabled=true; }
+    pixel('InitiateCheckout',{currency:PRECIO.currency,value:parseFloat(PRECIO.now)});
+    fetch(API_BASE+'crear-checkout.php',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})
+      .then(function(r){return r.json();})
+      .then(function(d){ if(d&&d.checkout_url){window.location.href=d.checkout_url;} else {alert('No se pudo iniciar el pago. Intenta de nuevo.');resetBtn();} })
+      .catch(function(){ alert('Error de conexión. Intenta de nuevo.');resetBtn(); });
+  }
+  function resetBtn(){ var b=document.getElementById('btnComprar'); if(b){b.disabled=false;b.innerHTML='Comprar ahora · <span id="precioBtn">'+PRECIO.symbol+PRECIO.now+'</span>';} }
+
+  /* ===== COMBO (recetario + 3 complementos) ===== */
+  function comprarCombo(){
+    var b=document.getElementById('btnCombo');
+    if(b){ b.disabled=true; b.textContent='Redirigiendo a pago seguro…'; }
+    pixel('InitiateCheckout',{currency:PRECIO.combo.currency,value:parseFloat(PRECIO.combo.now),content_name:'Combo 4 productos'});
+    fetch(API_BASE+'crear-checkout.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({combo:1})})
+      .then(function(r){return r.json();})
+      .then(function(d){ if(d&&d.checkout_url){window.location.href=d.checkout_url;} else {alert('No se pudo iniciar el pago. Intenta de nuevo.');resetCombo();} })
+      .catch(function(){ alert('Error de conexión. Intenta de nuevo.');resetCombo(); });
+  }
+  function resetCombo(){ var b=document.getElementById('btnCombo'); if(b){b.disabled=false;b.innerHTML='Llevar el combo · <span id="comboBtn">'+PRECIO.combo.symbol+PRECIO.combo.now+'</span>';} }
+
+  /* ===== DEJAR RESEÑA (sin backend) ===== */
+  function toggleReview(){ var f=document.getElementById('reviewForm'); f.style.display = (f.style.display==='block'?'none':'block'); }
+  function enviarReview(e){ e.preventDefault();
+    document.getElementById('reviewForm').style.display='none';
+    document.getElementById('reviewBtn').style.display='none';
+    document.getElementById('reviewOk').style.display='block';
+    return false; }
+</script>
+</body>
+</html>

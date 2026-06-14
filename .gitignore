@@ -1,0 +1,22 @@
+# ─── Secretos: NUNCA subir la config con llaves reales ───
+web/api/config.php
+web/api/.processed
+
+# ─── Producto / PDFs pesados (no regalar el producto en un repo público) ───
+*.pdf
+web/descargas/*.pdf
+
+# ─── Material de referencia de terceros ───
+PAGINA DE EJEMPLO/
+
+# ─── Artefactos de desarrollo (capturas de preview) ───
+imagenes/*-preview.png
+imagenes/*-check.png
+imagenes/*-borrador.png
+
+# ─── Basura del sistema ───
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*.tmp
