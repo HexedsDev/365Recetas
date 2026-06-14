@@ -121,12 +121,17 @@ function recipePage($r) {
   foreach (($r['steps'] ?? []) as $x) { $steps .= "        <li>" . h($x) . "</li>\n"; }
   $tips = '';
   foreach (($r['tips'] ?? []) as $x) { $tips .= "      <li>" . h($x) . "</li>\n"; }
+  // Usa la foto si ya existe; si no, deja el espacio reservado.
+  $imgFile = "imagenes/receta-$n.png";
+  $imgTag = file_exists(__DIR__ . "/$imgFile")
+    ? '<img class="r-img" src="' . $imgFile . '" alt="' . $title . '">'
+    : '<div class="r-img ph">📷 Foto próximamente</div>';
   return <<<HTML
 <!-- RECETA $n -->
 <div class="page recipe" id="receta-$n">
   <div class="r-top"><span class="r-num">Receta $n</span><span class="r-right"><a class="back" href="#indice">‹ Índice</a><span class="r-cat">$cat</span></span></div>
   <div class="r-title">$title</div>
-  <div class="r-img ph">📷 Foto próximamente</div>
+  $imgTag
   <div class="r-meta"><span>🍽 $port</span><span>⏱ $time</span><span>📊 $diff</span><span class="cal">$cal kcal</span></div>
   <div class="r-cols">
     <div class="r-col">
