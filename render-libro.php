@@ -1,10 +1,12 @@
 <?php
 /* =========================================================================
    render-libro.php — Arma libro.html completo (hasta 365 recetas)
-   - Conserva el encabezado/CSS, la portada y las recetas existentes (001-036)
-   - Lee recipes-b01.json..b20.json (recetas 037+) y genera sus paginas con
-     ESPACIO RESERVADO de imagen (placeholder), listas para foto futura
-   - Reconstruye el indice agrupado por categorias y paginado a tamano A4
+   - Conserva encabezado/CSS + portada; preserva las paginas base (001-036)
+   - Lee recipes-b01.json..b20.json (recetas 037+); pone la foto si existe,
+     si no deja el espacio reservado (placeholder)
+   - CUERPO AGRUPADO POR CATEGORIA (orden consistente en todo el libro)
+   - Indice agrupado por categoria y paginado a A4
+   - La Advertencia va UNA sola vez (arriba, en el indice), no en cada pagina
    Ejecutar:  php render-libro.php
    ========================================================================= */
 
@@ -19,18 +21,26 @@ if ($html === false) { fwrite(STDERR, "No se pudo leer libro.html\n"); exit(1); 
 /* ---- 1. Cortar el archivo en partes ---- */
 $mkIndex = '<!-- ÍNDICE INTERACTIVO -->';
 $posIndex = strpos($html, $mkIndex);
-$mkR1 = '<!-- RECETA 001 -->';
-$posR1 = strpos($html, $mkR1);
+$posR1 = strpos($html, '<!-- RECETA ');           // primera receta (cualquier numero)
 $posBody = strrpos($html, '</body>');
 if ($posIndex === false || $posR1 === false || $posBody === false) {
   fwrite(STDERR, "Marcadores no encontrados en libro.html\n"); exit(1);
 }
-$headCover = substr($html, 0, $posIndex);                 // <head>+CSS + portada
-// Idempotente: conserva SOLO las recetas base (001-036). Si ya se corrio antes,
-// corta en la primera receta generada (037) para no duplicar.
-$posR37 = strpos($html, '<!-- RECETA 037 -->');
-$endExisting = ($posR37 !== false) ? $posR37 : $posBody;
-$existingPages = rtrim(substr($html, $posR1, $endExisting - $posR1)); // recetas 001-036
+$headCover = substr($html, 0, $posIndex);          // <head>+CSS + portada
+
+/* ---- 1b. Trocear las paginas de receta actuales en bloques por numero ---- */
+$bodyRaw = substr($html, $posR1, $posBody - $posR1);
+$pageByNum = [];
+foreach (preg_split('/(?=<!-- RECETA \d{3} -->)/', $bodyRaw) as $blk) {
+  if (preg_match('/id="receta-(\d{3})"/', $blk, $mm)) $pageByNum[(int)$mm[1]] = rtrim($blk);
+}
+// Limpiar las paginas base (001-036): quitar la Advertencia (ahora va una vez
+// arriba) y el globo del enlace web.
+foreach ($pageByNum as $k=>&$blk) {
+  $blk = preg_replace('/[ \t]*<div class="advert">.*?<\/div>[ \t]*\n?/u', '', $blk);
+  $blk = str_replace('🌐 <b>www.365recetas.com</b>', '<b>www.365recetas.com</b>', $blk);
+}
+unset($blk);
 
 /* ---- 2. Inyectar CSS del indice compacto (una sola vez) ---- */
 if (strpos($headCover, '.cidx-line') === false) {
@@ -44,7 +54,7 @@ if (strpos($headCover, '.cidx-line') === false) {
   $headCover = str_replace('</style>', $css . '</style>', $headCover);
 }
 
-/* ---- 3. Metadatos de las 36 recetas existentes ---- */
+/* ---- 3. Metadatos de las 36 recetas base ---- */
 $existing = [
   [1,'Desayuno','Avena Overnight con Frutos Rojos y Chía',320],
   [2,'Almuerzo','Bowl de Pollo a la Plancha con Quinoa y Aguacate',480],
@@ -84,7 +94,7 @@ $existing = [
   [36,'Postre','Brownies de Frijol Negro',160],
 ];
 
-/* ---- 4. Leer los lotes JSON (recetas nuevas) en orden ---- */
+/* ---- 4. Leer los lotes JSON (recetas nuevas 037+) ---- */
 $new = [];
 $num = 37;
 $leidos = 0; $saltados = [];
@@ -96,32 +106,23 @@ for ($i = 1; $i <= 20; $i++) {
   $cat = isset($j['category']) ? $j['category'] : 'Snack';
   foreach ($j['recipes'] as $r) {
     if (empty($r['title'])) continue;
-    $r['num'] = $num;
-    $r['cat'] = $cat;
-    $new[] = $r;
-    $num++;
-    $leidos++;
+    $r['num'] = $num; $r['cat'] = $cat;
+    $new[] = $r; $num++; $leidos++;
   }
 }
 
-/* ---- 5. Plantilla de pagina de receta (con placeholder de imagen) ---- */
+/* ---- 5. Plantilla de pagina de receta (sin advert, enlace sin globo) ---- */
 function recipePage($r) {
   $n = sprintf('%03d', $r['num']);
-  $cat = h($r['cat']);
-  $title = h($r['title']);
+  $cat = h($r['cat']); $title = h($r['title']);
   $cal = (int)($r['calories'] ?? 0);
-  $port = h($r['portions'] ?? '1 porción');
-  $time = h($r['time'] ?? '');
+  $port = h($r['portions'] ?? '1 porción'); $time = h($r['time'] ?? '');
   $diff = h($r['difficulty'] ?? 'Fácil');
   $p = (int)($r['protein_g'] ?? 0); $c = (int)($r['carbs_g'] ?? 0);
   $f = (int)($r['fat_g'] ?? 0); $fi = (int)($r['fiber_g'] ?? 0);
-  $ing = '';
-  foreach (($r['ingredients'] ?? []) as $x) { $ing .= "        <li>" . h($x) . "</li>\n"; }
-  $steps = '';
-  foreach (($r['steps'] ?? []) as $x) { $steps .= "        <li>" . h($x) . "</li>\n"; }
-  $tips = '';
-  foreach (($r['tips'] ?? []) as $x) { $tips .= "      <li>" . h($x) . "</li>\n"; }
-  // Usa la foto si ya existe; si no, deja el espacio reservado.
+  $ing = ''; foreach (($r['ingredients'] ?? []) as $x) { $ing .= "        <li>" . h($x) . "</li>\n"; }
+  $steps = ''; foreach (($r['steps'] ?? []) as $x) { $steps .= "        <li>" . h($x) . "</li>\n"; }
+  $tips = ''; foreach (($r['tips'] ?? []) as $x) { $tips .= "      <li>" . h($x) . "</li>\n"; }
   $imgFile = "imagenes/receta-$n.png";
   $imgTag = file_exists(__DIR__ . "/$imgFile")
     ? '<img class="r-img" src="' . $imgFile . '" alt="' . $title . '">'
@@ -146,23 +147,21 @@ $ing      </ul>
 $steps      </ol>
     </div>
   </div>
-  <div class="weblink">🌐 <b>www.365recetas.com</b></div>
+  <div class="weblink"><b>www.365recetas.com</b></div>
   <div class="consejos">
     <div class="c-h">Consejos útiles</div>
     <ul>
 $tips    </ul>
   </div>
-  <div class="advert"><b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.</div>
   <div class="footer"><b>www.365recetas.com</b> · Una receta saludable para cada día</div>
 </div>
 HTML;
 }
 
-$newPagesHtml = '';
-foreach ($new as $r) { $newPagesHtml .= recipePage($r) . "\n\n"; }
-$newPagesHtml = rtrim($newPagesHtml);
+// Generar/regenerar las paginas 037+ (sobrescribe lo que hubiera en pageByNum)
+foreach ($new as $r) { $pageByNum[$r['num']] = recipePage($r); }
 
-/* ---- 6. Construir el indice agrupado por categoria y paginado ---- */
+/* ---- 6. Indice agrupado por categoria y paginado ---- */
 $meta = [];
 foreach ($existing as $e) { $meta[] = ['num'=>$e[0],'cat'=>$e[1],'title'=>$e[2],'cal'=>$e[3]]; }
 foreach ($new as $r) { $meta[] = ['num'=>$r['num'],'cat'=>$r['cat'],'title'=>$r['title'],'cal'=>(int)($r['calories']??0)]; }
@@ -184,7 +183,7 @@ $CAP = 40;
 $pages = []; $cur = []; $units = 0; $first = true;
 foreach ($items as $it) {
   $cost = $it['type']==='cat' ? 3 : 1;
-  $tope = $first ? ($CAP - 4) : $CAP;
+  $tope = $first ? ($CAP - 7) : $CAP;   // 1a pagina: titulo + sub + advertencia
   if ($it['type']==='cat' && ($units + 6) > $tope && !empty($cur)) {
     $pages[] = $cur; $cur = []; $units = 0; $first = false; $tope = $CAP;
   }
@@ -195,6 +194,7 @@ foreach ($items as $it) {
 }
 if (!empty($cur)) $pages[] = $cur;
 
+$advTxt = '<b>Advertencia:</b> Antes de hacer cambios importantes en tu dieta, sobre todo si tienes alguna condición de salud, consulta con un profesional.';
 $indexHtml = "<!-- ÍNDICE INTERACTIVO -->\n";
 foreach ($pages as $pi => $pg) {
   $id = $pi === 0 ? 'indice' : 'indice-' . ($pi + 1);
@@ -202,6 +202,7 @@ foreach ($pages as $pi => $pg) {
   if ($pi === 0) {
     $indexHtml .= "  <div class=\"idx-title\">Índice de recetas</div>\n";
     $indexHtml .= "  <div class=\"idx-sub\">" . count($meta) . " recetas · toca cualquiera para ir a ella ↓</div>\n";
+    $indexHtml .= "  <div class=\"advert-top\">$advTxt</div>\n";
   } else {
     $indexHtml .= "  <div class=\"idx-title\">Índice · continuación</div>\n";
   }
@@ -217,54 +218,44 @@ foreach ($pages as $pi => $pg) {
   $indexHtml .= "</div>\n\n";
 }
 
-/* ---- 6b. Corrector de tildes (palabras frecuentes; el contenido nuevo vino sin acentos) ---- */
+/* ---- 6b. Corrector de tildes (el contenido nuevo vino sin acentos) ---- */
 $fixmap = [
-  'porcion'=>'porción','Porcion'=>'Porción',
-  'facil'=>'fácil','Facil'=>'Fácil',
-  'limon'=>'limón','Limon'=>'Limón',
-  'platano'=>'plátano','Platano'=>'Plátano','platanos'=>'plátanos',
-  'pure'=>'puré','Pure'=>'Puré',
-  'azucar'=>'azúcar','Azucar'=>'Azúcar',
-  'brocoli'=>'brócoli','Brocoli'=>'Brócoli',
-  'pina'=>'piña','Pina'=>'Piña','pinas'=>'piñas',
+  'porcion'=>'porción','Porcion'=>'Porción','facil'=>'fácil','Facil'=>'Fácil',
+  'limon'=>'limón','Limon'=>'Limón','platano'=>'plátano','Platano'=>'Plátano','platanos'=>'plátanos',
+  'pure'=>'puré','Pure'=>'Puré','azucar'=>'azúcar','Azucar'=>'Azúcar',
+  'brocoli'=>'brócoli','Brocoli'=>'Brócoli','pina'=>'piña','Pina'=>'Piña','pinas'=>'piñas',
   'champinon'=>'champiñón','Champinon'=>'Champiñón','champinones'=>'champiñones',
-  'mani'=>'maní','Mani'=>'Maní',
-  'preparacion'=>'preparación',
-  'rapido'=>'rápido','rapida'=>'rápida','rapidamente'=>'rápidamente',
-  'nutricion'=>'nutrición',
-  'proteina'=>'proteína','proteinas'=>'proteínas',
-  'almibar'=>'almíbar',
-  'anade'=>'añade','anadir'=>'añadir','anades'=>'añades','anada'=>'añada',
-  'coccion'=>'cocción',
+  'mani'=>'maní','Mani'=>'Maní','preparacion'=>'preparación',
+  'rapido'=>'rápido','rapida'=>'rápida','rapidamente'=>'rápidamente','nutricion'=>'nutrición',
+  'proteina'=>'proteína','proteinas'=>'proteínas','almibar'=>'almíbar',
+  'anade'=>'añade','anadir'=>'añadir','anades'=>'añades','anada'=>'añada','coccion'=>'cocción',
   'pequeno'=>'pequeño','pequena'=>'pequeña','pequenos'=>'pequeños','pequenas'=>'pequeñas',
-  'sarten'=>'sartén','Sarten'=>'Sartén',
-  'salmon'=>'salmón','Salmon'=>'Salmón',
-  'albondigas'=>'albóndigas','Albondigas'=>'Albóndigas',
-  'esparragos'=>'espárragos','Esparragos'=>'Espárragos',
-  'jamon'=>'jamón','Jamon'=>'Jamón',
-  'oregano'=>'orégano','Oregano'=>'Orégano',
-  'maiz'=>'maíz','Maiz'=>'Maíz',
-  'datiles'=>'dátiles','Datiles'=>'Dátiles','datil'=>'dátil',
-  'sesamo'=>'sésamo','Sesamo'=>'Sésamo',
-  'rabano'=>'rábano','rabanos'=>'rábanos',
-  'almendra'=>'almendra',
-  'kcal'=>'kcal',
-  'rapidos'=>'rápidos','rapidas'=>'rápidas',
+  'sarten'=>'sartén','Sarten'=>'Sartén','salmon'=>'salmón','Salmon'=>'Salmón',
+  'albondigas'=>'albóndigas','Albondigas'=>'Albóndigas','esparragos'=>'espárragos','Esparragos'=>'Espárragos',
+  'jamon'=>'jamón','Jamon'=>'Jamón','oregano'=>'orégano','Oregano'=>'Orégano','maiz'=>'maíz','Maiz'=>'Maíz',
+  'datiles'=>'dátiles','Datiles'=>'Dátiles','datil'=>'dátil','sesamo'=>'sésamo','Sesamo'=>'Sésamo',
+  'rabano'=>'rábano','rabanos'=>'rábanos','rapidos'=>'rápidos','rapidas'=>'rápidas',
   'clasico'=>'clásico','clasica'=>'clásica',
-  'crujiente'=>'crujiente',
-  'pure'=>'puré',
 ];
 $fixfn = function($s) use ($fixmap){ foreach($fixmap as $k=>$v){ $s = preg_replace('/\b'.preg_quote($k,'/').'\b/u', $v, $s); } return $s; };
-$indexHtml    = $fixfn($indexHtml);
-$newPagesHtml = $fixfn($newPagesHtml);
+$indexHtml = $fixfn($indexHtml);
 
-/* ---- 7. Escribir libro.html ---- */
-$out = $headCover . $indexHtml . $existingPages . "\n\n" . $newPagesHtml . "\n\n</body>\n</html>\n";
+/* ---- 7. Cuerpo agrupado por categoria (orden consistente en todo el libro) ---- */
+$bodyParts = [];
+foreach ($catOrder as $k=>$label) {
+  if (empty($byCat[$k])) continue;
+  foreach ($byCat[$k] as $m) {
+    if (isset($pageByNum[$m['num']])) $bodyParts[] = $pageByNum[$m['num']];
+  }
+}
+$bodyHtml = $fixfn(implode("\n\n", $bodyParts));
+
+$out = $headCover . $indexHtml . $bodyHtml . "\n\n</body>\n</html>\n";
 file_put_contents($LIBRO, $out);
 
 $total = count($meta);
 echo "Recetas nuevas leidas: $leidos\n";
 if ($saltados) echo "Lotes saltados: " . implode(', ', $saltados) . "\n";
-echo "Total recetas en el libro: $total\n";
+echo "Total recetas en el libro: $total | paginas de receta: " . count($pageByNum) . "\n";
 echo "Paginas de indice: " . count($pages) . "\n";
-echo "libro.html reescrito.\n";
+echo "libro.html reescrito (cuerpo agrupado por categoria).\n";
